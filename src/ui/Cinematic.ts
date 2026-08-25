@@ -34,6 +34,11 @@ function fetchVideoBlob(src: string): Promise<Blob | null> {
   if (cached) return cached;
   const request = fetch(src, { cache: 'force-cache' })
     .then((response) => {
+      // 캐시에 남은 옛 오류 응답(404 등)이면 네트워크로 한 번 더 받아 본다
+      if (!response.ok) return fetch(src, { cache: 'reload' });
+      return response;
+    })
+    .then((response) => {
       if (!response.ok) throw new Error(`video ${response.status}`);
       return response.blob();
     })
