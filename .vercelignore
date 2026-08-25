@@ -1,0 +1,13 @@
+tmp/**
+asset-bank/**
+docs/screens/**
+node_modules/**
+dist/**
+background/**
+assets/**
+3d assets/**
+chinese/**
+samplepages/**
+sound/**
+/intro.mp4
+/final.mp4

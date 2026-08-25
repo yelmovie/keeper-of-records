@@ -38,7 +38,13 @@ import { Stage5Screen } from './ui/screens/Stage5Screen';
 import { RewardScreen } from './ui/screens/RewardScreen';
 import { CertificateScreen } from './ui/screens/CertificateScreen';
 
+/** index.html의 부팅 로딩 표시 제거 */
+function hideBootLoading(): void {
+  document.getElementById('boot-loading')?.remove();
+}
+
 function showFatal(message: string): void {
+  hideBootLoading();
   const overlay = document.getElementById('ui-overlay');
   if (!overlay) return;
   overlay.innerHTML = '';
@@ -132,6 +138,14 @@ async function boot(): Promise<void> {
 
   installDevHooks();
   await Router.go('title', undefined, false);
+  hideBootLoading();
+
+  // PWA: 프로덕션에서만 서비스워커 등록 (오프라인 캐시)
+  if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {
+      /* 등록 실패해도 게임 진행에는 영향 없음 */
+    });
+  }
 }
 
 boot().catch((err) => {

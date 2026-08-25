@@ -1,0 +1,15 @@
+{
+  "name": "기록의 주인",
+  "short_name": "기록의 주인",
+  "description": "사라진 기록을 복원하라 — 한국사 기록 복원형 탐구 게임",
+  "lang": "ko",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#0a1020",
+  "theme_color": "#0a1020",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "/og.jpg", "sizes": "1200x600", "type": "image/jpeg" }
+  ]
+}

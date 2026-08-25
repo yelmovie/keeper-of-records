@@ -45,6 +45,9 @@ body {
   position: fixed;
   inset: 0;
   height: var(--app-height, 100dvh);
+  /* 노치·홈바를 피한다 — 무대는 가운데 정렬 레터박스라 축소만 되고 어긋나지 않는다 */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,7 +139,7 @@ body {
 
 .rotate-guard__sub {
   color: var(--color-text-sub);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .rotate-guard__icon {

@@ -1632,6 +1632,32 @@ div:has(> .archive-screen) .guide-char--compact .guide-char__img {
   width: 100%;
 }
 
+.cert-name-input {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+  background: rgba(10, 16, 32, 0.55);
+  border: 1px solid var(--brass-500);
+  border-radius: var(--radius-md);
+}
+
+.cert-name-input::placeholder {
+  color: var(--color-text-sub);
+}
+
+.cert-name-input:focus {
+  outline: 2px solid var(--brass-300);
+  outline-offset: 1px;
+}
+
+.cert-options__note {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-sub);
+  line-height: 1.5;
+}
+
 .cert-preview-wrap {
   position: relative;
   width: 560px;

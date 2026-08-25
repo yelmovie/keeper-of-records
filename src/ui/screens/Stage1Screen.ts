@@ -230,7 +230,7 @@ export const Stage1Screen: Screen = {
             el('span', { class: 'explore-found__summary', text: `${KIND_LABEL[e.kind]} · ${e.summary}` }),
           ]),
           el('span', { class: 'explore-found__tap-cue', 'aria-hidden': 'true' }, [
-            el('span', { class: 'explore-found__tap-hand', text: '👆' }),
+            el('span', { class: 'explore-found__tap-hand' }, [icon(ICONS.tap)]),
             el('span', { text: '눌러 자세히 보기' }),
           ]),
         ]);

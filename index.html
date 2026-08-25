@@ -17,6 +17,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <title>기록의 주인 — 사라진 기록을 복원하라</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0a1020" />
     <link rel="preload" as="image" href="/assets/bg/title.webp" type="image/webp" />
   </head>
   <body>
@@ -28,6 +30,41 @@
       </div>
     </div>
     <div id="app">
+      <!-- 부팅 중 흰 화면 방지 — main.ts 부팅 완료 시 제거 -->
+      <div id="boot-loading" role="status" aria-live="polite">
+        <div class="boot-loading__spinner" aria-hidden="true"></div>
+        <p>기록실 여는 중…</p>
+      </div>
+      <style>
+        #boot-loading {
+          position: absolute;
+          inset: 0;
+          z-index: 50;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          background: #0a1020;
+          color: #e8e0cf;
+          font-family: 'Jua', 'Pretendard', sans-serif;
+          font-size: 18px;
+        }
+        .boot-loading__spinner {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 4px solid rgba(232, 224, 207, 0.25);
+          border-top-color: #e8b64c;
+          animation: boot-spin 0.9s linear infinite;
+        }
+        @keyframes boot-spin {
+          to { transform: rotate(360deg); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .boot-loading__spinner { animation-duration: 2s; }
+        }
+      </style>
       <div id="stage">
         <div id="phaser-root"></div>
         <div id="ui-overlay"></div>

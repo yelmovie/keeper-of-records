@@ -5,9 +5,11 @@
 학생은 미확인 인물이 남긴 문서·사진·물건·조직·사건을 직접 찾고, 비교하고, 연결해서 **"이 기록의 주인은 누구인가"**를 스스로 밝혀낸다. 정답을 맞히는 퀴즈가 아니라, 근거를 모아 기록을 되살리는 탐구다.
 
 ```txt
-흔적 탐색 → 자료 분석 → 기록 탐구 → 인물 비교 → 기록 복원
+흔적 탐색 → 자료 분석 → 기록 탐구 → 기록 복원
         → 인물 파일 해금 + 역사 기록관 인증서 출력
 ```
+
+다루는 인물은 5인 — **윤봉길 · 김구 · 유관순 · 안중근 · 안창호**. 사건(선택 상자) 하나마다 인물 트랙 하나가 배정된다.
 
 ## 실행
 
@@ -40,7 +42,7 @@ public/
     people.json             인물
     organizations.json      조직
     historical-sources.json HistoricalClaim (출처·검수 상태)
-    cases/case-001.json     CASE 데이터
+    cases/case-00N/track-*.json   인물 트랙별 CASE 데이터 (case-001/track-yunbonggil.json 등 5개)
 src/
   core/       EventBus · Router · GameState · SaveManager · AudioManager · Viewport
   scenes/     Phaser 9개 (공간·조작·연출)
@@ -84,7 +86,7 @@ docs/         MVP_AUDIT.md · MVP_IMPLEMENTATION_PLAN.md · screens/
 
 ## 새 CASE 추가
 
-`case-00N.json` + 필요한 claim/인물/조직 + 에셋을 추가하고 `catalog.json`을 `available`로 바꾸면 된다. Scene 코드는 재사용하며 인물별 하드코딩은 없다. 자세한 절차는 `docs/MVP_IMPLEMENTATION_PLAN.md` 11절.
+`cases/case-00N/track-<인물id>.json` + 필요한 claim/인물/조직 + 에셋을 추가하고 `catalog.json`에 사건과 트랙을 등록하면 된다. Scene 코드는 재사용하며 인물별 하드코딩은 없다. 자세한 절차는 `docs/MVP_IMPLEMENTATION_PLAN.md` 11절.
 
 ---
 

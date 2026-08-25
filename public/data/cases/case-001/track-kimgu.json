@@ -31,8 +31,7 @@
         "yunbonggil",
         "yugwansun",
         "ahnjunggeun",
-        "ahnchangho",
-        "kimjwajin"
+        "ahnchangho"
       ],
       "strength": "context",
       "sourceClaimIds": [
@@ -621,38 +620,6 @@
           ],
           "resultSummary": "만들고 이끈 사람과 들어가 실행한 사람 — 시계 하나가 두 사람의 자리를 보여 줍니다."
         }
-      ]
-    },
-    "compare": {
-      "personAId": "yunbonggil",
-      "personBId": "kimgu",
-      "grantEvidenceIds": [
-        "ev-yun-nongmin",
-        "ev-yun-seonseo",
-        "ev-yun-hongkou",
-        "ev-yun-kanazawa"
-      ],
-      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 같은 독립의 목표를 위해 두 사람이 각각 어떤 자리에 있었는지, 자료가 누구와 직접 연결되는지를 나눠 보세요.",
-      "cardAnswers": {
-        "ev-yun-nongmin": "A",
-        "ev-yun-seonseo": "A",
-        "ev-yun-hongkou": "A",
-        "ev-yun-kanazawa": "A",
-        "ev-haeju-record": "B",
-        "ev-gyeongmuguk-doc": "B",
-        "ev-uigeo-plan": "B",
-        "ev-nagyang-record": "B",
-        "ev-jusuk-doc": "B",
-        "ev-baekbeom-book": "B",
-        "ev-shanghai-photo": "SHARED",
-        "ev-imsijeongbu-doc": "SHARED",
-        "ev-aegukdan-record": "SHARED",
-        "ev-japanese-rule": "SHARED"
-      },
-      "minShared": 3,
-      "minDirectPerPerson": 2,
-      "completionEvidenceIds": [
-        "ev-uigeo-plan"
       ]
     },
     "restore": {

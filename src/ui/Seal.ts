@@ -1,6 +1,8 @@
 /** 기록 복원 인장 — 전각 도장을 절제된 팔레트로 그린 SVG.
  *  생성 이미지 보상 에셋(붉은 술 달린 도장·훈장)은 중국 판타지 톤이라 사용하지 않는다.
  */
+import { P, cssColor } from '../systems/interactions/palette';
+
 const NS = 'http://www.w3.org/2000/svg';
 
 export function restorationSeal(size = 190): SVGSVGElement {
@@ -20,8 +22,8 @@ export function restorationSeal(size = 190): SVGSVGElement {
   grad.setAttribute('y2', '1');
   [
     ['0%', '#f0dcae'],
-    ['42%', '#c9a05a'],
-    ['100%', '#8a7040'],
+    ['42%', cssColor(P.brass500)],
+    ['100%', cssColor(P.brassDim)],
   ].forEach(([offset, color]) => {
     const stop = document.createElementNS(NS, 'stop');
     stop.setAttribute('offset', offset);
@@ -83,7 +85,7 @@ export function restorationSeal(size = 190): SVGSVGElement {
     vein.setAttribute('y1', '-4');
     vein.setAttribute('x2', '0');
     vein.setAttribute('y2', '-24');
-    vein.setAttribute('stroke', '#9c3b34');
+    vein.setAttribute('stroke', cssColor(P.redMuted));
     vein.setAttribute('stroke-width', '2.4');
     vein.setAttribute('stroke-linecap', 'round');
     vein.setAttribute('opacity', '0.8');
@@ -93,7 +95,7 @@ export function restorationSeal(size = 190): SVGSVGElement {
   const core = document.createElementNS(NS, 'circle');
   core.setAttribute('cy', '-4');
   core.setAttribute('r', '9');
-  core.setAttribute('fill', '#9c3b34');
+  core.setAttribute('fill', cssColor(P.redMuted));
   g.appendChild(core);
 
   // 아래쪽 글씨
@@ -104,7 +106,7 @@ export function restorationSeal(size = 190): SVGSVGElement {
   label.setAttribute('letter-spacing', '5');
   label.setAttribute('font-family', "'Noto Serif KR', 'Batang', serif");
   label.setAttribute('font-weight', '700');
-  label.setAttribute('fill', '#e8d3a3');
+  label.setAttribute('fill', cssColor(P.brass300));
   label.textContent = '기록 복원';
   g.appendChild(label);
 

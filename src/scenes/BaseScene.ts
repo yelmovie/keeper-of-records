@@ -5,9 +5,16 @@ import { STAGE_W, STAGE_H } from '../core/Viewport';
 
 export abstract class BaseScene extends Phaser.Scene {
   protected loadTextures(...keys: TextureKey[]): void {
+    // 에셋 하나가 깨져도 게임은 계속 간다 — 경고만 남긴다
+    this.load.off('loaderror', this.onLoadError, this);
+    this.load.on('loaderror', this.onLoadError, this);
     keys.forEach((k) => {
       if (!this.textures.exists(k)) this.load.image(k, TEXTURE_KEYS[k]);
     });
+  }
+
+  private onLoadError(file: Phaser.Loader.File): void {
+    console.warn(`[에셋] 로드 실패: ${file.key} (${file.url}) — 진행은 계속됩니다`);
   }
 
   /** 화면을 덮는 배경. cover 방식으로 비율 유지 */

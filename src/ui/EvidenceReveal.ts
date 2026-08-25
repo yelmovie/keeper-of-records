@@ -3,6 +3,7 @@ import { el } from './dom';
 import { AudioManager } from '../core/AudioManager';
 import { KIND_LABEL } from './EvidenceDrawer';
 import type { EvidenceData } from '../data/schemas';
+import { P, cssColor } from '../systems/interactions/palette';
 
 const NS = 'http://www.w3.org/2000/svg';
 
@@ -32,7 +33,7 @@ function foundSeal(): SVGSVGElement {
   const outer = document.createElementNS(NS, 'circle');
   outer.setAttribute('r', '72');
   outer.setAttribute('fill', 'none');
-  outer.setAttribute('stroke', '#9c3b34');
+  outer.setAttribute('stroke', cssColor(P.redMuted));
   outer.setAttribute('stroke-width', '6');
   g.appendChild(outer);
 

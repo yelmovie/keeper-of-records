@@ -7,7 +7,7 @@ import { BaseScene } from './BaseScene';
 import { STAGE_W, STAGE_H } from '../core/Viewport';
 import { EventBus } from '../core/EventBus';
 import { GameState } from '../core/GameState';
-import { P } from '../systems/interactions/palette';
+import { P, cssColor } from '../systems/interactions/palette';
 import type { Rect } from './Stage2Scene';
 
 export class Stage5Scene extends BaseScene {
@@ -26,7 +26,7 @@ export class Stage5Scene extends BaseScene {
   create(): void {
     this.registerCleanup();
     this.addBackground('bg-stage5');
-    this.add.rectangle(STAGE_W / 2, STAGE_H / 2, STAGE_W, STAGE_H, 0x0a1020, 0.7);
+    this.add.rectangle(STAGE_W / 2, STAGE_H / 2, STAGE_W, STAGE_H, P.navy950, 0.7);
     this.work = this.add.container(0, 0);
     this.fx = this.add.container(0, 0).setDepth(900);
   }
@@ -91,7 +91,7 @@ export class Stage5Scene extends BaseScene {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
             fontSize: '19px',
             fontStyle: 'bold',
-            color: '#d9b878',
+            color: cssColor(P.brass400),
           })
           .setOrigin(align, 0),
       );
@@ -131,9 +131,9 @@ export class Stage5Scene extends BaseScene {
         g.strokeRoundedRect(s.x + 8, s.y + 8, cardW - 16, cardH - 16, 8);
       }
       s.hint.setVisible(state !== 'filled');
-      s.hint.setColor(state === 'target' ? '#f4ecdc' : '#c9a05a');
-      s.badge.setColor(state === 'filled' ? '#6fae8f' : '#0a1020');
-      s.badge.setBackgroundColor(state === 'filled' ? '#0a1020' : '#c9a05a');
+      s.hint.setColor(state === 'target' ? cssColor(P.hanji100) : cssColor(P.brass500));
+      s.badge.setColor(state === 'filled' ? '#6fae8f' : cssColor(P.navy950));
+      s.badge.setBackgroundColor(state === 'filled' ? cssColor(P.navy950) : cssColor(P.brass500));
     };
 
     for (let i = 0; i < n; i++) {
@@ -145,8 +145,8 @@ export class Stage5Scene extends BaseScene {
           fontFamily: 'Pretendard, sans-serif',
           fontSize: '20px',
           fontStyle: 'bold',
-          color: '#0a1020',
-          backgroundColor: '#c9a05a',
+          color: cssColor(P.navy950),
+          backgroundColor: cssColor(P.brass500),
           padding: { left: 11, right: 11, top: 3, bottom: 3 },
         })
         .setOrigin(0, 0);
@@ -154,7 +154,7 @@ export class Stage5Scene extends BaseScene {
         .text(sx + cardW / 2, slotY + cardH / 2 + 10, '여기에\n놓아요', {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '18px',
-          color: '#c9a05a',
+          color: cssColor(P.brass500),
           align: 'center',
           lineSpacing: 4,
         })
@@ -275,7 +275,7 @@ export class Stage5Scene extends BaseScene {
         this.add.text(14, 14, ev?.title ?? id, {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '18px',
-          color: '#f4ecdc',
+          color: cssColor(P.hanji100),
           wordWrap: { width: cardW - 28 },
           lineSpacing: 4,
           maxLines: 3,
@@ -286,7 +286,7 @@ export class Stage5Scene extends BaseScene {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '21px',
           fontStyle: 'bold',
-          color: '#d9b878',
+          color: cssColor(P.brass400),
         }),
       );
 
@@ -399,7 +399,7 @@ export class Stage5Scene extends BaseScene {
     const cy = STAGE_H * 0.5;
 
     const dark = this.add
-      .rectangle(cx, cy, STAGE_W, STAGE_H, 0x0a1020, 0)
+      .rectangle(cx, cy, STAGE_W, STAGE_H, P.navy950, 0)
       .setDepth(890);
     this.tweens.add({ targets: dark, fillAlpha: 0.92, duration: 600 });
 

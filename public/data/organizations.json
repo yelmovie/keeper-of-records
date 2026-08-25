@@ -43,7 +43,7 @@
     "id": "danjihoe",
     "name": "단지회",
     "foundedText": "1909년 3월",
-    "summary": "안중근이 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세하며 만든 비밀 모임입니다.",
+    "summary": "안중근이 동지 열한 명과 함께 손가락을 잘라 나라를 되찾자고 맹세하며 만든 비밀 모임입니다.",
     "sourceClaimIds": [
       "ahnjunggeun-danji-1909"
     ]
@@ -76,40 +76,12 @@
     ]
   },
   {
-    "id": "bukro-gunjeongseo",
-    "name": "북로군정서",
-    "foundedText": "1919년 · 만주",
-    "summary": "김좌진이 총사령관을 맡은 독립군 부대로, 1920년 청산리에서 일본군을 크게 무찔렀습니다.",
-    "sourceClaimIds": [
-      "kimjwajin-bukro-gunjeongseo",
-      "kimjwajin-cheongsanri-1920"
-    ]
-  },
-  {
     "id": "samheung-hakgyo",
     "name": "삼흥학교",
     "foundedText": "1906년 · 진남포",
     "summary": "안중근이 진남포에 세운 학교입니다. 그는 이어 돈의학교도 인수해 운영하며 인재를 길렀습니다.",
     "sourceClaimIds": [
       "ahnjunggeun-samheung-donui-1906"
-    ]
-  },
-  {
-    "id": "homyeong-hakgyo",
-    "name": "호명학교",
-    "foundedText": "충남 홍성",
-    "summary": "김좌진이 고향 집에 세워 운영한 학교입니다.",
-    "sourceClaimIds": [
-      "kimjwajin-homyeong-hakgyo"
-    ]
-  },
-  {
-    "id": "sinminbu",
-    "name": "신민부",
-    "foundedText": "1925년 · 만주",
-    "summary": "1925년 만주에서 조직된 독립운동 단체로, 김좌진이 중심이 되어 활동했습니다.",
-    "sourceClaimIds": [
-      "kimjwajin-sinminbu-1925"
     ]
   }
 ]

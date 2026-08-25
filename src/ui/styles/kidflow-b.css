@@ -234,7 +234,7 @@
 
 .explore-found__from {
   color: var(--brass-400);
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .explore-found__title {
@@ -249,8 +249,8 @@
   margin-top: 3px;
   overflow: hidden;
   color: var(--color-text-sub);
-  font-size: 14px;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 1.3;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
@@ -267,7 +267,7 @@
   border-radius: var(--radius-pill);
   background: rgba(211, 168, 78, 0.12);
   color: var(--brass-300);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
   pointer-events: none;

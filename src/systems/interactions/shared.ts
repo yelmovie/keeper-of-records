@@ -1,6 +1,6 @@
 /** 조작 모듈 공통 유틸 */
 import Phaser from 'phaser';
-import { P } from './palette';
+import { P, cssColor } from './palette';
 
 /** 조작 대상 물건의 이름표 — 조작 방식은 알려주되 정답 여부는 알려주지 않는다 */
 export function makeLabel(
@@ -11,23 +11,23 @@ export function makeLabel(
 ): Phaser.GameObjects.Container {
   const c = scene.add.container(0, 0);
   const t = scene.add
-    .text(0, -8, text, {
+    .text(0, -10, text, {
       fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
       fontSize: '17px',
       fontStyle: 'bold',
-      color: '#f4ecdc',
+      color: cssColor(P.hanji100),
     })
     .setOrigin(0.5);
   const action = scene.add
-    .text(0, 11, actionText, {
+    .text(0, 12, actionText, {
       fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-      fontSize: '13px',
-      color: '#e8d3a3',
+      fontSize: '16px',
+      color: cssColor(P.brass300),
     })
     .setOrigin(0.5);
   const pad = 14;
   const bw = Math.max(t.width, action.width) + pad * 2;
-  const bh = 48;
+  const bh = 52;
   const bg = scene.add.graphics();
   bg.fillStyle(P.navy950, 0.94);
   bg.fillRoundedRect(-bw / 2, -bh / 2, bw, bh, 12);

@@ -31,8 +31,7 @@
         "yunbonggil",
         "yugwansun",
         "ahnjunggeun",
-        "ahnchangho",
-        "kimjwajin"
+        "ahnchangho"
       ],
       "strength": "context",
       "sourceClaimIds": [
@@ -45,15 +44,15 @@
       "title": "북쪽으로 가는 기차표",
       "kind": "artifact",
       "summary": "만주 방면으로 가는 낡은 기차표입니다. 뒷면에 하얼빈이라는 지명이 보입니다.",
-      "detail": "만주와 그 둘레 지역에서는 여러 독립운동가가 활동했습니다. 하얼빈역에서 의거(나라를 되찾으려고 목숨을 걸고 벌인 일)를 실행한 사람도, 만주에서 독립군 부대를 이끈 사람도 있습니다. 기차표 한 장만으로는 누구의 것인지 알 수 없습니다.",
+      "detail": "나라 밖으로 건너가 활동한 독립운동가는 여럿입니다. 하얼빈역에서 의거(나라를 되찾으려고 목숨을 걸고 벌인 일)를 실행한 사람도, 나라 밖을 오가며 학교와 단체를 세워 힘을 기른 사람도 있습니다. 기차표 한 장만으로는 누구의 것인지 알 수 없습니다.",
       "relatedPersonIds": [
         "ahnjunggeun",
-        "kimjwajin"
+        "ahnchangho"
       ],
       "strength": "shared",
       "sourceClaimIds": [
         "ahnjunggeun-harbin-19091026",
-        "kimjwajin-bukro-gunjeongseo"
+        "ahnchangho-imsijeongbu"
       ],
       "interaction": "flip",
       "visualization": true
@@ -111,8 +110,8 @@
       "id": "ev-danji-record",
       "title": "봉투에 담긴 맹세 기록",
       "kind": "quote",
-      "summary": "열두 명의 동지가 함께 남긴 맹세의 기록입니다.",
-      "detail": "1909년 3월, 이 기록의 주인은 동지 열두 명과 함께 왼손 넷째 손가락 한 마디를 잘라 나라를 되찾자고 맹세했습니다. 이 모임을 단지회라고 부릅니다. 기록에는 잘린 손가락으로 남긴 손자국이 찍혀 있습니다.",
+      "summary": "열한 명의 동지가 함께 남긴 맹세의 기록입니다.",
+      "detail": "1909년 3월, 이 기록의 주인은 동지 열한 명과 함께 왼손 넷째 손가락 한 마디를 잘라 나라를 되찾자고 맹세했습니다. 이 모임을 단지회라고 부릅니다. 기록에는 잘린 손가락으로 남긴 손자국이 찍혀 있습니다.",
       "relatedPersonIds": [
         "ahnjunggeun"
       ],
@@ -508,7 +507,7 @@
               "isKey": false
             },
             {
-              "text": "1909년 3월에는 동지 열두 명과 함께 단지회라는 모임을 만들어 맹세했습니다.",
+              "text": "1909년 3월에는 동지 열한 명과 함께 단지회라는 모임을 만들어 맹세했습니다.",
               "isKey": true
             },
             {
@@ -590,7 +589,7 @@
               "isKey": true
             },
             {
-              "text": "1909년에는 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
+              "text": "1909년에는 동지 열한 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
               "isKey": true
             },
             {
@@ -602,39 +601,8 @@
             "ev-uibyeong-record",
             "ev-danji-record"
           ],
-          "resultSummary": "연해주의 의병 동지들, 그리고 함께 맹세한 열두 명의 동지와 이어져 있습니다."
+          "resultSummary": "연해주의 의병 동지들, 그리고 함께 맹세한 열한 명의 동지와 이어져 있습니다."
         }
-      ]
-    },
-    "compare": {
-      "personAId": "ahnchangho",
-      "personBId": "ahnjunggeun",
-      "grantEvidenceIds": [
-        "ev-sinminhoe",
-        "ev-daesung",
-        "ev-heungsadan",
-        "ev-naemuchongjang"
-      ],
-      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 두 사람 모두 학교를 세워 인재를 기르는 일에서 출발했지만, 서로 다른 길을 걸었습니다. 자료가 누구와 직접 연결되는지를 나눠 보세요.",
-      "cardAnswers": {
-        "ev-sinminhoe": "A",
-        "ev-daesung": "A",
-        "ev-heungsadan": "A",
-        "ev-naemuchongjang": "A",
-        "ev-hwanghae-record": "B",
-        "ev-uibyeong-record": "B",
-        "ev-danji-record": "B",
-        "ev-harbin-record": "B",
-        "ev-yumuk": "B",
-        "ev-donyang-record": "B",
-        "ev-manju-ticket": "B",
-        "ev-school-record": "SHARED",
-        "ev-japanese-rule": "SHARED"
-      },
-      "minShared": 2,
-      "minDirectPerPerson": 2,
-      "completionEvidenceIds": [
-        "ev-school-record"
       ]
     },
     "restore": {
@@ -707,10 +675,10 @@
               "feedback": "안창호는 대성학교와 흥사단, 임시정부로 이어지는 인물이야. 이 기록에는 의병을 이끌고 하얼빈역 의거를 직접 실행한 사람의 흔적이 남아 있어. 다시 확인해 봐."
             },
             {
-              "id": "p-kimjwajin",
-              "text": "김좌진",
+              "id": "p-yunbonggil",
+              "text": "윤봉길",
               "correct": false,
-              "feedback": "김좌진은 북로군정서와 청산리 전투로 이어지는 인물이야. 확보한 근거의 손도장과 맹세 기록을 다시 확인해 봐."
+              "feedback": "윤봉길은 1932년 상하이 훙커우공원 의거로 이어지는 인물이야. 이 기록은 1909년 하얼빈에서 있었던 일을 담고 있어. 확보한 근거의 손도장과 맹세 기록을 다시 확인해 봐."
             }
           ]
         },

@@ -339,7 +339,7 @@
   },
   {
     "id": "yugwansun-sungug-1920",
-    "claim": "유관순은 서대문형무소에 갇혀서도 만세를 불렀고, 1920년 9월 열여덟 살에 옥중에서 순국했습니다.",
+    "claim": "유관순은 서대문형무소에 갇혀서도 만세를 불렀고, 1920년 9월 열일곱 살에 옥중에서 순국했습니다.",
     "personIds": [
       "yugwansun"
     ],
@@ -352,7 +352,7 @@
   },
   {
     "id": "ahnjunggeun-danji-1909",
-    "claim": "안중근은 1909년 3월 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
+    "claim": "안중근은 1909년 3월 동지 열한 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
     "personIds": [
       "ahnjunggeun"
     ],
@@ -452,38 +452,6 @@
     "sourceName": "독립기념관 한국독립운동정보시스템 「독립운동인명사전 · 안창호」",
     "sourceUrl": "https://search.i815.or.kr/dictionary/detail.do?id=696",
     "sourceType": "museum",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-bukro-gunjeongseo",
-    "claim": "김좌진은 만주에서 독립군 부대인 북로군정서의 총사령관을 맡았습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "organizationIds": [
-      "bukro-gunjeongseo"
-    ],
-    "dateText": "1919년~1920년",
-    "sourceName": "우리역사넷(국사편찬위원회) 「북로군정서」",
-    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_o401600",
-    "sourceType": "official",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-cheongsanri-1920",
-    "claim": "김좌진이 이끄는 북로군정서는 1920년 10월 청산리에서 일본군을 크게 무찔렀습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "organizationIds": [
-      "bukro-gunjeongseo"
-    ],
-    "dateText": "1920년 10월 21일~26일",
-    "sourceName": "우리역사넷(국사편찬위원회) 「북로군정서」",
-    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_o401600",
-    "sourceType": "official",
     "directQuote": false,
     "status": "approved"
   },
@@ -851,92 +819,6 @@
     "dateText": "1912년 · 1923년 개칭",
     "sourceName": "한국민족문화대백과사전 「서대문형무소」",
     "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0066513",
-    "sourceType": "academic",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-hongseong-1889",
-    "claim": "김좌진은 1889년 충청남도 홍주(지금의 홍성)에서 태어났습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "dateText": "1889년",
-    "sourceName": "한국민족문화대백과사전 「김좌진」",
-    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
-    "sourceType": "academic",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-homyeong-hakgyo",
-    "claim": "김좌진은 고향 집에 호명학교를 세워 운영했습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "organizationIds": [
-      "homyeong-hakgyo"
-    ],
-    "sourceName": "한국민족문화대백과사전 「김좌진」",
-    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
-    "sourceType": "academic",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-manju-mangmyeong",
-    "claim": "김좌진은 만주로 건너가 독립군을 이끌며 무장 독립운동을 펼쳤습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "dateText": "1913년 출옥 이후",
-    "sourceName": "한국민족문화대백과사전 「김좌진」",
-    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
-    "sourceType": "academic",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-cheongsanri-jimyeong",
-    "claim": "청산리 전투는 백운평·어랑촌 등 여러 골짜기에서 며칠 동안 이어진 싸움이었습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "organizationIds": [
-      "bukro-gunjeongseo"
-    ],
-    "dateText": "1920년 10월",
-    "sourceName": "한국민족문화대백과사전 「김좌진」",
-    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
-    "sourceType": "academic",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-sinminbu-1925",
-    "claim": "김좌진은 1925년 만주에서 조직된 신민부의 중심이 되어 활동을 이어갔습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "organizationIds": [
-      "sinminbu"
-    ],
-    "dateText": "1925년 3월",
-    "sourceName": "한국민족문화대백과사전 「김좌진」",
-    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
-    "sourceType": "academic",
-    "directQuote": false,
-    "status": "approved"
-  },
-  {
-    "id": "kimjwajin-sungug-1930",
-    "claim": "김좌진은 1930년 1월 만주 산시에서 세상을 떠났습니다.",
-    "personIds": [
-      "kimjwajin"
-    ],
-    "dateText": "1930년 1월",
-    "sourceName": "한국민족문화대백과사전 「김좌진」",
-    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
     "sourceType": "academic",
     "directQuote": false,
     "status": "approved"

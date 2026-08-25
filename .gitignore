@@ -26,3 +26,6 @@ scripts/tmp/
 /asset-bank/
 .vite-preview.*.log
 /tmp/
+
+.vercel
+_unused/

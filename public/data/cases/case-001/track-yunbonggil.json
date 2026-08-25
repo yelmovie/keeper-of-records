@@ -31,8 +31,7 @@
         "yunbonggil",
         "yugwansun",
         "ahnjunggeun",
-        "ahnchangho",
-        "kimjwajin"
+        "ahnchangho"
       ],
       "strength": "context",
       "sourceClaimIds": [
@@ -571,36 +570,6 @@
           ],
           "resultSummary": "계획하고 이끈 사람과, 실행한 사람. 두 사람은 같은 목표를 향한 서로 다른 자리에 있었습니다."
         }
-      ]
-    },
-    "compare": {
-      "personAId": "kimgu",
-      "personBId": "yunbonggil",
-      "grantEvidenceIds": [
-        "ev-gyeongmuguk",
-        "ev-baekbeomilji",
-        "ev-jusuk-record",
-        "ev-nagyang"
-      ],
-      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 같은 독립의 목표를 위해 두 사람이 각각 어떤 자리에 있었는지, 자료가 누구와 직접 연결되는지를 나눠 보세요.",
-      "cardAnswers": {
-        "ev-gyeongmuguk": "A",
-        "ev-baekbeomilji": "A",
-        "ev-jusuk-record": "A",
-        "ev-nagyang": "A",
-        "ev-nongmin-dokbon": "B",
-        "ev-woljinhoe-rule": "B",
-        "ev-yesan-record": "B",
-        "ev-seonseomun": "B",
-        "ev-hongkou-record": "B",
-        "ev-kanazawa-record": "B",
-        "ev-shanghai-photo": "SHARED",
-        "ev-japanese-rule": "SHARED"
-      },
-      "minShared": 2,
-      "minDirectPerPerson": 2,
-      "completionEvidenceIds": [
-        "ev-hongkou-record"
       ]
     },
     "restore": {

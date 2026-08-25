@@ -153,20 +153,6 @@ export interface InquiryStageData {
   questions: InquiryQuestion[];
 }
 
-export interface CompareStageData {
-  personAId: string;
-  personBId: string;
-  /** Stage 진입 시 자동으로 제공되는 비교 자료 */
-  grantEvidenceIds: string[];
-  /** 분류 대상 근거 id → 정답 zone */
-  cardAnswers: Record<string, 'A' | 'SHARED' | 'B'>;
-  minShared: number;
-  minDirectPerPerson: number;
-  guideText: string;
-  /** Stage 완료 시 지급되는 근거 (두 인물의 관계 자료) */
-  completionEvidenceIds: string[];
-}
-
 export interface RestoreSlotDef {
   slot: 'person' | 'period' | 'organization' | 'activity' | 'role';
   label: string;
@@ -207,7 +193,6 @@ export interface CaseData {
     explore: ExploreStageData;
     analyze: AnalyzeStageData;
     inquiry: InquiryStageData;
-    compare: CompareStageData;
     restore: RestoreStageData;
   };
   memoryScene?: MemorySceneData;

@@ -35,6 +35,14 @@ export const TitleScreen: Screen = {
     ]);
 
     const hasSave = SaveManager.hasProgress();
+    // 진행 중이던 사건이 있으면(새로고침 등) 이어하기를 주 버튼으로 강조한다
+    const save = SaveManager.get();
+    const resuming =
+      hasSave &&
+      (save.currentCaseId !== null ||
+        Object.values(save.caseProgress).some(
+          (p) => p.stage > 0 && p.stage < 6,
+        ));
     let starting = false;
 
     const startBtn = button(
@@ -59,7 +67,7 @@ export const TitleScreen: Screen = {
         if (scene) scene.playPrologue(playVideo);
         else playVideo();
       },
-      { variant: 'primary', size: 'lg' },
+      { variant: resuming ? 'default' : 'primary', size: 'lg' },
     );
 
     const continueBtn = button(
@@ -68,7 +76,7 @@ export const TitleScreen: Screen = {
         AudioManager.sfx('uiTap');
         void Router.go('archive');
       },
-      { size: 'lg' },
+      { variant: resuming ? 'primary' : 'default', size: 'lg' },
     );
     continueBtn.disabled = !hasSave;
     if (!hasSave) continueBtn.title = '진행 중인 기록이 없습니다';

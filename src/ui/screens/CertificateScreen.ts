@@ -16,6 +16,9 @@ import {
 
 let offGuide: (() => void) | null = null;
 
+/** 이름은 sessionStorage에만 둔다 — 탭을 닫으면 사라지고 localStorage에는 남지 않는다 */
+const CERT_NAME_KEY = 'keeper-cert-name';
+
 export const CertificateScreen: Screen = {
   mount(overlay: HTMLElement): void {
     const c = GameState.caseData;
@@ -33,7 +36,7 @@ export const CertificateScreen: Screen = {
     offGuide = mountGuide(overlay, {
       compact: true,
       hints: [
-        '인쇄하기를 누르면 A4 세로로 나와요. 이름 칸은 인쇄한 뒤 직접 쓰세요.',
+        '인쇄하기를 누르면 A4 세로로 나와요. 이름은 미리 적거나, 인쇄한 뒤 직접 써도 돼요.',
         '기록을 끝까지 복원한 사람만 받는 인증서예요. 축하해요!',
       ],
     });
@@ -46,11 +49,43 @@ export const CertificateScreen: Screen = {
       printRoot.replaceChildren(buildCertificate());
     }
 
+    // 이름 미리 넣기(선택) — 세션에만 두고 localStorage에는 저장하지 않는다
+    const nameInput = el('input', {
+      class: 'cert-name-input',
+      type: 'text',
+      maxlength: '12',
+      placeholder: '이름 (선택)',
+      'aria-label': '인증서에 표시할 이름',
+      autocomplete: 'off',
+    });
+    nameInput.value = sessionStorage.getItem(CERT_NAME_KEY) ?? '';
+    const applyName = () => {
+      const v = nameInput.value.trim();
+      document
+        .querySelectorAll('.cert-field--name .cert-field__blank')
+        .forEach((blank) => {
+          blank.textContent = v;
+        });
+    };
+    nameInput.addEventListener('input', () => {
+      try {
+        sessionStorage.setItem(CERT_NAME_KEY, nameInput.value);
+      } catch {
+        /* 시크릿 모드 등 저장 불가 시 무시 */
+      }
+      applyName();
+    });
+
     const options = el('aside', { class: 'cert-options' }, [
       el('div', { class: 'cert-options__title', text: '인증서 출력' }),
       el('p', {
         class: 'cert-options__desc',
-        text: 'A4 세로로 인쇄돼요. 학교·학년·반·번호·이름은 인쇄한 뒤 인증서에 직접 적어 주세요.',
+        text: 'A4 세로로 인쇄돼요. 학교·학년·반·번호는 인쇄한 뒤 인증서에 직접 적어 주세요.',
+      }),
+      nameInput,
+      el('p', {
+        class: 'cert-options__note',
+        text: '이름은 저장되지 않아요. 이 화면에서만 잠깐 쓰여요.',
       }),
       button(
         '인쇄하기',
@@ -70,6 +105,8 @@ export const CertificateScreen: Screen = {
     ]);
 
     overlay.appendChild(root);
+    // 세션에 남아 있던 이름을 미리보기·인쇄본 양쪽에 반영
+    applyName();
   },
 
   unmount(): void {

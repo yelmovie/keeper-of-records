@@ -51,14 +51,18 @@ export const emptyCaseProgress = (): CaseProgress => ({
   unlockedProfile: false,
 });
 
-function sanitize(raw: unknown): SaveData {
+/** 저장 데이터 이관 겸 보정.
+ *  버전이 달라도 통째로 버리지 않고 필드 단위로 검증해 살릴 수 있는
+ *  진행 기록(completedCaseIds, caseProgress 등)은 최대한 보존하고,
+ *  모르는 필드는 DEFAULT 값으로 채운다. (테스트를 위해 export)
+ */
+export function migrateSave(raw: unknown): SaveData {
   if (!raw || typeof raw !== 'object') return structuredClone(DEFAULT_SAVE);
   const r = raw as Partial<SaveData>;
-  if (r.version !== SAVE_VERSION) return structuredClone(DEFAULT_SAVE);
   const base = structuredClone(DEFAULT_SAVE);
   return {
     ...base,
-    ...r,
+    lastSavedAt: typeof r.lastSavedAt === 'string' ? r.lastSavedAt : '',
     version: SAVE_VERSION,
     completedCaseIds: Array.isArray(r.completedCaseIds)
       ? r.completedCaseIds.filter(
@@ -106,7 +110,7 @@ class SaveManagerImpl {
   private data: SaveData;
 
   constructor() {
-    this.data = sanitize(SafeStorage.getJSON<unknown>(SAVE_KEY, null));
+    this.data = migrateSave(SafeStorage.getJSON<unknown>(SAVE_KEY, null));
   }
 
   get(): SaveData {

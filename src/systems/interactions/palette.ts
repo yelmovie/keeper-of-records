@@ -13,6 +13,8 @@ export const P = {
   brass400: 0xd9b878,
   brass300: 0xe8d3a3,
   brassDim: 0x8a7040,
+  /** 안내 문구·강조용 밝은 금색 (Stage2 등에서 사용) */
+  gold300: 0xf2cf78,
   hanji100: 0xf4ecdc,
   hanji200: 0xe8dcc4,
   hanji300: 0xd5c5a5,

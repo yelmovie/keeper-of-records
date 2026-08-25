@@ -3,7 +3,7 @@
  *  - claim id 중복 / 참조 무결성
  *  - 학생 화면에 노출되는 자료가 approved claim만 참조하는지
  *  - 인물·조직 참조 무결성
- *  - CASE 내부 참조 (evidence id, slot, timeline, compare) 무결성
+ *  - CASE 내부 참조 (evidence id, slot, timeline) 무결성
  *  - 금지 표현 사용 여부
  *
  * 역사적 사실의 진위는 자동 검증할 수 없다 → 사람이 최종 검수한다.
@@ -358,37 +358,6 @@ async function main() {
     const unlockSets = inq.questions.map((q) => q.unlockEvidenceIds.join(','));
     if (new Set(unlockSets).size !== unlockSets.length) {
       err(`${L}/inquiry: 서로 다른 질문이 같은 자료만 열어 줍니다`);
-    }
-
-    // compare
-    const cmp = c.stages.compare;
-    if (!personIds.has(cmp.personAId) || !personIds.has(cmp.personBId)) {
-      err(`${L}/compare: 비교 인물이 people에 없음`);
-    }
-    cmp.grantEvidenceIds.forEach((id) => ref(id, 'compare/grant'));
-    cmp.completionEvidenceIds.forEach((id) => ref(id, 'compare/completion'));
-    let sharedCount = 0;
-    Object.entries(cmp.cardAnswers).forEach(([id, zone]) => {
-      ref(id, 'compare/cardAnswers');
-      if (!['A', 'SHARED', 'B'].includes(zone)) {
-        err(`${L}/compare: zone 값이 잘못됨 (${id} → ${zone})`);
-      }
-      if (zone === 'SHARED') sharedCount++;
-      const e = evMap.get(id);
-      if (!e) return;
-      // 정답 zone과 evidence의 연결 인물이 어긋나면 학습 내용이 틀어진다
-      if (zone === 'A' && !e.relatedPersonIds.includes(cmp.personAId)) {
-        err(`${L}/compare: ${id} 는 A(${cmp.personAId})와 연결되지 않습니다`);
-      }
-      if (zone === 'B' && !e.relatedPersonIds.includes(cmp.personBId)) {
-        err(`${L}/compare: ${id} 는 B(${cmp.personBId})와 연결되지 않습니다`);
-      }
-      if (zone === 'SHARED' && e.strength === 'direct') {
-        err(`${L}/compare: ${id} 는 direct 인데 SHARED로 분류되어 있습니다`);
-      }
-    });
-    if (sharedCount < cmp.minShared) {
-      err(`${L}/compare: SHARED 정답(${sharedCount})이 minShared(${cmp.minShared})보다 적습니다`);
     }
 
     // restore

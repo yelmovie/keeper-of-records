@@ -110,7 +110,7 @@
     "organizationIds": [
       "ewha-hakdang"
     ],
-    "profileSummary": "이화학당에서 공부하다 1919년 3·1운동에 참여했고, 4월 1일 아우내 장터에서 수천 명이 모인 만세 시위를 앞장서서 이끌었습니다. 서대문형무소에 갇혀서도 만세를 부르다 1920년 열여덟 살에 순국했습니다.",
+    "profileSummary": "이화학당에서 공부하다 1919년 3·1운동에 참여했고, 4월 1일 아우내 장터에서 수천 명이 모인 만세 시위를 앞장서서 이끌었습니다. 서대문형무소에 갇혀서도 만세를 부르다 1920년 열일곱 살에 순국했습니다.",
     "revealFacts": [
       {
         "text": "1916년 이화학당에 들어가 공부했습니다."
@@ -119,7 +119,7 @@
         "text": "1919년 4월 1일 아우내 만세 시위를 이끌었습니다."
       },
       {
-        "text": "1920년 9월, 열여덟 살에 옥중에서 순국했습니다."
+        "text": "1920년 9월, 열일곱 살에 옥중에서 순국했습니다."
       },
       {
         "text": "1902년 충청남도 목천군, 지금의 천안시 병천면에서 태어났습니다.",
@@ -160,7 +160,7 @@
     "profileSummary": "1909년 동지들과 손가락을 잘라 나라를 되찾자고 맹세했고, 그해 10월 26일 하얼빈역에서 이토 히로부미를 처단했습니다. 이듬해 뤼순감옥에서 순국했으며 옥중에서 쓰던 『동양평화론』은 끝내 완성하지 못했습니다.",
     "revealFacts": [
       {
-        "text": "1909년 동지 열두 명과 단지 맹세를 했습니다."
+        "text": "1909년 동지 열한 명과 단지 맹세를 했습니다."
       },
       {
         "text": "1909년 10월 26일 하얼빈역 의거를 실행했습니다."
@@ -254,48 +254,5 @@
       "ahnchangho-imsijeongbu"
     ],
     "illustrationKey": "char-ahnchangho"
-  },
-  {
-    "id": "kimjwajin",
-    "displayName": "김좌진",
-    "lifeText": "1889 ~ 1930",
-    "activityPeriod": "1919년 ~ 1930년",
-    "organizationIds": [
-      "bukro-gunjeongseo"
-    ],
-    "profileSummary": "만주에서 독립군 부대인 북로군정서의 총사령관을 맡았고, 1920년 10월 청산리에서 일본군을 크게 무찔렀습니다.",
-    "revealFacts": [
-      {
-        "text": "북로군정서의 총사령관을 맡았습니다."
-      },
-      {
-        "text": "1920년 10월 청산리에서 일본군을 크게 무찔렀습니다."
-      },
-      {
-        "text": "1889년 충청남도 홍성에서 태어났습니다.",
-        "unlockedByEvidenceId": "ev-hongseong-record"
-      },
-      {
-        "text": "고향 집에 호명학교를 세워 운영했습니다.",
-        "unlockedByEvidenceId": "ev-homyeong-record"
-      },
-      {
-        "text": "만주로 건너가 북로군정서의 총사령관을 맡았습니다.",
-        "unlockedByEvidenceId": "ev-bukro-record"
-      },
-      {
-        "text": "1925년 신민부의 중심이 되어 활동을 이어갔습니다.",
-        "unlockedByEvidenceId": "ev-sinminbu-record"
-      },
-      {
-        "text": "1930년 1월 만주에서 세상을 떠났습니다.",
-        "unlockedByEvidenceId": "ev-sungug-1930"
-      }
-    ],
-    "sourceClaimIds": [
-      "kimjwajin-bukro-gunjeongseo",
-      "kimjwajin-cheongsanri-1920"
-    ],
-    "illustrationKey": "char-kimjwajin"
   }
 ]

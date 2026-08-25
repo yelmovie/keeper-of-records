@@ -10,14 +10,13 @@ import { STAGE_W, STAGE_H } from '../core/Viewport';
 import { EventBus } from '../core/EventBus';
 import { GameState } from '../core/GameState';
 import type { TextureKey } from '../config/AssetMap';
-import { P, pairColor } from '../systems/interactions/palette';
+import { P, pairColor, cssColor } from '../systems/interactions/palette';
 import type { AnalyzeTask } from '../data/schemas';
 
 const ANALYSIS_TEXTURE_BY_PERSON: Record<string, TextureKey> = {
   yunbonggil: 'analysis-yunbonggil',
   ahnjunggeun: 'analysis-ahnjunggeun',
   yugwansun: 'analysis-yugwansun',
-  kimjwajin: 'analysis-kimjwajin',
   ahnchangho: 'analysis-ahnchangho',
   kimgu: 'analysis-kimgu',
 };
@@ -48,7 +47,7 @@ export class Stage2Scene extends BaseScene {
     this.completed = new Set();
 
     this.addBackground('bg-stage2');
-    this.add.rectangle(STAGE_W / 2, STAGE_H / 2, STAGE_W, STAGE_H, 0x0a1020, 0.72);
+    this.add.rectangle(STAGE_W / 2, STAGE_H / 2, STAGE_W, STAGE_H, P.navy950, 0.72);
 
     this.work = this.add.container(0, 0);
   }
@@ -200,7 +199,7 @@ export class Stage2Scene extends BaseScene {
         .text(px, cy - docH / 2 - 26, text, {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '16px',
-          color: '#d9b878',
+          color: cssColor(P.brass400),
         })
         .setOrigin(0.5);
 
@@ -312,7 +311,7 @@ export class Stage2Scene extends BaseScene {
       .text(0, 34, insight, {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
         fontSize: '17px',
-        color: '#f4ecdc',
+        color: cssColor(P.hanji100),
         align: 'center',
         lineSpacing: 6,
         wordWrap: { width: panelW - 56 },
@@ -321,8 +320,8 @@ export class Stage2Scene extends BaseScene {
     const foot = this.add
       .text(0, 34 + body.height + 14, '확인한 사실에 기록해 두었어요', {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-        fontSize: '13px',
-        color: '#d5c5a5',
+        fontSize: '16px',
+        color: cssColor(P.hanji300),
       })
       .setOrigin(0.5, 0);
 
@@ -340,7 +339,7 @@ export class Stage2Scene extends BaseScene {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
         fontSize: '18px',
         fontStyle: 'bold',
-        color: '#0a1020',
+        color: cssColor(P.navy950),
       })
       .setOrigin(0.5);
 
@@ -431,7 +430,7 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, sans-serif',
           fontSize: '16px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
         })
         .setOrigin(0, 0),
     );
@@ -441,7 +440,7 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, sans-serif',
           fontSize: '16px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
         })
         .setOrigin(1, 0),
     );
@@ -451,7 +450,7 @@ export class Stage2Scene extends BaseScene {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
         fontSize: '17px',
         fontStyle: 'bold',
-        color: '#f2cf78',
+        color: cssColor(P.gold300),
         backgroundColor: 'rgba(10,16,32,0.78)',
         padding: { left: 16, right: 16, top: 7, bottom: 7 },
       })
@@ -485,7 +484,7 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '18px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
           align: 'center',
           lineSpacing: 7,
         })
@@ -502,7 +501,7 @@ export class Stage2Scene extends BaseScene {
               fontFamily: 'Pretendard, sans-serif',
               fontSize: '22px',
               fontStyle: 'bold',
-              color: '#f2cf78',
+              color: cssColor(P.gold300),
             })
             .setOrigin(0.5),
         );
@@ -663,7 +662,7 @@ export class Stage2Scene extends BaseScene {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
             fontSize: '18px',
             fontStyle: 'bold',
-            color: '#f4ecdc',
+            color: cssColor(P.hanji100),
             align: 'center',
             wordWrap: { width: slotW - 24 },
             lineSpacing: 5,
@@ -677,7 +676,7 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '16px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
         })
         .setOrigin(0.5);
       const dateBadgeW = Math.max(84, dateLabel.width + 24);
@@ -791,8 +790,8 @@ export class Stage2Scene extends BaseScene {
       this.add
         .text(x + w / 2, y + 52, '연결선과 두 카드가 함께 나온 기록을 수업에서 확인할 수 있어요.', {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-          fontSize: '15px',
-          color: '#d5c5a5',
+          fontSize: '16px',
+          color: cssColor(P.hanji300),
         })
         .setOrigin(0.5, 0),
     );
@@ -820,8 +819,8 @@ export class Stage2Scene extends BaseScene {
       card.add(
         this.add.text(imageX + 66, -34, node.kind, {
           fontFamily: 'Pretendard, sans-serif',
-          fontSize: '12px',
-          color: '#c9a05a',
+          fontSize: '16px',
+          color: cssColor(P.brass500),
         }),
       );
       card.add(
@@ -829,16 +828,16 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '18px',
           fontStyle: 'bold',
-          color: '#f4ecdc',
+          color: cssColor(P.hanji100),
           wordWrap: { width: cardW - 94 },
           maxLines: 2,
         }),
       );
       card.add(
         this.add
-          .text(0, cardH / 2 - 17, '정답 카드', {
+          .text(0, cardH / 2 - 19, '정답 카드', {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-            fontSize: '12px',
+            fontSize: '16px',
             fontStyle: 'bold',
             color: '#8ed2b1',
           })
@@ -864,7 +863,7 @@ export class Stage2Scene extends BaseScene {
             fontFamily: 'Pretendard, sans-serif',
             fontSize: '25px',
             fontStyle: 'bold',
-            color: '#0a1020',
+            color: cssColor(P.navy950),
           })
           .setOrigin(0.5),
       );
@@ -872,9 +871,9 @@ export class Stage2Scene extends BaseScene {
         this.add
           .text(x + w / 2, py + 38, `함께 나온 기록: ${sharedTitle(from, to)}`, {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-            fontSize: '13px',
+            fontSize: '16px',
             fontStyle: 'bold',
-            color: '#f2cf78',
+            color: cssColor(P.gold300),
             backgroundColor: 'rgba(10,16,32,0.86)',
             padding: { left: 10, right: 10, top: 4, bottom: 4 },
           })
@@ -891,7 +890,7 @@ export class Stage2Scene extends BaseScene {
         this.add
           .text(x + w / 2, y + h - 22, `연결하지 않는 카드: ${distractors.join(', ')}`, {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-            fontSize: '14px',
+            fontSize: '16px',
             color: '#b8aa90',
           })
           .setOrigin(0.5, 1),
@@ -927,7 +926,7 @@ export class Stage2Scene extends BaseScene {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
         fontSize: '21px',
         fontStyle: 'bold',
-        color: '#f4ecdc',
+        color: cssColor(P.hanji100),
       })
       .setOrigin(0.5, 0);
     const helper = this.add
@@ -937,8 +936,8 @@ export class Stage2Scene extends BaseScene {
         '카드를 끌지 않아도 돼요 · 오른쪽에서 카드 하나만 눌러요',
         {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-          fontSize: '15px',
-          color: '#f2cf78',
+          fontSize: '16px',
+          color: cssColor(P.gold300),
           backgroundColor: 'rgba(10,16,32,0.78)',
           padding: { left: 14, right: 14, top: 5, bottom: 5 },
         },
@@ -947,7 +946,7 @@ export class Stage2Scene extends BaseScene {
     const summary = this.add
       .text(x + w / 2, y + h - 18, '', {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-        fontSize: '14px',
+        fontSize: '16px',
         color: '#8ed2b1',
         align: 'center',
       })
@@ -999,7 +998,7 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '17px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
         })
         .setOrigin(0.5);
       const stepTwo = this.add
@@ -1007,7 +1006,7 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
           fontSize: '17px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
         })
         .setOrigin(0.5);
       roundLayer.add([stepOne, stepTwo]);
@@ -1042,10 +1041,10 @@ export class Stage2Scene extends BaseScene {
         const textX = imageX + imageSize + 14;
         const textW = cw - (textX + cw / 2) - 12;
         card.add(
-          this.add.text(textX, -ch / 2 + 18, node.kind, {
+          this.add.text(textX, -ch / 2 + 16, node.kind, {
             fontFamily: 'Pretendard, sans-serif',
-            fontSize: '12px',
-            color: '#c9a05a',
+            fontSize: '16px',
+            color: cssColor(P.brass500),
           }),
         );
         card.add(
@@ -1053,7 +1052,7 @@ export class Stage2Scene extends BaseScene {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
             fontSize: role === 'start' ? '19px' : '16px',
             fontStyle: 'bold',
-            color: '#f4ecdc',
+            color: cssColor(P.hanji100),
             wordWrap: { width: textW },
             maxLines: 2,
           }),
@@ -1062,9 +1061,9 @@ export class Stage2Scene extends BaseScene {
           this.add
             .text(0, ch / 2 - 24, note, {
               fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-              fontSize: role === 'start' ? '13px' : '12px',
+              fontSize: '16px',
               fontStyle: 'bold',
-              color: note.includes('없음') ? '#9b8460' : '#f2cf78',
+              color: note.includes('없음') ? '#9b8460' : cssColor(P.gold300),
               align: 'center',
               wordWrap: { width: cw - 20 },
               maxLines: 2,
@@ -1102,14 +1101,14 @@ export class Stage2Scene extends BaseScene {
           fontFamily: 'Pretendard, sans-serif',
           fontSize: '54px',
           fontStyle: 'bold',
-          color: '#f2cf78',
+          color: cssColor(P.gold300),
         })
         .setOrigin(0.5);
       const arrowLabel = this.add
         .text(x + w * 0.43, centerY + 48, '짝 고르기', {
           fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-          fontSize: '14px',
-          color: '#d5c5a5',
+          fontSize: '16px',
+          color: cssColor(P.hanji300),
         })
         .setOrigin(0.5);
       roundLayer.add([arrow, arrowLabel]);
@@ -1178,9 +1177,9 @@ export class Stage2Scene extends BaseScene {
               const cue = this.add
                 .text(p.x, p.y - 70, '같은 기록 제목을 찾아봐!', {
                   fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-                  fontSize: '13px',
+                  fontSize: '16px',
                   fontStyle: 'bold',
-                  color: '#f2cf78',
+                  color: cssColor(P.gold300),
                 })
                 .setOrigin(0.5);
               roundLayer?.add(cue);
@@ -1309,23 +1308,23 @@ export class Stage2Scene extends BaseScene {
       .text(cx, y + 16, '', {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
         fontSize: '20px',
-        color: '#f4ecdc',
+        color: cssColor(P.hanji100),
         align: 'center',
       })
       .setOrigin(0.5, 0);
     const counter = this.add
       .text(cx, y + 50, '', {
         fontFamily: 'Pretendard, sans-serif',
-        fontSize: '15px',
-        color: '#c9a05a',
+        fontSize: '16px',
+        color: cssColor(P.brass500),
       })
       .setOrigin(0.5, 0);
     const startTag = this.add
       .text(0, 0, '출발', {
         fontFamily: 'Pretendard, sans-serif',
-        fontSize: '13px',
-        color: '#0a1020',
-        backgroundColor: '#e8d3a3',
+        fontSize: '16px',
+        color: cssColor(P.navy950),
+        backgroundColor: cssColor(P.brass300),
         padding: { left: 8, right: 8, top: 3, bottom: 3 },
       })
       .setOrigin(0.5, 1)
@@ -1572,10 +1571,10 @@ export class Stage2Scene extends BaseScene {
       const textX = 26;
       c.add(
         this.add
-          .text(textX, -30, n.kind, {
+          .text(textX, -32, n.kind, {
             fontFamily: 'Pretendard, sans-serif',
-            fontSize: '12px',
-            color: '#c9a05a',
+            fontSize: '16px',
+            color: cssColor(P.brass500),
           })
           .setOrigin(0.5),
       );
@@ -1584,7 +1583,7 @@ export class Stage2Scene extends BaseScene {
           .text(textX, -8, n.label, {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
             fontSize: '16px',
-            color: '#f4ecdc',
+            color: cssColor(P.hanji100),
             align: 'center',
             wordWrap: { width: 138 },
           })
@@ -1593,13 +1592,13 @@ export class Stage2Scene extends BaseScene {
       // 이 이름이 어느 기록에 나오는지 — 아이가 어디를 읽어야 할지 알려 준다
       c.add(
         this.add
-          .text(textX, 24, sourceLine(n.id), {
+          .text(textX, 26, sourceLine(n.id), {
             fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-            fontSize: '11px',
-            color: declaredSources(n.id) === 0 ? '#8a7040' : '#d5c5a5',
+            fontSize: '16px',
+            color: declaredSources(n.id) === 0 ? cssColor(P.brassDim) : cssColor(P.hanji300),
             align: 'center',
-            wordWrap: { width: 140 },
-            maxLines: 2,
+            wordWrap: { width: 150 },
+            maxLines: 1,
             lineSpacing: 1,
           })
           .setOrigin(0.5, 0.5),

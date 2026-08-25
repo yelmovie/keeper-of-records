@@ -5,7 +5,7 @@ import Phaser from 'phaser';
 import { BaseScene } from './BaseScene';
 import { STAGE_W, STAGE_H } from '../core/Viewport';
 import { EventBus } from '../core/EventBus';
-import { P } from '../systems/interactions/palette';
+import { P, cssColor } from '../systems/interactions/palette';
 import type { CaseCatalogEntry } from '../data/schemas';
 
 const CAB_W = 320;
@@ -35,7 +35,7 @@ export class ArchiveScene extends BaseScene {
     this.entries = data.entries ?? this.entries;
 
     this.addBackground('bg-archive');
-    this.add.rectangle(STAGE_W / 2, STAGE_H / 2, STAGE_W, STAGE_H, 0x0a1020, 0.5);
+    this.add.rectangle(STAGE_W / 2, STAGE_H / 2, STAGE_W, STAGE_H, P.navy950, 0.5);
 
     this.rail = this.add.container(0, 0);
     this.entries.forEach((entry, i) => this.buildCabinet(entry, i));
@@ -109,8 +109,8 @@ export class ArchiveScene extends BaseScene {
     const stateText = this.add
       .text(CAB_W / 2, CAB_H - 30, '선택 가능', {
         fontFamily: 'Pretendard, Noto Sans KR, sans-serif',
-        fontSize: '15px',
-        color: '#d9b878',
+        fontSize: '16px',
+        color: cssColor(P.brass400),
       })
       .setOrigin(0.5);
     front.add(stateText);

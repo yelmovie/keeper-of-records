@@ -119,7 +119,7 @@
   padding-top: 12px;
   border-top: 1px solid rgba(120, 90, 40, 0.25);
   color: rgba(36, 29, 20, 0.68);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* 인장: scale 2.6 → 1 가속 낙하. delay 0.3s + 0.4s = JS의 SEAL_LAND_MS(700ms) */

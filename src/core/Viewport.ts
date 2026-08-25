@@ -19,7 +19,8 @@ class ViewportImpl {
     window.addEventListener('resize', apply);
     window.addEventListener('orientationchange', apply);
     window.visualViewport?.addEventListener('resize', apply);
-    this.apply();
+    // 백그라운드 탭에서는 rAF 콜백이 돌지 않으므로 첫 적용만은 동기로 한다
+    this.applyNow();
   }
 
   get scale(): number {
@@ -32,21 +33,24 @@ class ViewportImpl {
     return () => this.listeners.delete(fn);
   }
 
+  /** 리사이즈는 rAF로 묶어 한 프레임에 한 번만 적용 */
   private apply(): void {
     cancelAnimationFrame(this.rafId);
-    this.rafId = requestAnimationFrame(() => {
-      const vv = window.visualViewport;
-      const w = vv?.width ?? window.innerWidth;
-      const h = vv?.height ?? window.innerHeight;
-      document.documentElement.style.setProperty('--app-height', `${h}px`);
+    this.rafId = requestAnimationFrame(() => this.applyNow());
+  }
 
-      const scale = Math.min(w / STAGE_W, h / STAGE_H);
-      this.currentScale = scale;
-      if (this.stageEl) {
-        this.stageEl.style.transform = `scale(${scale})`;
-      }
-      this.listeners.forEach((fn) => fn(scale));
-    });
+  private applyNow(): void {
+    const vv = window.visualViewport;
+    const w = vv?.width ?? window.innerWidth;
+    const h = vv?.height ?? window.innerHeight;
+    document.documentElement.style.setProperty('--app-height', `${h}px`);
+
+    const scale = Math.min(w / STAGE_W, h / STAGE_H);
+    this.currentScale = scale;
+    if (this.stageEl) {
+      this.stageEl.style.transform = `scale(${scale})`;
+    }
+    this.listeners.forEach((fn) => fn(scale));
   }
 
   /** 브라우저 좌표 → 무대 논리 좌표 */
