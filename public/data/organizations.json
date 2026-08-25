@@ -1,0 +1,115 @@
+[
+  {
+    "id": "imsijeongbu",
+    "name": "대한민국 임시정부",
+    "foundedText": "1919년 4월 11일 · 중국 상하이",
+    "summary": "3·1운동 뒤 나라를 되찾기 위해 상하이에 세운 우리 정부입니다. 일제의 추적을 피해 여러 도시를 거쳐 1940년 충칭에 자리를 잡았습니다.",
+    "sourceClaimIds": [
+      "imsijeongbu-1919-shanghai",
+      "imsijeongbu-idong-gyeongro",
+      "imsijeongbu-chongqing-1940"
+    ]
+  },
+  {
+    "id": "hanin-aegukdan",
+    "name": "한인애국단",
+    "foundedText": "1931년 · 중국 상하이",
+    "summary": "김구가 상하이에서 만든 독립운동 단체입니다. 힘이 빠져 있던 독립운동에 다시 활기를 불어넣는 것이 목적이었습니다.",
+    "sourceClaimIds": [
+      "hanin-aegukdan-1931",
+      "hanin-aegukdan-mokjeok",
+      "hanin-aegukdan-ibongchang"
+    ]
+  },
+  {
+    "id": "woljinhoe",
+    "name": "월진회",
+    "foundedText": "1929년 · 충남 예산",
+    "summary": "윤봉길이 고향 농민들과 함께 만든 모임입니다. 달마다 조금씩 힘을 모아 마을을 일으키자는 뜻을 담았습니다.",
+    "sourceClaimIds": [
+      "yunbonggil-woljinhoe"
+    ]
+  },
+  {
+    "id": "ewha-hakdang",
+    "name": "이화학당",
+    "foundedText": "서울",
+    "summary": "유관순이 1916년에 들어가 공부한 학교입니다.",
+    "sourceClaimIds": [
+      "yugwansun-ewha-1916"
+    ]
+  },
+  {
+    "id": "danjihoe",
+    "name": "단지회",
+    "foundedText": "1909년 3월",
+    "summary": "안중근이 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세하며 만든 비밀 모임입니다.",
+    "sourceClaimIds": [
+      "ahnjunggeun-danji-1909"
+    ]
+  },
+  {
+    "id": "sinminhoe",
+    "name": "신민회",
+    "foundedText": "1907년",
+    "summary": "안창호가 동지들과 함께 조직한 비밀단체입니다.",
+    "sourceClaimIds": [
+      "ahnchangho-sinminhoe-1907"
+    ]
+  },
+  {
+    "id": "daesung-hakgyo",
+    "name": "대성학교",
+    "foundedText": "평양",
+    "summary": "안창호가 평양에 세운 학교로, 나라를 되찾을 인재를 길렀습니다.",
+    "sourceClaimIds": [
+      "ahnchangho-daesung"
+    ]
+  },
+  {
+    "id": "heungsadan",
+    "name": "흥사단",
+    "foundedText": "1913년 5월 · 미국 샌프란시스코",
+    "summary": "안창호가 미국에서 만든 단체입니다.",
+    "sourceClaimIds": [
+      "ahnchangho-heungsadan-1913"
+    ]
+  },
+  {
+    "id": "bukro-gunjeongseo",
+    "name": "북로군정서",
+    "foundedText": "1919년 · 만주",
+    "summary": "김좌진이 총사령관을 맡은 독립군 부대로, 1920년 청산리에서 일본군을 크게 무찔렀습니다.",
+    "sourceClaimIds": [
+      "kimjwajin-bukro-gunjeongseo",
+      "kimjwajin-cheongsanri-1920"
+    ]
+  },
+  {
+    "id": "samheung-hakgyo",
+    "name": "삼흥학교",
+    "foundedText": "1906년 · 진남포",
+    "summary": "안중근이 진남포에 세운 학교입니다. 그는 이어 돈의학교도 인수해 운영하며 인재를 길렀습니다.",
+    "sourceClaimIds": [
+      "ahnjunggeun-samheung-donui-1906"
+    ]
+  },
+  {
+    "id": "homyeong-hakgyo",
+    "name": "호명학교",
+    "foundedText": "충남 홍성",
+    "summary": "김좌진이 고향 집에 세워 운영한 학교입니다.",
+    "sourceClaimIds": [
+      "kimjwajin-homyeong-hakgyo"
+    ]
+  },
+  {
+    "id": "sinminbu",
+    "name": "신민부",
+    "foundedText": "1925년 · 만주",
+    "summary": "1925년 만주에서 조직된 독립운동 단체로, 김좌진이 중심이 되어 활동했습니다.",
+    "sourceClaimIds": [
+      "kimjwajin-sinminbu-1925"
+    ]
+  }
+]

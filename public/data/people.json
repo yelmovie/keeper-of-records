@@ -1,0 +1,301 @@
+[
+  {
+    "id": "yunbonggil",
+    "displayName": "윤봉길",
+    "lifeText": "1908 ~ 1932",
+    "activityPeriod": "1920년대 후반 ~ 1932년",
+    "organizationIds": [
+      "woljinhoe",
+      "hanin-aegukdan"
+    ],
+    "profileSummary": "충남 예산에서 태어나 고향에서 야학을 열고 농민들과 함께 마을을 일으키다가, 1931년 상하이로 건너가 한인애국단에 들어갔습니다. 1932년 4월 29일 훙커우공원 의거를 실행하고 그해 12월 스물넷의 나이로 순국했습니다.",
+    "illustrationKey": "char-yunbonggil",
+    "revealFacts": [
+      {
+        "text": "충청남도 예산에서 태어났습니다.",
+        "unlockedByEvidenceId": "ev-yesan-record"
+      },
+      {
+        "text": "고향에서 야학을 열어 글을 가르쳤습니다.",
+        "unlockedByEvidenceId": "ev-nongmin-dokbon"
+      },
+      {
+        "text": "농민들과 함께 월진회를 만들어 회장을 맡았습니다.",
+        "unlockedByEvidenceId": "ev-woljinhoe-rule"
+      },
+      {
+        "text": "1931년 상하이로 활동 무대를 옮겼습니다.",
+        "unlockedByEvidenceId": "ev-shanghai-photo"
+      },
+      {
+        "text": "1932년 한인애국단에 들어가며 선서했습니다.",
+        "unlockedByEvidenceId": "ev-seonseomun"
+      },
+      {
+        "text": "1932년 4월 29일 훙커우공원 의거를 실행했습니다.",
+        "unlockedByEvidenceId": "ev-hongkou-record"
+      },
+      {
+        "text": "1932년 12월 19일 스물넷의 나이로 순국했습니다.",
+        "unlockedByEvidenceId": "ev-kanazawa-record"
+      }
+    ],
+    "sourceClaimIds": [
+      "yunbonggil-yesan",
+      "yunbonggil-yahak-nongmindokbon",
+      "yunbonggil-woljinhoe",
+      "yunbonggil-shanghai-1931",
+      "yunbonggil-seonseo-19320426",
+      "hongkou-uigeo-seonggyeok",
+      "yunbonggil-sungug-19321219",
+      "yunbonggil-sajin"
+    ]
+  },
+  {
+    "id": "kimgu",
+    "displayName": "김구",
+    "lifeText": "1876 ~ 1949",
+    "activityPeriod": "1919년 ~ 1945년 (임시정부)",
+    "organizationIds": [
+      "imsijeongbu",
+      "hanin-aegukdan"
+    ],
+    "profileSummary": "1919년 상하이로 건너가 대한민국 임시정부의 첫 경무국장이 되었고, 1931년 한인애국단을 만들어 이봉창·윤봉길 의거를 이끌었습니다. 1940년 임시정부 주석이 되어 광복을 맞을 때까지 임시정부를 이끌었고, 자서전 『백범일지』를 남겼습니다.",
+    "illustrationKey": "char-kimgu",
+    "revealFacts": [
+      {
+        "text": "1919년 임시정부의 첫 경무국장이 되었습니다.",
+        "unlockedByEvidenceId": "ev-imsijeongbu-doc"
+      },
+      {
+        "text": "1931년 한인애국단을 만들었습니다.",
+        "unlockedByEvidenceId": "ev-aegukdan-ledger"
+      },
+      {
+        "text": "자서전 『백범일지』를 남겼습니다.",
+        "unlockedByEvidenceId": "ev-baekbeomilji"
+      },
+      {
+        "text": "1940년 임시정부 주석이 되었습니다.",
+        "unlockedByEvidenceId": "ev-jusuk-record"
+      },
+      {
+        "text": "1876년 황해도 해주에서 태어났습니다.",
+        "unlockedByEvidenceId": "ev-haeju-record"
+      },
+      {
+        "text": "1931년 상하이에서 한인애국단을 만들었습니다.",
+        "unlockedByEvidenceId": "ev-danjang-record"
+      },
+      {
+        "text": "이봉창·윤봉길 의거를 계획하고 이끌었습니다.",
+        "unlockedByEvidenceId": "ev-uigeo-plan"
+      }
+    ],
+    "sourceClaimIds": [
+      "kimgu-saengmol",
+      "kimgu-gyeongmuguk-1919",
+      "kimgu-hanin-aegukdan-1931",
+      "kimgu-uigeo-judo",
+      "kimgu-jusuk-1940",
+      "kimgu-baekbeomilji",
+      "kimgu-sajin"
+    ]
+  },
+  {
+    "id": "yugwansun",
+    "displayName": "유관순",
+    "lifeText": "1902 ~ 1920",
+    "activityPeriod": "1919년 ~ 1920년",
+    "organizationIds": [
+      "ewha-hakdang"
+    ],
+    "profileSummary": "이화학당에서 공부하다 1919년 3·1운동에 참여했고, 4월 1일 아우내 장터에서 수천 명이 모인 만세 시위를 앞장서서 이끌었습니다. 서대문형무소에 갇혀서도 만세를 부르다 1920년 열여덟 살에 순국했습니다.",
+    "revealFacts": [
+      {
+        "text": "1916년 이화학당에 들어가 공부했습니다."
+      },
+      {
+        "text": "1919년 4월 1일 아우내 만세 시위를 이끌었습니다."
+      },
+      {
+        "text": "1920년 9월, 열여덟 살에 옥중에서 순국했습니다."
+      },
+      {
+        "text": "1902년 충청남도 목천군, 지금의 천안시 병천면에서 태어났습니다.",
+        "unlockedByEvidenceId": "ev-cheonan-birth"
+      },
+      {
+        "text": "1919년 서울 만세 시위에 참여했고, 휴교령으로 고향에 돌아왔습니다.",
+        "unlockedByEvidenceId": "ev-gwihyang-record"
+      },
+      {
+        "text": "아우내 장터 시위 날 부모를 잃었습니다.",
+        "unlockedByEvidenceId": "ev-aunae-record"
+      },
+      {
+        "text": "1920년 3월 1일 옥중에서 만세를 불렀습니다.",
+        "unlockedByEvidenceId": "ev-okjung-manse"
+      },
+      {
+        "text": "서대문형무소에서 찍힌 수형기록표 사진이 남아 있습니다.",
+        "unlockedByEvidenceId": "ev-suhyeong-girokpyo"
+      }
+    ],
+    "sourceClaimIds": [
+      "yugwansun-ewha-1916",
+      "yugwansun-aunae-19190401",
+      "yugwansun-sungug-1920"
+    ],
+    "illustrationKey": "char-yugwansun"
+  },
+  {
+    "id": "ahnjunggeun",
+    "displayName": "안중근",
+    "lifeText": "1879 ~ 1910",
+    "activityPeriod": "1907년 ~ 1910년",
+    "organizationIds": [
+      "danjihoe"
+    ],
+    "profileSummary": "1909년 동지들과 손가락을 잘라 나라를 되찾자고 맹세했고, 그해 10월 26일 하얼빈역에서 이토 히로부미를 처단했습니다. 이듬해 뤼순감옥에서 순국했으며 옥중에서 쓰던 『동양평화론』은 끝내 완성하지 못했습니다.",
+    "revealFacts": [
+      {
+        "text": "1909년 동지 열두 명과 단지 맹세를 했습니다."
+      },
+      {
+        "text": "1909년 10월 26일 하얼빈역 의거를 실행했습니다."
+      },
+      {
+        "text": "1910년 3월 26일 뤼순감옥에서 순국했습니다."
+      },
+      {
+        "text": "1879년 황해도 해주에서 태어났습니다.",
+        "unlockedByEvidenceId": "ev-hwanghae-record"
+      },
+      {
+        "text": "1906년 진남포에서 삼흥학교를 세우고 돈의학교를 맡아 인재를 길렀습니다.",
+        "unlockedByEvidenceId": "ev-school-record"
+      },
+      {
+        "text": "연해주에서 의병을 이끌고 국내 진공 작전을 펼쳤습니다.",
+        "unlockedByEvidenceId": "ev-uibyeong-record"
+      },
+      {
+        "text": "옥중에서 『동양평화론』을 쓰다 끝내 완성하지 못했습니다.",
+        "unlockedByEvidenceId": "ev-donyang-record"
+      },
+      {
+        "text": "감옥에서 남긴 붓글씨(유묵)가 보물로 지정되어 있습니다.",
+        "unlockedByEvidenceId": "ev-yumuk"
+      },
+      {
+        "text": "연해주에서 의병을 이끌었습니다.",
+        "unlockedByEvidenceId": "ev-uibyeong-record"
+      },
+      {
+        "text": "삼흥학교를 세워 인재를 길렀습니다.",
+        "unlockedByEvidenceId": "ev-hakgyo-record"
+      }
+    ],
+    "sourceClaimIds": [
+      "ahnjunggeun-danji-1909",
+      "ahnjunggeun-harbin-19091026",
+      "ahnjunggeun-sungug-1910"
+    ],
+    "illustrationKey": "char-ahnjunggeun"
+  },
+  {
+    "id": "ahnchangho",
+    "displayName": "안창호",
+    "lifeText": "1878 ~ 1938",
+    "activityPeriod": "1907년 ~ 1930년대",
+    "organizationIds": [
+      "sinminhoe",
+      "daesung-hakgyo",
+      "heungsadan",
+      "imsijeongbu"
+    ],
+    "profileSummary": "1907년 비밀단체 신민회를 조직하고 평양에 대성학교를 세워 인재를 길렀습니다. 1913년 미국에서 흥사단을 만들었고, 대한민국 임시정부에서 내무총장 겸 국무총리 대리를 맡아 조직을 정비했습니다.",
+    "revealFacts": [
+      {
+        "text": "1907년 비밀단체 신민회를 조직했습니다."
+      },
+      {
+        "text": "평양에 대성학교를 세웠습니다."
+      },
+      {
+        "text": "1913년 미국에서 흥사단을 만들었습니다."
+      },
+      {
+        "text": "임시정부의 내무총장 겸 국무총리 대리를 맡았습니다.",
+        "unlockedByEvidenceId": "ev-imsijeongbu-doc"
+      },
+      {
+        "text": "1878년 평안남도 강서에서 태어났습니다.",
+        "unlockedByEvidenceId": "ev-gangseo-record"
+      },
+      {
+        "text": "1898년 서울 종로에서 만민공동회를 여는 데 함께했습니다.",
+        "unlockedByEvidenceId": "ev-manmin-record"
+      },
+      {
+        "text": "1932년 훙커우 의거 직후 상하이에서 일본 경찰에 붙잡혔습니다.",
+        "unlockedByEvidenceId": "ev-chepo-record"
+      },
+      {
+        "text": "1937년 동우회 사건으로 다시 붙잡혔고, 1938년 순국했습니다.",
+        "unlockedByEvidenceId": "ev-majimak-ahn"
+      }
+    ],
+    "sourceClaimIds": [
+      "ahnchangho-sinminhoe-1907",
+      "ahnchangho-daesung",
+      "ahnchangho-heungsadan-1913",
+      "ahnchangho-imsijeongbu"
+    ],
+    "illustrationKey": "char-ahnchangho"
+  },
+  {
+    "id": "kimjwajin",
+    "displayName": "김좌진",
+    "lifeText": "1889 ~ 1930",
+    "activityPeriod": "1919년 ~ 1930년",
+    "organizationIds": [
+      "bukro-gunjeongseo"
+    ],
+    "profileSummary": "만주에서 독립군 부대인 북로군정서의 총사령관을 맡았고, 1920년 10월 청산리에서 일본군을 크게 무찔렀습니다.",
+    "revealFacts": [
+      {
+        "text": "북로군정서의 총사령관을 맡았습니다."
+      },
+      {
+        "text": "1920년 10월 청산리에서 일본군을 크게 무찔렀습니다."
+      },
+      {
+        "text": "1889년 충청남도 홍성에서 태어났습니다.",
+        "unlockedByEvidenceId": "ev-hongseong-record"
+      },
+      {
+        "text": "고향 집에 호명학교를 세워 운영했습니다.",
+        "unlockedByEvidenceId": "ev-homyeong-record"
+      },
+      {
+        "text": "만주로 건너가 북로군정서의 총사령관을 맡았습니다.",
+        "unlockedByEvidenceId": "ev-bukro-record"
+      },
+      {
+        "text": "1925년 신민부의 중심이 되어 활동을 이어갔습니다.",
+        "unlockedByEvidenceId": "ev-sinminbu-record"
+      },
+      {
+        "text": "1930년 1월 만주에서 세상을 떠났습니다.",
+        "unlockedByEvidenceId": "ev-sungug-1930"
+      }
+    ],
+    "sourceClaimIds": [
+      "kimjwajin-bukro-gunjeongseo",
+      "kimjwajin-cheongsanri-1920"
+    ],
+    "illustrationKey": "char-kimjwajin"
+  }
+]

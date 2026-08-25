@@ -1,0 +1,184 @@
+/* 기록의 주인 — 기본 레이아웃 */
+
+/* 셀프호스팅 본문 폰트 (OFL, 원문: /assets/fonts/Pretendard-OFL.txt)
+   제목·버튼용 Jua는 @fontsource/jua 를 main.ts에서 임포트한다 */
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/assets/fonts/Pretendard-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/assets/fonts/Pretendard-Bold.woff2') format('woff2');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  font-family: var(--font-family);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+  touch-action: none;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+  height: var(--app-height, 100dvh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(29, 44, 74, 0.5), transparent 70%),
+    var(--color-bg);
+}
+
+/* 1600x900 논리 무대: JS가 transform scale 적용 */
+#stage {
+  position: relative;
+  /* flex 컨테이너 안에서 절대로 줄어들면 안 된다.
+     줄어들면 1600x900 논리 좌표계가 깨져 Phaser 작업면 위치가 어긋난다. */
+  flex: 0 0 auto;
+  width: calc(var(--stage-w) * 1px);
+  height: calc(var(--stage-h) * 1px);
+  transform-origin: center center;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+#phaser-root {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-game);
+}
+
+#phaser-root canvas {
+  display: block;
+}
+
+#ui-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-hud);
+  pointer-events: none;
+}
+
+#ui-overlay .clickable,
+#ui-overlay button,
+#ui-overlay [data-interactive] {
+  pointer-events: auto;
+}
+
+#modal-layer {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-modal-backdrop);
+  pointer-events: none;
+}
+
+#transition-veil {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-transition);
+  background: var(--navy-950);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+#transition-veil.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 세로 모드 안내 */
+#rotate-guard {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-rotate-guard);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-950);
+  text-align: center;
+}
+
+@media (orientation: portrait) {
+  #rotate-guard {
+    display: flex;
+  }
+}
+
+.rotate-guard__inner p {
+  font-size: 20px;
+  margin-top: var(--space-md);
+}
+
+.rotate-guard__sub {
+  color: var(--color-text-sub);
+  font-size: 15px;
+}
+
+.rotate-guard__icon {
+  width: 72px;
+  height: 48px;
+  margin: 0 auto;
+  border: 3px solid var(--brass-500);
+  border-radius: 8px;
+  animation: rotate-hint 2s ease-in-out infinite;
+}
+
+@keyframes rotate-hint {
+  0%,
+  20% {
+    transform: rotate(90deg);
+  }
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* 한글 처리 */
+.text-korean,
+#ui-overlay,
+#modal-layer {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: var(--line-height-body);
+}
+
+/* 모션 최소화 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 인쇄 루트: 화면에서는 숨김 */
+#certificate-print-root {
+  display: none;
+}

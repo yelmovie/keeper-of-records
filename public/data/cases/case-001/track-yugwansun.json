@@ -1,0 +1,871 @@
+{
+  "id": "case-001",
+  "title": "아우내의 함성",
+  "subtitle": "이름이 지워진 기록의 주인을 찾아라",
+  "teaser": "빛바랜 수형기록표 사진 한 장과 이름이 지워진 문서 몇 장. 오래된 기록보관실에서 나온 자료들입니다.",
+  "solvedPersonId": "yugwansun",
+  "candidateIds": [
+    "kimgu",
+    "yunbonggil",
+    "yugwansun",
+    "ahnjunggeun",
+    "ahnchangho"
+  ],
+  "finalCandidateIds": [
+    "kimgu",
+    "yugwansun"
+  ],
+  "initialClueIds": [
+    "ev-japanese-rule",
+    "ev-aunae-record"
+  ],
+  "evidence": [
+    {
+      "id": "ev-japanese-rule",
+      "title": "식민 통치 아래의 기록실",
+      "kind": "event",
+      "summary": "이 자료들이 만들어진 시기의 배경입니다.",
+      "detail": "1910년부터 1945년까지 일본 제국주의는 우리나라를 강제로 식민지로 삼아 지배했습니다. 우리말과 우리 역사를 배우고 남기는 일까지 억눌렀기 때문에, 이 시기의 기록은 이름이 지워지거나 감춰진 채 전해지는 경우가 많습니다.",
+      "relatedPersonIds": [
+        "kimgu",
+        "yunbonggil",
+        "yugwansun",
+        "ahnjunggeun",
+        "ahnchangho",
+        "kimjwajin"
+      ],
+      "strength": "context",
+      "sourceClaimIds": [
+        "ilje-sikmin-tongchi"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-ewha-record",
+      "title": "학당의 학적 기록",
+      "kind": "document",
+      "summary": "서울의 한 학교에 다닌 학생의 기록입니다.",
+      "detail": "이 기록의 주인은 1916년 선교사의 추천을 받아 이화학당에 들어가 공부했습니다. 고향을 떠나 서울에서 배움을 이어 간 학생이었습니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-ewha-1916"
+      ],
+      "interaction": "drawer"
+    },
+    {
+      "id": "ev-gwihyang-record",
+      "title": "휴교령과 귀향의 기록",
+      "kind": "document",
+      "summary": "학교 문이 닫힌 뒤 고향으로 내려간 기록입니다.",
+      "detail": "이 기록의 주인은 1919년 서울에서 만세 시위에 참여했습니다. 학생들의 시위가 커지자 일제는 3월 10일 휴교령을 내렸고, 학교에 갈 수 없게 된 그는 기차를 타고 고향으로 돌아왔습니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-samil-gwihyang-1919"
+      ],
+      "interaction": "puzzle"
+    },
+    {
+      "id": "ev-aunae-record",
+      "title": "아우내 장터의 기록",
+      "kind": "event",
+      "summary": "1919년 4월 1일 장터에서 일어난 일의 기록입니다.",
+      "detail": "1919년 4월 1일, 이 기록의 주인은 아우내 장터에서 수천 명이 모인 만세 시위를 마을 어른들과 함께 준비해 앞장서서 이끌었습니다. 서울에서 시작된 만세의 물결이 고향의 장터에서 다시 타오른 것입니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-aunae-19190401",
+        "yugwansun-samil-gwihyang-1919"
+      ],
+      "interaction": "rub"
+    },
+    {
+      "id": "ev-seodaemun-record",
+      "title": "서대문의 감옥 기록",
+      "kind": "place",
+      "summary": "서대문에 있던 감옥의 수감 기록입니다.",
+      "detail": "서대문에 있던 이 감옥은 1923년부터 서대문형무소로 불렸고, 수많은 독립운동가가 갇혔던 곳입니다. 김구도 1911년 안악 사건으로 붙잡혀 15년형을 받고 이 감옥에 갇힌 적이 있습니다. 이 기록만으로는 주인을 한 사람으로 정할 수 없습니다.",
+      "relatedPersonIds": [
+        "yugwansun",
+        "kimgu"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "seodaemun-oksa",
+        "kimgu-seodaemun-1911"
+      ],
+      "interaction": "drawer"
+    },
+    {
+      "id": "ev-okjung-manse",
+      "title": "옥중 만세의 기록",
+      "kind": "event",
+      "summary": "감옥 안에서 다시 만세를 부른 기록입니다.",
+      "detail": "이 기록의 주인은 서대문형무소에 갇혀서도 뜻을 꺾지 않았습니다. 3·1운동 1주년이 되는 1920년 3월 1일, 동료들과 함께 옥중에서 만세를 불렀습니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-okjung-manse-1920",
+        "yugwansun-sungug-1920"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-majimak-girok",
+      "title": "순국 기록",
+      "kind": "document",
+      "summary": "1920년 9월, 열여덟 살에 옥중에서 순국한 기록입니다.",
+      "detail": "이 기록의 주인은 감옥에서 계속된 고문과 영양실조로 1920년 9월 28일 옥중에서 순국했습니다. 그때 나이 열여덟이었습니다. 시신이 학교로 돌아온 날, 학생들은 통곡으로 맞이했습니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-sungug-1920",
+        "yugwansun-majimak-1920"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-suhyeong-girokpyo",
+      "title": "수형기록표의 사진",
+      "kind": "photo",
+      "summary": "감옥에서 찍힌 사진이 붙은 기록표입니다.",
+      "detail": "서대문형무소에서 찍힌 사진이 남은 수형기록표입니다. 사진 속 열여덟 살의 얼굴에는 감옥에서 겪은 심한 구타와 영양실조의 흔적이 남아 있다고 연구자들은 봅니다. 이름은 지워졌지만, 얼굴은 지워지지 않았습니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-suhyeong-girokpyo"
+      ],
+      "interaction": "flip",
+      "visualization": true
+    },
+    {
+      "id": "ev-cheonan-birth",
+      "title": "천안 병천의 마을 기록",
+      "kind": "place",
+      "summary": "한 사람이 태어나고 자란 마을의 기록입니다.",
+      "detail": "이 기록의 주인은 1902년 충청남도 목천군, 지금의 천안시 병천면에서 태어났습니다. 아우내 장터가 있는 바로 그 고장입니다.",
+      "relatedPersonIds": [
+        "yugwansun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "yugwansun-cheonan-1902"
+      ],
+      "interaction": "pinch"
+    },
+    {
+      "id": "ev-gyeongmuguk",
+      "title": "임시정부 경무국장 임명 기록",
+      "kind": "document",
+      "summary": "1919년 임시정부의 첫 경무국장(임시정부의 경찰 책임자)이 된 사람의 기록입니다.",
+      "detail": "1919년 상하이로 건너가 대한민국 임시정부의 첫 경무국장이 된 사람은 김구입니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-gyeongmuguk-1919"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-baekbeomilji",
+      "title": "『백범일지』",
+      "kind": "document",
+      "summary": "자기 삶을 직접 기록한 자서전입니다.",
+      "detail": "김구가 상하이와 충칭에서 쓴 자서전입니다. 1947년에 책으로 나왔습니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-baekbeomilji"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-jusuk-record",
+      "title": "임시정부 주석 취임 기록",
+      "kind": "document",
+      "summary": "1940년 임시정부의 주석이 된 사람의 기록입니다.",
+      "detail": "김구는 1940년 대한민국 임시정부의 주석이 되어 광복을 맞을 때까지 임시정부를 이끌었습니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-jusuk-1940",
+        "kimgu-shanghai-chongqing"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-anak-record",
+      "title": "안악 사건의 기록",
+      "kind": "document",
+      "summary": "1911년 서대문의 감옥에 갇힌 사람의 기록입니다.",
+      "detail": "1911년 안악 사건으로 붙잡혀 15년형을 받고 서대문감옥에 갇힌 사람은 김구입니다. 그는 감옥에서 나온 뒤에도 독립운동을 이어 가, 1919년 상하이로 건너갔습니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-seodaemun-1911",
+        "kimgu-gyeongmuguk-1919"
+      ],
+      "interaction": "tap"
+    }
+  ],
+  "stages": {
+    "explore": {
+      "roomWidth": 2900,
+      "requiredEvidenceIds": [
+        "ev-ewha-record",
+        "ev-seodaemun-record",
+        "ev-aunae-record"
+      ],
+      "hintTexts": [
+        "책상 왼쪽 서랍 안에서 오래된 학교 기록의 흔적이 감지됩니다.",
+        "화면을 좌우로 밀면 기록실의 다른 구역을 볼 수 있습니다.",
+        "먼지가 두껍게 쌓인 문서는 오래 손대지 않았다는 뜻입니다.",
+        "봉인이 그대로 남아 있는 봉투가 아직 열리지 않았습니다."
+      ],
+      "hotspots": [
+        {
+          "id": "hs-drawer-left",
+          "x": 190,
+          "y": 615,
+          "w": 240,
+          "h": 110,
+          "interaction": "drawer",
+          "textureKey": "prop-yugwansun-school-register",
+          "evidenceId": "ev-ewha-record",
+          "label": "책상 왼쪽 서랍",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-envelope",
+          "x": 520,
+          "y": 565,
+          "w": 210,
+          "h": 130,
+          "interaction": "envelope",
+          "evidenceId": "ev-aunae-record",
+          "label": "봉인된 봉투",
+          "hintText": "봉인을 옆으로 밀어 봐."
+        },
+        {
+          "id": "hs-photo",
+          "x": 830,
+          "y": 525,
+          "w": 190,
+          "h": 150,
+          "interaction": "flip",
+          "textureKey": "prop-yugwansun-prison-record",
+          "backTextureKey": "prop-yugwansun-prison-record-back",
+          "evidenceId": "ev-suhyeong-girokpyo",
+          "label": "낡은 사진"
+        },
+        {
+          "id": "hs-teacup",
+          "x": 1090,
+          "y": 615,
+          "w": 110,
+          "h": 90,
+          "interaction": "tap",
+          "textureKey": "prop-yugwansun-investigation-photo",
+          "label": "학교에서 찍은 사진",
+          "emptyText": "또래 여학생들이 책을 든 학습용 재현 사진이야. 실제 사진은 자료 출처에서 확인할 수 있어."
+        },
+        {
+          "id": "hs-dusty-doc",
+          "x": 1290,
+          "y": 515,
+          "w": 260,
+          "h": 190,
+          "interaction": "rub",
+          "textureKey": "prop-yugwansun-aunae-notice",
+          "evidenceId": "ev-aunae-record",
+          "label": "먼지 덮인 문서",
+          "hintText": "손가락으로 문질러 먼지를 걷어내 봐."
+        },
+        {
+          "id": "hs-lamp",
+          "x": 1640,
+          "y": 475,
+          "w": 120,
+          "h": 150,
+          "interaction": "tap",
+          "textureKey": "prop-yugwansun-school-handbell",
+          "label": "학교 손종",
+          "emptyText": "수업 시작을 알리던 작은 손종이야. 기록과 직접 연결되지는 않아."
+        },
+        {
+          "id": "hs-cabinet",
+          "x": 1830,
+          "y": 595,
+          "w": 250,
+          "h": 120,
+          "interaction": "drawer",
+          "evidenceId": "ev-seodaemun-record",
+          "label": "문서 캐비닛",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-watch",
+          "x": 2160,
+          "y": 545,
+          "w": 150,
+          "h": 150,
+          "interaction": "rotate",
+          "textureKey": "prop-yugwansun-schoolbook",
+          "backTextureKey": "prop-yugwansun-schoolbook-back",
+          "evidenceId": "ev-ewha-record",
+          "label": "낡은 책",
+          "hintText": "좌우로 돌려 앞뒤를 살펴봐."
+        },
+        {
+          "id": "hs-torn",
+          "x": 2420,
+          "y": 525,
+          "w": 240,
+          "h": 180,
+          "interaction": "puzzle",
+          "evidenceId": "ev-gwihyang-record",
+          "label": "찢어진 종이 조각",
+          "hintText": "조각의 결이 맞는 자리를 찾아 놓아 봐."
+        },
+        {
+          "id": "hs-inkstone",
+          "x": 2700,
+          "y": 635,
+          "w": 120,
+          "h": 80,
+          "interaction": "tap",
+          "textureKey": "prop-yugwansun-book-bundle",
+          "label": "책보",
+          "emptyText": "낡은 책을 베천으로 감싸 끈으로 묶은 책보야. 현대식 가방은 아니야."
+        }
+      ]
+    },
+    "analyze": {
+      "tasks": [
+        {
+          "id": "task-compare",
+          "type": "compare",
+          "title": "두 기록 겹쳐 보기",
+          "instruction": "가운데 손잡이를 좌우로 밀어 두 기록을 겹쳐 보세요. 두 기록에서 같은 것이 보이나요?",
+          "pairEvidenceIds": [
+            "ev-gwihyang-record",
+            "ev-aunae-record"
+          ],
+          "compareInsightText": "두 기록에 같은 고장이 나옵니다. 학교가 문을 닫아 돌아간 고향과 만세 시위가 일어난 장터는 같은 곳입니다.",
+          "compareUnlockEvidenceId": "ev-cheonan-birth"
+        },
+        {
+          "id": "task-timeline",
+          "type": "timeline",
+          "title": "시간 순서로 놓기",
+          "instruction": "자료를 왼쪽부터 시간 순서대로 옮겨 놓으세요. 카드에 적힌 연도를 보면 순서를 알 수 있어요.",
+          "timelineEvidenceIds": [
+            "ev-aunae-record",
+            "ev-gwihyang-record",
+            "ev-ewha-record",
+            "ev-cheonan-birth"
+          ],
+          "timelineDateLabels": {
+            "ev-cheonan-birth": "1902년",
+            "ev-ewha-record": "1916년",
+            "ev-gwihyang-record": "1919년 3월",
+            "ev-aunae-record": "1919년 4월"
+          },
+          "timelineCorrectOrder": [
+            "ev-cheonan-birth",
+            "ev-ewha-record",
+            "ev-gwihyang-record",
+            "ev-aunae-record"
+          ],
+          "timelineInsightText": "1902년 천안 병천에서 태어나 1916년 서울 이화학당에서 공부했고, 1919년 3월 학교가 문을 닫아 고향으로 돌아간 뒤 4월 아우내 장터에서 만세 시위를 이끌었습니다."
+        },
+        {
+          "id": "task-connect",
+          "type": "connect",
+          "title": "관계 잇기",
+          "instruction": "「출발」 카드와 직접 이어지는 카드를 눌러 보세요. 카드마다 그 이름이 나오는 기록이 적혀 있고, 확보한 기록에 없는 카드는 이어지지 않아요.",
+          "connectNodes": [
+            {
+              "id": "n-seoul",
+              "label": "서울",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-ewha-record",
+                "ev-gwihyang-record",
+                "ev-aunae-record"
+              ]
+            },
+            {
+              "id": "n-ewha",
+              "label": "이화학당",
+              "kind": "학교",
+              "sourceEvidenceIds": [
+                "ev-ewha-record"
+              ]
+            },
+            {
+              "id": "n-aunae",
+              "label": "아우내 장터",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-aunae-record",
+                "ev-cheonan-birth"
+              ]
+            },
+            {
+              "id": "n-manse",
+              "label": "만세 시위",
+              "kind": "사건",
+              "sourceEvidenceIds": [
+                "ev-gwihyang-record",
+                "ev-aunae-record"
+              ]
+            },
+            {
+              "id": "n-heungsadan",
+              "label": "흥사단",
+              "kind": "조직",
+              "sourceEvidenceIds": []
+            }
+          ],
+          "connectAnswers": [
+            [
+              "n-seoul",
+              "n-ewha"
+            ],
+            [
+              "n-aunae",
+              "n-manse"
+            ]
+          ],
+          "connectInsightText": "이 기록의 주인은 서울 이화학당에서 공부하던 학생이었고, 고향 아우내 장터에서 만세 시위를 앞장서 이끌었습니다."
+        }
+      ]
+    },
+    "inquiry": {
+      "budget": 3,
+      "questions": [
+        {
+          "id": "q-place",
+          "prompt": "어느 지역과 이어질까?",
+          "category": "place",
+          "recordTitle": "지역에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1902년 충청남도 목천군, 지금의 천안시 병천면에서 태어났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "병천에는 사람들이 모여드는 큰 장터가 있었습니다.",
+              "isKey": false
+            },
+            {
+              "text": "그는 1916년 공부를 위해 서울로 갔습니다.",
+              "isKey": true
+            },
+            {
+              "text": "서울에는 여러 학교가 있었습니다.",
+              "isKey": false
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-cheonan-birth"
+          ],
+          "resultSummary": "고향은 천안 병천, 공부한 곳은 서울입니다. 아우내 장터가 있는 바로 그 고장에서 태어났습니다."
+        },
+        {
+          "id": "q-organization",
+          "prompt": "어느 학교와 관련 있었을까?",
+          "category": "organization",
+          "recordTitle": "학교에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1916년 선교사의 추천을 받아 이화학당에 들어갔습니다.",
+              "isKey": true
+            },
+            {
+              "text": "이화학당은 서울에 있던 학교입니다.",
+              "isKey": false
+            },
+            {
+              "text": "1919년 3월 10일 휴교령이 내려져 학교에 갈 수 없게 되었습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-ewha-record"
+          ],
+          "resultSummary": "이화학당에서 공부하던 학생입니다. 학교를 세운 사람이 아니라, 학교에서 배운 사람입니다."
+        },
+        {
+          "id": "q-event",
+          "prompt": "어떤 사건과 연결될까?",
+          "category": "event",
+          "recordTitle": "사건에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "1919년 4월 1일 아우내 장터에서 수천 명이 모인 만세 시위가 일어났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "장날의 장터는 많은 사람이 모이는 곳이었습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 그 시위를 앞장서서 이끌었습니다.",
+              "isKey": true
+            },
+            {
+              "text": "그날 그의 부모를 포함해 열아홉 명이 시위 현장에서 순국했습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-aunae-record"
+          ],
+          "resultSummary": "1919년 4월 1일 아우내 장터 만세 시위와 직접 연결됩니다. 그날 부모를 잃고도 뜻을 꺾지 않았습니다."
+        },
+        {
+          "id": "q-record",
+          "prompt": "어떤 기록이 남아 있을까?",
+          "category": "record",
+          "recordTitle": "남아 있는 기록",
+          "recordSentences": [
+            {
+              "text": "서대문형무소에서 찍힌 수형기록표 사진이 남아 있습니다.",
+              "isKey": true
+            },
+            {
+              "text": "수형기록표는 감옥에서 만든 기록표입니다.",
+              "isKey": false
+            },
+            {
+              "text": "1920년 3월 1일 옥중에서 만세를 불렀다는 기록이 있습니다.",
+              "isKey": true
+            },
+            {
+              "text": "이 기록의 주인은 1920년 9월 28일 열여덟 살에 옥중에서 순국했습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-okjung-manse",
+            "ev-majimak-girok",
+            "ev-suhyeong-girokpyo"
+          ],
+          "resultSummary": "수형기록표 사진과 옥중 만세의 기록, 그리고 순국 기록이 남아 있습니다."
+        },
+        {
+          "id": "q-relationship",
+          "prompt": "감옥에서는 어떤 일이 있었을까?",
+          "category": "relationship",
+          "recordTitle": "서대문 감옥의 기록",
+          "recordSentences": [
+            {
+              "text": "서대문의 감옥에는 수많은 독립운동가가 갇혔습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 아우내 장터 만세 시위를 이끌다 붙잡혀 이 감옥에 갇혔습니다.",
+              "isKey": true
+            },
+            {
+              "text": "감옥에 갇혀서도 1920년 3월 1일, 다시 만세를 불렀습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-seodaemun-record",
+            "ev-majimak-girok"
+          ],
+          "resultSummary": "붙잡힌 뒤에도 뜻을 굽히지 않고 옥중에서 만세를 불렀습니다. 1920년 열여덟 살에 순국했습니다."
+        }
+      ]
+    },
+    "compare": {
+      "personAId": "kimgu",
+      "personBId": "yugwansun",
+      "grantEvidenceIds": [
+        "ev-gyeongmuguk",
+        "ev-baekbeomilji",
+        "ev-jusuk-record",
+        "ev-anak-record"
+      ],
+      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 같은 감옥을 거쳐 간 두 사람이 각각 어떤 자리에서 독립을 위해 움직였는지, 자료가 누구와 직접 연결되는지를 나눠 보세요.",
+      "cardAnswers": {
+        "ev-gyeongmuguk": "A",
+        "ev-baekbeomilji": "A",
+        "ev-jusuk-record": "A",
+        "ev-anak-record": "A",
+        "ev-ewha-record": "B",
+        "ev-gwihyang-record": "B",
+        "ev-aunae-record": "B",
+        "ev-okjung-manse": "B",
+        "ev-majimak-girok": "B",
+        "ev-suhyeong-girokpyo": "B",
+        "ev-cheonan-birth": "B",
+        "ev-seodaemun-record": "SHARED",
+        "ev-japanese-rule": "SHARED"
+      },
+      "minShared": 2,
+      "minDirectPerPerson": 2,
+      "completionEvidenceIds": [
+        "ev-seodaemun-record"
+      ]
+    },
+    "restore": {
+      "timelineEvidenceIds": [
+        "ev-aunae-record",
+        "ev-cheonan-birth",
+        "ev-majimak-girok",
+        "ev-ewha-record",
+        "ev-okjung-manse",
+        "ev-gwihyang-record"
+      ],
+      "timelineDateLabels": {
+        "ev-cheonan-birth": "1902년",
+        "ev-ewha-record": "1916년",
+        "ev-gwihyang-record": "1919년 3월",
+        "ev-aunae-record": "1919년 4월",
+        "ev-okjung-manse": "1920년 3월",
+        "ev-majimak-girok": "1920년 9월"
+      },
+      "timelineCorrectOrder": [
+        "ev-cheonan-birth",
+        "ev-ewha-record",
+        "ev-gwihyang-record",
+        "ev-aunae-record",
+        "ev-okjung-manse",
+        "ev-majimak-girok"
+      ],
+      "relationPairs": [
+        {
+          "from": "기록의 주인",
+          "to": "이화학당",
+          "label": "1916년 들어가 공부함"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "아우내 만세 시위",
+          "label": "앞장서서 이끎"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "서대문형무소",
+          "label": "갇혀서도 만세를 부름"
+        },
+        {
+          "from": "김구",
+          "to": "서대문형무소",
+          "label": "1911년 안악 사건으로 갇힘"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "3·1운동",
+          "label": "서울에서 만세 시위에 참여함"
+        }
+      ],
+      "minEvidenceCount": 3,
+      "slots": [
+        {
+          "slot": "person",
+          "label": "인물",
+          "options": [
+            {
+              "id": "p-yu",
+              "text": "유관순",
+              "correct": true
+            },
+            {
+              "id": "p-kim",
+              "text": "김구",
+              "correct": false,
+              "feedback": "김구는 1911년 서대문의 감옥에 갇혔다가 뒷날 임시정부를 이끈 사람이야. 이 기록에는 1919년 아우내 장터에서 시위를 이끈 학생의 흔적이 남아 있어."
+            },
+            {
+              "id": "p-ahn",
+              "text": "안창호",
+              "correct": false,
+              "feedback": "안창호는 신민회와 대성학교, 흥사단과 이어지는 인물이야. 확보한 근거와 직접 연결되지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "period",
+          "label": "활동 시기",
+          "options": [
+            {
+              "id": "t-1916",
+              "text": "1916년 ~ 1920년",
+              "correct": true
+            },
+            {
+              "id": "t-1907",
+              "text": "1907년 ~ 1913년",
+              "correct": false,
+              "feedback": "이 시기는 학교와 단체를 세운 인물의 활동 시기에 가까워. 확보한 자료는 1916년 학적 기록에서 1920년 순국 기록으로 이어져."
+            },
+            {
+              "id": "t-1931",
+              "text": "1931년 ~ 1932년",
+              "correct": false,
+              "feedback": "이 시기는 상하이에서 의거를 실행한 인물의 활동 시기야. 이 기록의 마지막 자료는 1920년에서 멈춰."
+            }
+          ]
+        },
+        {
+          "slot": "organization",
+          "label": "관련 조직",
+          "options": [
+            {
+              "id": "o-ewha",
+              "text": "이화학당",
+              "correct": true
+            },
+            {
+              "id": "o-aegukdan",
+              "text": "한인애국단",
+              "correct": false,
+              "feedback": "한인애국단은 1931년 상하이에서 만들어진 단체야. 확보한 기록의 시기와 맞지 않아."
+            },
+            {
+              "id": "o-heungsadan",
+              "text": "흥사단",
+              "correct": false,
+              "feedback": "흥사단은 1913년 미국에서 만들어진 단체야. 확보한 기록과 직접 이어지지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "activity",
+          "label": "주요 활동",
+          "options": [
+            {
+              "id": "a-aunae",
+              "text": "1919년 4월 1일 아우내 장터 만세 시위",
+              "correct": true
+            },
+            {
+              "id": "a-hongkou",
+              "text": "1932년 훙커우공원 의거",
+              "correct": false,
+              "feedback": "훙커우 의거는 1932년 상하이에서 일어난 일이야. 확보한 자료의 시기·장소와 맞지 않아."
+            },
+            {
+              "id": "a-cheongsanri",
+              "text": "1920년 청산리 전투",
+              "correct": false,
+              "feedback": "청산리 전투는 만주에서 독립군 부대가 치른 전투야. 이 기록과 직접 연결되지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "role",
+          "label": "독립운동에서의 역할",
+          "options": [
+            {
+              "id": "r-student",
+              "text": "학교에서 배운 학생으로서 고향의 만세 시위를 앞장서 이끌고, 옥중에서도 만세를 부른 독립운동가",
+              "correct": true
+            },
+            {
+              "id": "r-leader",
+              "text": "임시정부를 오래 이끈 지도자",
+              "correct": false,
+              "feedback": "확보한 근거는 임시정부를 이끈 기록이 아니라, 고향의 장터에서 만세 시위를 이끈 기록이야."
+            },
+            {
+              "id": "r-commander",
+              "text": "독립군 부대를 지휘한 사령관",
+              "correct": false,
+              "feedback": "부대를 지휘한 기록은 확보한 자료에 없어."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "epilogue": {
+    "profileFacts": [
+      {
+        "label": "이름",
+        "text": "유관순 (1902 ~ 1920)",
+        "sourceClaimIds": [
+          "yugwansun-cheonan-1902",
+          "yugwansun-sungug-1920"
+        ]
+      },
+      {
+        "label": "활동 시기",
+        "text": "1916년 ~ 1920년",
+        "sourceClaimIds": [
+          "yugwansun-ewha-1916",
+          "yugwansun-sungug-1920"
+        ]
+      },
+      {
+        "label": "관련 조직",
+        "text": "이화학당 (1916년 입학)",
+        "sourceClaimIds": [
+          "yugwansun-ewha-1916"
+        ]
+      },
+      {
+        "label": "주요 활동",
+        "text": "1919년 서울의 만세 시위에 참여했고, 휴교령으로 고향에 돌아온 뒤 4월 1일 아우내 장터에서 수천 명이 모인 만세 시위를 앞장서서 이끌었습니다.",
+        "sourceClaimIds": [
+          "yugwansun-samil-gwihyang-1919",
+          "yugwansun-aunae-19190401"
+        ]
+      },
+      {
+        "label": "관련 장소",
+        "text": "충청남도 천안 병천(아우내 장터) · 서울 이화학당 · 서대문형무소",
+        "sourceClaimIds": [
+          "yugwansun-cheonan-1902",
+          "yugwansun-ewha-1916",
+          "yugwansun-aunae-19190401",
+          "yugwansun-sungug-1920"
+        ]
+      },
+      {
+        "label": "남은 기록",
+        "text": "서대문형무소에서 찍힌 수형기록표 사진이 남아, 열여덟 살의 얼굴과 감옥에서 겪은 고초를 오늘까지 전하고 있습니다.",
+        "sourceClaimIds": [
+          "yugwansun-suhyeong-girokpyo"
+        ]
+      },
+      {
+        "label": "역사적 의미",
+        "text": "3·1운동이 서울만이 아니라 전국의 장터와 마을에서 함께 일어난 운동이었음을 보여 줍니다. 부모를 잃고 감옥에 갇혀서도 만세를 부른 기록은, 일제의 탄압이 꺾지 못한 의지를 증언합니다.",
+        "sourceClaimIds": [
+          "samil-undong-1919",
+          "yugwansun-bumo-sungug-1919",
+          "yugwansun-okjung-manse-1920"
+        ]
+      }
+    ],
+    "meaningText": "열여덟 살 학생은 학교 문이 닫히자 고향으로 돌아가 장터 앞에 섰습니다. 그날 부모를 잃었고, 감옥에 갇혀서도 만세를 불렀습니다. 남은 것은 이름이 지워진 수형기록표 사진 한 장. 그 얼굴의 주인을 오늘 당신이 기억해 냈습니다."
+  }
+}

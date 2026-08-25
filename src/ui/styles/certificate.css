@@ -1,0 +1,381 @@
+/* PAGE 10 — 역사 기록관 인증서 (A4 세로 인쇄) */
+
+.certificate {
+  position: relative;
+  width: 210mm;
+  /* A4 한 장에 정확히 맞춘다 (296mm: 반올림 오차로 2쪽 넘어가는 것 방지) */
+  height: 296mm;
+  overflow: hidden;
+  /* 장식 프레임과 꽃·리본을 피한 실제 필기 안전영역 */
+  /* 상단 장식선 아래에서 제목이 시작되도록 안전 여백을 확보한다. */
+  padding: 40mm 28mm 54mm;
+  box-sizing: border-box;
+  background: transparent;
+  color: #241d14;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: none;
+  isolation: isolate;
+}
+
+/* 화면 미리보기에서는 축소해서 보여준다 (실제 크기 = A4 한 장 고정) */
+.cert-preview-wrap .certificate {
+  flex: 0 0 auto;
+  transform: scale(0.66);
+  transform-origin: center center;
+}
+
+.certificate__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.certificate > :not(.certificate__frame) {
+  position: relative;
+  z-index: 1;
+}
+
+.certificate__title {
+  font-family: var(--font-family-serif);
+  font-size: 25pt;
+  line-height: 1.15;
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+  color: #6b4f22;
+  font-weight: 750;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.certificate__subtitle {
+  margin-top: 2mm;
+  font-size: 10pt;
+  line-height: 1.2;
+  letter-spacing: 0.28em;
+  text-indent: 0.28em;
+  color: #8a6c34;
+  font-weight: 600;
+}
+
+.certificate__rule {
+  width: 64%;
+  height: 1.2px;
+  margin: 3.5mm 0 5mm;
+  background: linear-gradient(90deg, transparent, #b08d4d, transparent);
+}
+
+.certificate__fields {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 3.5mm 5mm;
+  width: 100%;
+  padding: 0 5mm;
+  box-sizing: border-box;
+  margin-bottom: 6mm;
+  font-size: 10.5pt;
+}
+
+.cert-field {
+  display: flex;
+  align-items: baseline;
+  gap: 2.5mm;
+  min-width: 0;
+}
+
+.cert-field--school,
+.cert-field--name {
+  grid-column: span 7;
+}
+
+.cert-field--school {
+  padding-left: 8mm;
+}
+
+.cert-field--grade {
+  grid-column: span 3;
+}
+
+.cert-field--class {
+  grid-column: span 2;
+}
+
+.cert-field--number {
+  grid-column: span 5;
+}
+
+.cert-field__label {
+  color: #6b5330;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.cert-field__blank {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  border-bottom: 1.2px solid #8a6c34;
+  height: 5mm;
+}
+
+.certificate__body {
+  width: 100%;
+  font-size: 10.6pt;
+  line-height: 1.62;
+  text-align: center;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.certificate__body p {
+  margin: 0;
+}
+
+.certificate__body strong {
+  color: #6b4f22;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+/* 복원한 다섯 인물 — 이름 크게, 핵심 한 줄만 */
+.certificate__people {
+  margin: 6mm 0 4mm;
+  padding: 0 5mm 3mm;
+  border: 1.2px solid rgba(176, 141, 77, 0.62);
+  background: rgba(255, 250, 231, 0.32);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.certificate__people-heading {
+  margin: 0 -5mm 2mm;
+  padding: 2.6mm 5mm;
+  border-bottom: 1px solid rgba(176, 141, 77, 0.48);
+  background: rgba(176, 141, 77, 0.1);
+  color: #725427;
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+.certificate__person-row {
+  display: grid;
+  grid-template-columns: 22mm 24mm 1fr;
+  align-items: baseline;
+  gap: 3mm;
+  padding: 2.2mm 0;
+  border-bottom: 1px dotted rgba(138, 108, 52, 0.35);
+}
+
+.certificate__person-row:last-child {
+  border-bottom: none;
+}
+
+.certificate__person-name {
+  color: #442f16;
+  font-family: var(--font-family-serif);
+  font-size: 14pt;
+  letter-spacing: 0.06em;
+}
+
+.certificate__person-life {
+  color: #8a6c34;
+  font-size: 8.5pt;
+}
+
+.certificate__person-core {
+  color: #4a3a20;
+  font-size: 10.5pt;
+  font-weight: 600;
+  word-break: keep-all;
+}
+
+.certificate__record {
+  margin: 6mm 0 4mm;
+  padding: 0 5mm 4mm;
+  border: 1.2px solid rgba(176, 141, 77, 0.62);
+  background: rgba(255, 250, 231, 0.32);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.certificate__record-heading {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 4mm;
+  margin: 0 -5mm 2mm;
+  padding: 3mm 5mm;
+  border-bottom: 1px solid rgba(176, 141, 77, 0.48);
+  background: rgba(176, 141, 77, 0.1);
+  color: #725427;
+  font-size: 9pt;
+  letter-spacing: 0.08em;
+}
+
+.certificate__record-heading strong {
+  color: #442f16;
+  font-family: var(--font-family-serif);
+  font-size: 16pt;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+.certificate__record-heading em {
+  color: #8a6c34;
+  font-size: 8.5pt;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.certificate__record-row {
+  display: grid;
+  grid-template-columns: 26mm minmax(0, 1fr);
+  gap: 4mm;
+  padding: 1.8mm 0;
+  font-size: 9.2pt;
+  line-height: 1.42;
+  border-bottom: 1px dotted rgba(138, 108, 52, 0.35);
+}
+
+.certificate__record-row:last-child {
+  border-bottom: none;
+}
+
+.certificate__record-label {
+  color: #8a6c34;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.certificate__record-row > div:last-child {
+  min-width: 0;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.certificate__record--dense .certificate__record-row {
+  padding: 1.25mm 0;
+  font-size: 8.6pt;
+  line-height: 1.34;
+}
+
+.certificate__record--dense .certificate__record-heading strong {
+  font-size: 15pt;
+}
+
+.certificate__achievement {
+  width: 100%;
+  margin-top: 2mm;
+  text-align: center;
+}
+
+.certificate__stages {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2mm;
+  margin: 2.5mm 0 0;
+}
+
+.certificate__achievement-title {
+  color: #8a6c34;
+  font-size: 8.8pt;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.cert-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5mm;
+  color: #6b5330;
+  font-size: 7.8pt;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.cert-stage__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.5mm;
+  height: 8.5mm;
+  border: 1.5px solid #b08d4d;
+  border-radius: 50%;
+  color: #6b4f22;
+  font-size: 8.5pt;
+  font-weight: 750;
+  background: rgba(176, 141, 77, 0.08);
+}
+
+.certificate__foot {
+  width: 100%;
+  margin-top: 10mm;
+  padding-top: 4mm;
+  border-top: 1px solid rgba(176, 141, 77, 0.45);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 9.5pt;
+  color: #514027;
+  line-height: 1.38;
+  word-break: keep-all;
+}
+
+.certificate__foot p {
+  margin: 0;
+}
+
+.certificate__issuer {
+  margin-top: 4mm;
+  font-family: var(--font-family-serif);
+  font-size: 14pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #6b4f22;
+}
+
+/* ── 인쇄 ─────────────────────────────── */
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: auto;
+    overflow: visible;
+    background: #fff;
+  }
+
+  #app,
+  #rotate-guard {
+    display: none !important;
+  }
+
+  #certificate-print-root {
+    display: block !important;
+    position: static;
+  }
+
+  #certificate-print-root .certificate {
+    box-shadow: none;
+    transform: none;
+    margin: 0 auto;
+    page-break-after: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

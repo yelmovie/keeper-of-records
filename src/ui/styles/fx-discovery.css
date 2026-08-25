@@ -1,0 +1,224 @@
+/* 발견 연출 (Agent A) */
+
+/* ── 기록 확보 리빌 ─────────────────────────────── */
+.evidence-reveal {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 16, 32, 0.45);
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.evidence-reveal.show {
+  opacity: 1;
+}
+
+.evidence-reveal__stack {
+  position: relative;
+  animation: evidence-reveal-in 0.3s ease-out both;
+}
+
+@keyframes evidence-reveal-in {
+  from {
+    transform: translateY(18px) scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.evidence-reveal__card {
+  width: min(720px, 82vw);
+  min-height: 330px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: center;
+  column-gap: 24px;
+  text-align: left;
+  padding: var(--space-xl);
+}
+
+.evidence-reveal__object {
+  grid-column: 1;
+  grid-row: 1 / span 6;
+  align-self: center;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  padding: 14px;
+  border: 1px solid rgba(120, 90, 40, 0.3);
+  border-radius: var(--radius-md);
+  background: rgba(120, 90, 40, 0.08);
+  filter: drop-shadow(0 8px 10px rgba(36, 29, 20, 0.25));
+}
+
+.evidence-reveal__found-from {
+  color: rgba(36, 29, 20, 0.7);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 인장 착지 순간의 흔들림 (JS가 클래스 부여) */
+.evidence-reveal__card--thud {
+  animation: evidence-thud 0.15s ease-out;
+}
+
+@keyframes evidence-thud {
+  0% {
+    transform: none;
+  }
+  35% {
+    transform: translate(3px, 4px) rotate(0.5deg);
+  }
+  70% {
+    transform: translate(-2px, 1px) rotate(-0.35deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.evidence-reveal__kind {
+  font-size: var(--font-size-caption);
+  letter-spacing: 2px;
+  color: var(--red-deep);
+  margin: 3px 0 var(--space-xs);
+}
+
+.evidence-reveal__title {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.evidence-reveal__why {
+  color: var(--red-deep);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.evidence-reveal__summary {
+  margin-top: 4px;
+  font-size: 18px;
+  color: rgba(36, 29, 20, 0.75);
+  line-height: 1.55;
+  white-space: normal;
+}
+
+.evidence-reveal__continue {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(120, 90, 40, 0.25);
+  color: rgba(36, 29, 20, 0.68);
+  font-size: 15px;
+}
+
+/* 인장: scale 2.6 → 1 가속 낙하. delay 0.3s + 0.4s = JS의 SEAL_LAND_MS(700ms) */
+.evidence-reveal__seal {
+  position: absolute;
+  top: -36px;
+  right: -30px;
+  width: 132px;
+  height: 132px;
+  opacity: 0;
+  transform: scale(2.6) rotate(-15deg);
+  animation: evidence-seal-drop 0.4s cubic-bezier(0.55, 0, 1, 0.45) 0.3s forwards;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
+}
+
+@keyframes evidence-seal-drop {
+  from {
+    opacity: 0;
+    transform: scale(2.6) rotate(-15deg);
+  }
+  25% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-8deg);
+  }
+}
+
+/* ── 자료 상세 — 읽는 맛 ─────────────────────────────── */
+.evidence-detail__paper {
+  margin-top: var(--space-md);
+}
+
+.evidence-detail__paper p {
+  margin: 0;
+  font-size: var(--font-size-body);
+  line-height: 1.8;
+}
+
+.evidence-facts {
+  margin-top: var(--space-lg);
+}
+
+.evidence-facts__heading {
+  font-size: var(--font-size-caption);
+  letter-spacing: 2px;
+  color: var(--brass-400);
+  margin-bottom: var(--space-sm);
+}
+
+.evidence-facts__list {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.evidence-facts__item {
+  font-size: var(--font-size-sub);
+  line-height: var(--line-height-body);
+  color: var(--color-text-main);
+}
+
+.evidence-facts__item::marker {
+  color: var(--brass-500);
+}
+
+/* 직접 인용 강조 블록 */
+.evidence-quote {
+  margin: var(--space-sm) 0 var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid var(--brass-500);
+  background: var(--color-primary-soft);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family-serif);
+}
+
+.evidence-quote__text {
+  margin: 0;
+  font-size: var(--font-size-sub);
+  line-height: 1.7;
+}
+
+.evidence-quote__text::before {
+  content: '\201C  ';
+  color: var(--brass-400);
+}
+
+.evidence-quote__text::after {
+  content: '  \201D';
+  color: var(--brass-400);
+}
+
+.evidence-quote__ref {
+  display: block;
+  margin-top: var(--space-xs);
+  font-size: var(--font-size-caption);
+  font-style: normal;
+  color: var(--brass-400);
+  text-align: right;
+}

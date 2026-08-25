@@ -1,0 +1,878 @@
+{
+  "id": "case-001",
+  "title": "하얼빈의 기록",
+  "subtitle": "이름이 지워진 기록의 주인을 찾아라",
+  "teaser": "돌돌 말린 족자 하나와 이름이 지워진 문서 몇 장. 북쪽 하얼빈에서 온 자료들입니다.",
+  "solvedPersonId": "ahnjunggeun",
+  "candidateIds": [
+    "kimgu",
+    "yunbonggil",
+    "yugwansun",
+    "ahnjunggeun",
+    "ahnchangho"
+  ],
+  "finalCandidateIds": [
+    "ahnchangho",
+    "ahnjunggeun"
+  ],
+  "initialClueIds": [
+    "ev-japanese-rule",
+    "ev-manju-ticket"
+  ],
+  "evidence": [
+    {
+      "id": "ev-japanese-rule",
+      "title": "식민 통치 아래의 기록실",
+      "kind": "event",
+      "summary": "이 자료들이 보관된 시기의 배경입니다.",
+      "detail": "1910년부터 1945년까지 일본 제국주의는 우리나라를 강제로 식민지로 삼아 지배했습니다. 우리말과 우리 역사를 배우고 남기는 일까지 억눌렀기 때문에, 이 기록실의 자료는 이름이 지워지거나 감춰진 채 전해지는 경우가 많습니다. 그중에는 식민지가 되기 전, 일제가 침략의 발을 넓히던 시기의 기록도 섞여 있습니다.",
+      "relatedPersonIds": [
+        "kimgu",
+        "yunbonggil",
+        "yugwansun",
+        "ahnjunggeun",
+        "ahnchangho",
+        "kimjwajin"
+      ],
+      "strength": "context",
+      "sourceClaimIds": [
+        "ilje-sikmin-tongchi"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-manju-ticket",
+      "title": "북쪽으로 가는 기차표",
+      "kind": "artifact",
+      "summary": "만주 방면으로 가는 낡은 기차표입니다. 뒷면에 하얼빈이라는 지명이 보입니다.",
+      "detail": "만주와 그 둘레 지역에서는 여러 독립운동가가 활동했습니다. 하얼빈역에서 의거(나라를 되찾으려고 목숨을 걸고 벌인 일)를 실행한 사람도, 만주에서 독립군 부대를 이끈 사람도 있습니다. 기차표 한 장만으로는 누구의 것인지 알 수 없습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun",
+        "kimjwajin"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "ahnjunggeun-harbin-19091026",
+        "kimjwajin-bukro-gunjeongseo"
+      ],
+      "interaction": "flip",
+      "visualization": true
+    },
+    {
+      "id": "ev-school-record",
+      "title": "학교 이름이 적힌 명부",
+      "kind": "document",
+      "summary": "서랍 안에서 나온 명부. 학교 이름이 적혀 있습니다.",
+      "detail": "나라의 힘을 기르려고 학교를 세워 인재를 기른 독립운동가들이 있었습니다. 평양에는 대성학교가 세워졌습니다. 진남포에서는 삼흥학교가 세워지고 돈의학교가 운영되었는데, 그 일을 한 사람들의 이름은 지워져 있습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun",
+        "ahnchangho"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "ahnjunggeun-samheung-donui-1906",
+        "ahnchangho-daesung"
+      ],
+      "interaction": "drawer"
+    },
+    {
+      "id": "ev-hwanghae-record",
+      "title": "황해도 해주의 기록",
+      "kind": "place",
+      "summary": "한 사람이 태어난 고장의 기록입니다.",
+      "detail": "이 기록의 주인은 1879년 황해도 해주에서 태어났습니다. 뒷날 가족과 함께 평안도 진남포로 옮겨 가 그곳에서 새로운 일을 시작했습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-haeju-1879",
+        "ahnjunggeun-samheung-donui-1906"
+      ],
+      "interaction": "pinch"
+    },
+    {
+      "id": "ev-uibyeong-record",
+      "title": "먼지 덮인 의병 문서",
+      "kind": "document",
+      "summary": "먼지를 걷어내자 의병 부대에 관한 기록이 드러납니다.",
+      "detail": "이 기록의 주인은 1907년 연해주로 건너가 동지들을 모았고, 1908년에는 의병 부대를 이끌고 두만강을 건너 국내로 들어가 일본군과 싸우는 작전을 펼쳤습니다. 그는 의병 부대에서 대한의군 참모중장이라는 직책을 맡았습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-yeonhaeju-uibyeong-1908",
+        "ahnjunggeun-chammojungjang"
+      ],
+      "interaction": "rub"
+    },
+    {
+      "id": "ev-danji-record",
+      "title": "봉투에 담긴 맹세 기록",
+      "kind": "quote",
+      "summary": "열두 명의 동지가 함께 남긴 맹세의 기록입니다.",
+      "detail": "1909년 3월, 이 기록의 주인은 동지 열두 명과 함께 왼손 넷째 손가락 한 마디를 잘라 나라를 되찾자고 맹세했습니다. 이 모임을 단지회라고 부릅니다. 기록에는 잘린 손가락으로 남긴 손자국이 찍혀 있습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-danji-1909",
+        "ahnjunggeun-yumuk-bomul"
+      ],
+      "interaction": "envelope"
+    },
+    {
+      "id": "ev-harbin-record",
+      "title": "하얼빈역의 기록",
+      "kind": "event",
+      "summary": "1909년 10월 26일 하얼빈역에서 일어난 일의 기록입니다.",
+      "detail": "이토 히로부미는 을사늑약 체결을 강요하고 초대 통감이 되어 대한제국의 국권을 빼앗는 침략을 이끈 인물입니다. 1909년 10월 26일, 이 기록의 주인은 하얼빈역에서 그를 처단했습니다. 침략의 한가운데에 있던 인물을 향해 우리 민족의 뜻을 분명하게 보여 준 의거였습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-harbin-19091026",
+        "ito-hirobumi-chimtal"
+      ],
+      "interaction": "puzzle"
+    },
+    {
+      "id": "ev-yumuk",
+      "title": "손도장이 찍힌 족자",
+      "kind": "artifact",
+      "summary": "말려 있던 족자를 펼치자 힘 있는 붓글씨가 나타납니다.",
+      "detail": "이 기록의 주인이 1910년 뤼순 감옥 안에서 남긴 붓글씨입니다. 그는 도장 대신 먹을 묻힌 손바닥을 찍었는데, 손도장에는 넷째 손가락 한 마디가 없는 왼손의 모양이 그대로 남아 있습니다. 이 유묵들은 오늘날 보물로 지정되어 있습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-yumuk-bomul"
+      ],
+      "interaction": "rotate",
+      "visualization": true
+    },
+    {
+      "id": "ev-donyang-record",
+      "title": "완성되지 못한 원고",
+      "kind": "document",
+      "summary": "1910년 3월, 뤼순감옥에서 순국한 기록입니다.",
+      "detail": "이 기록의 주인은 뤼순감옥에서 『동양평화론』이라는 글을 쓰기 시작했습니다. 동양의 나라들이 서로 침략하지 않고 평화롭게 살아가는 길을 담으려 했지만, 1910년 3월 26일 순국하면서 그 글은 끝내 완성되지 못했습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-sungug-1910"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-sinminhoe",
+      "title": "신민회 관련 기록",
+      "kind": "organization",
+      "summary": "1907년에 만들어진 비밀단체의 기록입니다.",
+      "detail": "안창호는 1907년 동지들과 함께 비밀단체인 신민회를 조직해 나라의 힘을 기르는 운동을 펼쳤습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-sinminhoe-1907"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-daesung",
+      "title": "대성학교 설립 기록",
+      "kind": "organization",
+      "summary": "평양에 세워진 학교의 기록입니다.",
+      "detail": "안창호는 평양에 대성학교를 세워 나라를 되찾을 인재를 길렀습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-daesung"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-heungsadan",
+      "title": "흥사단 창립 기록",
+      "kind": "organization",
+      "summary": "1913년 미국에서 만들어진 단체의 기록입니다.",
+      "detail": "안창호는 1913년 미국 샌프란시스코에서 흥사단을 만들어 인재를 기르는 일을 이어 갔습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-heungsadan-1913"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-naemuchongjang",
+      "title": "임시정부 내무총장 기록",
+      "kind": "document",
+      "summary": "임시정부에서 중요한 자리를 맡은 사람의 기록입니다.",
+      "detail": "안창호는 대한민국 임시정부의 내무총장 겸 국무총리 대리를 맡아 임시정부의 조직을 정비했습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-imsijeongbu"
+      ],
+      "interaction": "tap"
+    }
+  ],
+  "stages": {
+    "explore": {
+      "roomWidth": 2900,
+      "requiredEvidenceIds": [
+        "ev-school-record",
+        "ev-danji-record",
+        "ev-uibyeong-record",
+        "ev-harbin-record"
+      ],
+      "hintTexts": [
+        "책상 왼쪽 서랍 안에서 종이 스치는 소리가 나는 듯합니다.",
+        "화면을 좌우로 밀면 기록실의 다른 구역을 볼 수 있습니다.",
+        "먼지가 두껍게 쌓인 자리는 오래 손대지 않았다는 뜻입니다.",
+        "말려 있는 족자는 돌려서 펼쳐 보아야 안쪽을 알 수 있습니다."
+      ],
+      "hotspots": [
+        {
+          "id": "hs-drawer-left",
+          "x": 190,
+          "y": 615,
+          "w": 240,
+          "h": 110,
+          "interaction": "drawer",
+          "textureKey": "prop-ahnjunggeun-school-ledger",
+          "evidenceId": "ev-school-record",
+          "label": "책상 왼쪽 서랍",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-envelope",
+          "x": 520,
+          "y": 565,
+          "w": 210,
+          "h": 130,
+          "interaction": "envelope",
+          "textureKey": "prop-ahnjunggeun-oath-envelope",
+          "evidenceId": "ev-danji-record",
+          "label": "봉인된 봉투",
+          "hintText": "봉인을 옆으로 밀어 봐."
+        },
+        {
+          "id": "hs-photo",
+          "x": 830,
+          "y": 525,
+          "w": 190,
+          "h": 150,
+          "interaction": "flip",
+          "textureKey": "prop-ahnjunggeun-investigation-photo",
+          "evidenceId": "ev-manju-ticket",
+          "label": "낡은 사진"
+        },
+        {
+          "id": "hs-teacup",
+          "x": 1090,
+          "y": 615,
+          "w": 110,
+          "h": 90,
+          "interaction": "tap",
+          "textureKey": "prop-ahnjunggeun-rosary",
+          "label": "묵주",
+          "emptyText": "손때가 밴 묵주야. 기록의 주인이 지닌 신념을 떠올리게 해."
+        },
+        {
+          "id": "hs-dusty-doc",
+          "x": 1290,
+          "y": 515,
+          "w": 260,
+          "h": 190,
+          "interaction": "rub",
+          "evidenceId": "ev-uibyeong-record",
+          "label": "먼지 덮인 문서",
+          "hintText": "손가락으로 문질러 먼지를 걷어내 봐."
+        },
+        {
+          "id": "hs-lamp",
+          "x": 1640,
+          "y": 475,
+          "w": 120,
+          "h": 150,
+          "interaction": "tap",
+          "textureKey": "prop-ahnjunggeun-field-binoculars",
+          "label": "야전 쌍안경",
+          "emptyText": "먼 곳을 살피던 낡은 쌍안경이야. 새 기록은 들어 있지 않아."
+        },
+        {
+          "id": "hs-cabinet",
+          "x": 1830,
+          "y": 595,
+          "w": 250,
+          "h": 120,
+          "interaction": "drawer",
+          "evidenceId": "ev-donyang-record",
+          "label": "문서 캐비닛",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-watch",
+          "x": 2160,
+          "y": 545,
+          "w": 150,
+          "h": 150,
+          "interaction": "tap",
+          "textureKey": "prop-ahnjunggeun-handprint-scroll",
+          "evidenceId": "ev-yumuk",
+          "label": "말려 있는 족자",
+          "hintText": "좌우로 돌려 안쪽 면을 펼쳐 봐."
+        },
+        {
+          "id": "hs-torn",
+          "x": 2420,
+          "y": 525,
+          "w": 240,
+          "h": 180,
+          "interaction": "puzzle",
+          "evidenceId": "ev-harbin-record",
+          "label": "찢어진 신문 조각",
+          "hintText": "조각의 결이 맞는 자리를 찾아 놓아 봐."
+        },
+        {
+          "id": "hs-inkstone",
+          "x": 2700,
+          "y": 635,
+          "w": 120,
+          "h": 80,
+          "interaction": "tap",
+          "textureKey": "prop-ahnjunggeun-wooden-document-case",
+          "label": "나무 문서함",
+          "emptyText": "작은 문서를 보관하던 나무함이야. 지금은 비어 있어."
+        }
+      ]
+    },
+    "analyze": {
+      "tasks": [
+        {
+          "id": "task-compare",
+          "type": "compare",
+          "title": "두 기록 겹쳐 보기",
+          "instruction": "가운데 손잡이를 좌우로 밀어 두 기록을 겹쳐 보세요. 두 기록에서 같은 것이 보이나요?",
+          "pairEvidenceIds": [
+            "ev-danji-record",
+            "ev-yumuk"
+          ],
+          "compareInsightText": "두 기록에 찍힌 손자국이 같습니다. 왼손 넷째 손가락 한 마디가 없는, 같은 사람의 손입니다.",
+          "compareUnlockEvidenceId": "ev-hwanghae-record"
+        },
+        {
+          "id": "task-timeline",
+          "type": "timeline",
+          "title": "시간 순서로 놓기",
+          "instruction": "자료를 왼쪽부터 시간 순서대로 옮겨 놓으세요. 카드에 적힌 연도를 보면 순서를 알 수 있어요.",
+          "timelineEvidenceIds": [
+            "ev-yumuk",
+            "ev-harbin-record",
+            "ev-uibyeong-record",
+            "ev-hwanghae-record"
+          ],
+          "timelineDateLabels": {
+            "ev-hwanghae-record": "1879년",
+            "ev-uibyeong-record": "1908년",
+            "ev-harbin-record": "1909년",
+            "ev-yumuk": "1910년"
+          },
+          "timelineCorrectOrder": [
+            "ev-hwanghae-record",
+            "ev-uibyeong-record",
+            "ev-harbin-record",
+            "ev-yumuk"
+          ],
+          "timelineInsightText": "1879년 황해도 해주에서 태어나 1908년 의병 부대를 이끌었고, 1909년 하얼빈역에서 의거를 실행한 뒤 1910년 뤼순 감옥에서 글씨를 남겼습니다."
+        },
+        {
+          "id": "task-connect",
+          "type": "connect",
+          "title": "관계 잇기",
+          "instruction": "「출발」 카드와 직접 이어지는 카드를 눌러 보세요. 카드마다 그 이름이 나오는 기록이 적혀 있고, 확보한 기록에 없는 카드는 이어지지 않아요.",
+          "connectNodes": [
+            {
+              "id": "n-yeonhaeju",
+              "label": "연해주",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-manju-ticket",
+                "ev-uibyeong-record"
+              ]
+            },
+            {
+              "id": "n-uibyeong",
+              "label": "의병 부대",
+              "kind": "조직",
+              "sourceEvidenceIds": [
+                "ev-uibyeong-record"
+              ]
+            },
+            {
+              "id": "n-harbin",
+              "label": "하얼빈역",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-harbin-record",
+                "ev-manju-ticket"
+              ]
+            },
+            {
+              "id": "n-ito",
+              "label": "이토 히로부미",
+              "kind": "인물",
+              "sourceEvidenceIds": [
+                "ev-harbin-record"
+              ]
+            },
+            {
+              "id": "n-hongkou",
+              "label": "훙커우공원",
+              "kind": "장소",
+              "sourceEvidenceIds": []
+            }
+          ],
+          "connectAnswers": [
+            [
+              "n-yeonhaeju",
+              "n-uibyeong"
+            ],
+            [
+              "n-harbin",
+              "n-ito"
+            ]
+          ],
+          "connectInsightText": "이 기록의 주인은 연해주로 건너가 의병 부대를 이끌었고, 하얼빈역에서 침략을 이끈 이토 히로부미를 처단했습니다."
+        }
+      ]
+    },
+    "inquiry": {
+      "budget": 3,
+      "questions": [
+        {
+          "id": "q-place",
+          "prompt": "어느 지역에서 활동했을까?",
+          "category": "place",
+          "recordTitle": "지역에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1879년 황해도 해주에서 태어났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "뒷날 가족과 함께 진남포로 옮겨 가 그곳에서 학교를 운영했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "진남포는 바닷가에 있는 항구 도시였습니다.",
+              "isKey": false
+            },
+            {
+              "text": "1907년에는 나라 밖 연해주로 건너가 활동을 이어 갔습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-hwanghae-record"
+          ],
+          "resultSummary": "황해도 해주에서 태어나 진남포를 거쳐 연해주로 건너간 사람입니다."
+        },
+        {
+          "id": "q-organization",
+          "prompt": "어떤 조직과 관련 있었을까?",
+          "category": "organization",
+          "recordTitle": "조직에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1906년 진남포에서 삼흥학교를 세우고 돈의학교를 맡아 운영했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "이 무렵에는 학교를 세워 인재를 기르려는 움직임이 활발했습니다.",
+              "isKey": false
+            },
+            {
+              "text": "1909년 3월에는 동지 열두 명과 함께 단지회라는 모임을 만들어 맹세했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "학교를 세운 일과 손가락을 잘라 맹세한 일은 같은 사람이 걸어간 길입니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-school-record",
+            "ev-danji-record"
+          ],
+          "resultSummary": "삼흥학교와 돈의학교, 그리고 단지회와 이어지는 사람입니다."
+        },
+        {
+          "id": "q-event",
+          "prompt": "어떤 사건과 연결될까?",
+          "category": "event",
+          "recordTitle": "사건에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이토 히로부미는 을사늑약 체결을 강요하고 초대 통감이 되어 대한제국 침략을 이끈 인물입니다.",
+              "isKey": true
+            },
+            {
+              "text": "이토가 탄 열차는 1909년 10월 26일 하얼빈역에 도착했습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 그날 하얼빈역에서 이토 히로부미를 처단했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "침략의 한가운데에 있던 인물을 향해 우리 민족의 뜻을 분명하게 보여 준 의거였습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-harbin-record"
+          ],
+          "resultSummary": "1909년 10월 26일 하얼빈역 의거와 직접 연결됩니다."
+        },
+        {
+          "id": "q-record",
+          "prompt": "어떤 기록이 남아 있을까?",
+          "category": "record",
+          "recordTitle": "남아 있는 기록",
+          "recordSentences": [
+            {
+              "text": "그가 감옥에서 남긴 붓글씨에는 넷째 손가락 한 마디가 없는 손도장이 찍혀 있고, 오늘날 보물로 지정되어 있습니다.",
+              "isKey": true
+            },
+            {
+              "text": "붓글씨에는 그가 평소 마음에 새긴 글귀들이 담겨 있습니다.",
+              "isKey": false
+            },
+            {
+              "text": "그가 옥중에서 쓰던 『동양평화론』은 1910년 3월 26일 순국하면서 끝내 완성되지 못했습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-donyang-record",
+            "ev-yumuk"
+          ],
+          "resultSummary": "보물로 지정된 유묵과, 완성되지 못한 『동양평화론』 원고가 남아 있습니다."
+        },
+        {
+          "id": "q-relationship",
+          "prompt": "다른 사람들과 어떤 관계였을까?",
+          "category": "relationship",
+          "recordTitle": "동지들에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "연해주에는 나라를 걱정하는 사람들이 많이 모여 살았습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 연해주에서 동지들을 모아 의병 부대를 함께 만들었습니다.",
+              "isKey": true
+            },
+            {
+              "text": "1909년에는 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "혼자서 한 일이 아니라, 뜻을 같이한 동지들과 함께한 일이었습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-uibyeong-record",
+            "ev-danji-record"
+          ],
+          "resultSummary": "연해주의 의병 동지들, 그리고 함께 맹세한 열두 명의 동지와 이어져 있습니다."
+        }
+      ]
+    },
+    "compare": {
+      "personAId": "ahnchangho",
+      "personBId": "ahnjunggeun",
+      "grantEvidenceIds": [
+        "ev-sinminhoe",
+        "ev-daesung",
+        "ev-heungsadan",
+        "ev-naemuchongjang"
+      ],
+      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 두 사람 모두 학교를 세워 인재를 기르는 일에서 출발했지만, 서로 다른 길을 걸었습니다. 자료가 누구와 직접 연결되는지를 나눠 보세요.",
+      "cardAnswers": {
+        "ev-sinminhoe": "A",
+        "ev-daesung": "A",
+        "ev-heungsadan": "A",
+        "ev-naemuchongjang": "A",
+        "ev-hwanghae-record": "B",
+        "ev-uibyeong-record": "B",
+        "ev-danji-record": "B",
+        "ev-harbin-record": "B",
+        "ev-yumuk": "B",
+        "ev-donyang-record": "B",
+        "ev-manju-ticket": "B",
+        "ev-school-record": "SHARED",
+        "ev-japanese-rule": "SHARED"
+      },
+      "minShared": 2,
+      "minDirectPerPerson": 2,
+      "completionEvidenceIds": [
+        "ev-school-record"
+      ]
+    },
+    "restore": {
+      "timelineEvidenceIds": [
+        "ev-harbin-record",
+        "ev-school-record",
+        "ev-donyang-record",
+        "ev-uibyeong-record",
+        "ev-hwanghae-record",
+        "ev-danji-record"
+      ],
+      "timelineDateLabels": {
+        "ev-hwanghae-record": "1879년",
+        "ev-school-record": "1906년",
+        "ev-uibyeong-record": "1907~1908년",
+        "ev-danji-record": "1909년 3월",
+        "ev-harbin-record": "1909년 10월",
+        "ev-donyang-record": "1910년 3월"
+      },
+      "timelineCorrectOrder": [
+        "ev-hwanghae-record",
+        "ev-school-record",
+        "ev-uibyeong-record",
+        "ev-danji-record",
+        "ev-harbin-record",
+        "ev-donyang-record"
+      ],
+      "relationPairs": [
+        {
+          "from": "기록의 주인",
+          "to": "삼흥학교",
+          "label": "세워서 인재를 기름"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "의병 부대",
+          "label": "이끌고 국내 진공 작전을 폄"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "단지회",
+          "label": "동지들과 함께 맹세함"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "하얼빈역 의거",
+          "label": "직접 실행함"
+        },
+        {
+          "from": "안창호",
+          "to": "대성학교",
+          "label": "평양에 세움"
+        }
+      ],
+      "minEvidenceCount": 3,
+      "slots": [
+        {
+          "slot": "person",
+          "label": "인물",
+          "options": [
+            {
+              "id": "p-ahnjunggeun",
+              "text": "안중근",
+              "correct": true
+            },
+            {
+              "id": "p-ahnchangho",
+              "text": "안창호",
+              "correct": false,
+              "feedback": "안창호는 대성학교와 흥사단, 임시정부로 이어지는 인물이야. 이 기록에는 의병을 이끌고 하얼빈역 의거를 직접 실행한 사람의 흔적이 남아 있어. 다시 확인해 봐."
+            },
+            {
+              "id": "p-kimjwajin",
+              "text": "김좌진",
+              "correct": false,
+              "feedback": "김좌진은 북로군정서와 청산리 전투로 이어지는 인물이야. 확보한 근거의 손도장과 맹세 기록을 다시 확인해 봐."
+            }
+          ]
+        },
+        {
+          "slot": "period",
+          "label": "활동 시기",
+          "options": [
+            {
+              "id": "t-1900s",
+              "text": "1900년대 후반 ~ 1910년",
+              "correct": true
+            },
+            {
+              "id": "t-1930s",
+              "text": "1920년대 후반 ~ 1932년",
+              "correct": false,
+              "feedback": "현재 선택한 시기와 기록이 맞지 않아. 확보한 자료는 1909년의 맹세와 의거, 1910년의 순국 기록으로 이어져. 다시 확인해 봐."
+            },
+            {
+              "id": "t-1945",
+              "text": "1919년 ~ 1945년",
+              "correct": false,
+              "feedback": "이 시기는 임시정부에서 오래 활동한 인물들의 기간에 가까워. 이 기록의 마지막 자료는 1910년에서 멈춰. 다시 확인해 봐."
+            }
+          ]
+        },
+        {
+          "slot": "organization",
+          "label": "관련 조직",
+          "options": [
+            {
+              "id": "o-danjihoe",
+              "text": "단지회",
+              "correct": true
+            },
+            {
+              "id": "o-aegukdan",
+              "text": "한인애국단",
+              "correct": false,
+              "feedback": "한인애국단은 1931년 상하이에서 만들어진 단체야. 확보한 기록의 시기와 맞지 않으니 다시 확인해 봐."
+            },
+            {
+              "id": "o-heungsadan",
+              "text": "흥사단",
+              "correct": false,
+              "feedback": "흥사단은 미국에서 만들어진 단체로, 다른 인물과 이어져. 확보한 맹세 기록을 다시 확인해 봐."
+            }
+          ]
+        },
+        {
+          "slot": "activity",
+          "label": "주요 활동",
+          "options": [
+            {
+              "id": "a-harbin",
+              "text": "1909년 10월 26일 하얼빈역 의거",
+              "correct": true
+            },
+            {
+              "id": "a-hongkou",
+              "text": "1932년 4월 29일 상하이 훙커우공원 의거",
+              "correct": false,
+              "feedback": "훙커우공원 의거는 1932년의 일이야. 확보한 자료의 시기와 맞지 않으니 다시 확인해 봐."
+            },
+            {
+              "id": "a-cheongsanri",
+              "text": "1920년 10월 청산리 전투",
+              "correct": false,
+              "feedback": "청산리 전투는 만주에서 독립군 부대가 치른 전투야. 이 기록과 직접 연결되지 않으니 다시 확인해 봐."
+            }
+          ]
+        },
+        {
+          "slot": "role",
+          "label": "독립운동에서의 역할",
+          "options": [
+            {
+              "id": "r-teacher-fighter",
+              "text": "학교를 세워 인재를 기르는 일에서 시작해, 의병을 이끌고 하얼빈역 의거를 직접 실행한 독립운동가",
+              "correct": true
+            },
+            {
+              "id": "r-organizer",
+              "text": "단체를 만들고 임시정부의 조직을 정비한 지도자",
+              "correct": false,
+              "feedback": "이 역할은 신민회와 흥사단을 만든 인물에 가까워. 확보한 근거는 의병을 이끌고 의거를 실행한 기록이야. 다시 확인해 봐."
+            },
+            {
+              "id": "r-commander",
+              "text": "만주에서 독립군 부대를 지휘해 큰 전투를 치른 사령관",
+              "correct": false,
+              "feedback": "청산리 같은 큰 전투를 지휘한 기록은 확보한 자료에 없어. 다시 확인해 봐."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "epilogue": {
+    "profileFacts": [
+      {
+        "label": "이름",
+        "text": "안중근 (1879 ~ 1910)",
+        "sourceClaimIds": [
+          "ahnjunggeun-haeju-1879",
+          "ahnjunggeun-sungug-1910"
+        ]
+      },
+      {
+        "label": "활동 시기",
+        "text": "1900년대 후반 ~ 1910년",
+        "sourceClaimIds": [
+          "ahnjunggeun-samheung-donui-1906",
+          "ahnjunggeun-sungug-1910"
+        ]
+      },
+      {
+        "label": "관련 조직",
+        "text": "삼흥학교 · 돈의학교 (1906, 진남포) · 단지회 (1909)",
+        "sourceClaimIds": [
+          "ahnjunggeun-samheung-donui-1906",
+          "ahnjunggeun-danji-1909"
+        ]
+      },
+      {
+        "label": "주요 활동",
+        "text": "진남포에서 학교를 세워 인재를 길렀고, 연해주에서 의병을 이끌었으며, 1909년 10월 26일 하얼빈역에서 대한제국 침략을 이끈 이토 히로부미를 처단했습니다.",
+        "sourceClaimIds": [
+          "ahnjunggeun-samheung-donui-1906",
+          "ahnjunggeun-yeonhaeju-uibyeong-1908",
+          "ahnjunggeun-harbin-19091026",
+          "ito-hirobumi-chimtal"
+        ]
+      },
+      {
+        "label": "관련 장소",
+        "text": "황해도 해주 · 진남포 · 러시아 연해주 · 중국 하얼빈 · 뤼순",
+        "sourceClaimIds": [
+          "ahnjunggeun-haeju-1879",
+          "ahnjunggeun-samheung-donui-1906",
+          "ahnjunggeun-yeonhaeju-uibyeong-1908",
+          "ahnjunggeun-harbin-19091026",
+          "ahnjunggeun-sungug-1910"
+        ]
+      },
+      {
+        "label": "남은 기록",
+        "text": "옥중에서 쓰다 완성하지 못한 『동양평화론』 원고와, 넷째 손가락 한 마디가 없는 손도장이 찍힌 유묵(보물)이 전해집니다.",
+        "sourceClaimIds": [
+          "ahnjunggeun-sungug-1910",
+          "ahnjunggeun-yumuk-bomul"
+        ]
+      },
+      {
+        "label": "역사적 의미",
+        "text": "하얼빈역 의거는 을사늑약을 강요하고 대한제국의 국권을 빼앗는 침략을 이끈 이토 히로부미를 처단하여, 우리 민족이 침략에 굴하지 않았음을 분명하게 보여 준 일입니다.",
+        "sourceClaimIds": [
+          "ahnjunggeun-harbin-19091026",
+          "ito-hirobumi-chimtal"
+        ]
+      }
+    ],
+    "meaningText": "학교를 세워 아이들을 가르치던 사람이, 나라가 무너지자 의병을 이끌고 국경을 넘었습니다. 마지막에는 감옥 안에서 평화에 관한 글을 쓰다 붓을 놓아야 했습니다. 남은 것은 완성되지 못한 원고와, 넷째 손가락 한 마디가 없는 손도장. 그 기록을 오늘 당신이 되살렸습니다."
+  }
+}

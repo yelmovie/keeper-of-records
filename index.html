@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="description" content="기록의 주인 — 사라진 기록을 복원하라. 한국사 기록 복원형 탐구 게임" />
+    <meta property="og:title" content="기록의 주인" />
+    <meta property="og:description" content="사라진 기록을 복원하라 — 한국사 기록 복원형 탐구 게임" />
+    <meta property="og:image" content="/og.png" />
+    <title>기록의 주인 — 사라진 기록을 복원하라</title>
+    <link rel="icon" type="image/png" href="/og.png" />
+    <link rel="preload" as="image" href="/assets/bg/title.webp" type="image/webp" />
+  </head>
+  <body>
+    <div id="rotate-guard">
+      <div class="rotate-guard__inner">
+        <div class="rotate-guard__icon" aria-hidden="true"></div>
+        <p>태블릿을 <strong>가로</strong>로 돌려 주세요.</p>
+        <p class="rotate-guard__sub">《기록의 주인》은 가로 화면에서 진행됩니다.</p>
+      </div>
+    </div>
+    <div id="app">
+      <div id="stage">
+        <div id="phaser-root"></div>
+        <div id="ui-overlay"></div>
+        <div id="modal-layer"></div>
+        <div id="transition-veil"></div>
+      </div>
+    </div>
+    <div id="certificate-print-root"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

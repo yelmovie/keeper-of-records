@@ -1,0 +1,124 @@
+/* 감동 서사 연출 (Agent C) */
+
+/* ── 기록의 목소리 (QuoteScene) ─────────────────────────── */
+.quote-scene {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  padding: var(--space-2xl);
+  background: rgba(6, 9, 18, 0.92);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.quote-scene.show {
+  opacity: 1;
+}
+
+.quote-scene__title {
+  color: var(--color-text-faint);
+  font-size: var(--font-size-sub);
+  letter-spacing: 0.24em;
+  text-indent: 0.24em;
+}
+
+.quote-scene__quote {
+  max-width: 920px;
+  min-height: 3.6em;
+  margin: 0;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-h2);
+  line-height: 1.8;
+  color: var(--hanji-100);
+  text-align: center;
+  word-break: keep-all;
+}
+
+.quote-scene__caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: -0.12em;
+  background: var(--brass-300);
+  animation: quote-caret-blink 0.9s step-end infinite;
+}
+
+@keyframes quote-caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.quote-scene__foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  opacity: 0;
+  transition: opacity 1.1s ease;
+}
+
+.quote-scene__foot.show {
+  opacity: 1;
+}
+
+.quote-scene__source {
+  color: var(--hanji-300);
+  font-size: var(--font-size-sub);
+}
+
+.quote-scene__hint {
+  position: absolute;
+  bottom: var(--space-lg);
+  color: var(--color-text-faint);
+  font-size: var(--font-size-caption);
+}
+
+/* 기록 열람대의 듣기 버튼 자리 */
+.quote-listen {
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+/* ── 인증서 전 인장 연출 (RewardScreen) ─────────────────── */
+.seal-stamp {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 16, 32, 0.4);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.seal-stamp.show {
+  opacity: 1;
+}
+
+.seal-stamp svg {
+  transform: scale(1.6);
+  opacity: 0;
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.15),
+    opacity 0.3s ease;
+}
+
+.seal-stamp.show svg {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 무한 반복 애니메이션은 움직임 최소화 설정에서 멈춘다 */
+@media (prefers-reduced-motion: reduce) {
+  .quote-scene__caret {
+    animation: none;
+  }
+}

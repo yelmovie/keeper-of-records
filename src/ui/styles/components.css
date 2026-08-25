@@ -1,0 +1,982 @@
+/* 기록의 주인 — 공통 UI 컴포넌트 */
+
+/* ── 버튼 ─────────────────────────────── */
+.kr-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: var(--button-height-md);
+  min-width: var(--touch-min);
+  padding: 0 var(--space-lg);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, var(--navy-700), var(--navy-800));
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  word-break: keep-all;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: var(--shadow-button);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.kr-btn > * {
+  pointer-events: none;
+}
+
+.kr-btn:hover {
+  transform: translateY(-1px) scale(1.02);
+  border-color: var(--color-border-strong);
+}
+
+.kr-btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.kr-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+.kr-btn--primary {
+  background: linear-gradient(180deg, #d9b878, #b98f47);
+  border-color: rgba(255, 240, 210, 0.5);
+  color: var(--navy-950);
+  font-weight: 700;
+}
+
+.kr-btn--primary:hover {
+  box-shadow: var(--shadow-button), var(--glow-brass);
+}
+
+.kr-btn--ghost {
+  background: transparent;
+  border-color: var(--color-border-soft);
+  box-shadow: none;
+}
+
+.kr-btn--lg {
+  min-height: var(--button-height-lg);
+  padding: 0 var(--space-2xl);
+  font-size: var(--font-size-h3);
+  border-radius: var(--radius-lg);
+}
+
+.kr-btn--sm {
+  min-height: var(--button-height-sm);
+  padding: 0 var(--space-md);
+  font-size: var(--font-size-sub);
+}
+
+/* ── 상단 HUD ─────────────────────────────── */
+.top-hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  z-index: var(--z-hud);
+  pointer-events: none;
+}
+
+.top-hud > * {
+  pointer-events: auto;
+}
+
+.top-hud__title {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  color: var(--brass-300);
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+.top-hud__spacer {
+  flex: 1;
+  pointer-events: none;
+}
+
+/* 진행 단계 표시 */
+.stage-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(10, 16, 32, 0.72);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(4px);
+}
+
+.stage-progress__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brass-dim);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.stage-progress__dot.done {
+  background: var(--brass-500);
+  border-color: var(--brass-400);
+}
+
+.stage-progress__dot.current {
+  border-color: var(--brass-300);
+  box-shadow: var(--glow-brass);
+  transform: scale(1.25);
+}
+
+.stage-progress__label {
+  font-size: var(--font-size-sub);
+  color: var(--color-text-sub);
+  padding-right: var(--space-xs);
+}
+
+/* 아이콘 버튼 (홈/사운드) */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--button-height-md);
+  height: var(--button-height-md);
+  border-radius: 50%;
+  border: 1px solid var(--color-border-soft);
+  background: rgba(10, 16, 32, 0.72);
+  color: var(--brass-300);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+  backdrop-filter: blur(4px);
+}
+
+.icon-btn:hover {
+  border-color: var(--color-border-strong);
+  transform: scale(1.06);
+}
+
+.icon-btn:active {
+  transform: scale(0.94);
+}
+
+.icon-btn svg {
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+}
+
+/* ── 패널/카드 ─────────────────────────────── */
+.kr-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(6px);
+}
+
+.kr-panel__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border-soft);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  color: var(--brass-300);
+}
+
+.kr-panel__body {
+  padding: var(--space-lg);
+}
+
+/* 한지 질감 카드 (기록 원문용) */
+.paper-card {
+  background:
+    linear-gradient(160deg, rgba(255, 250, 235, 0.06), transparent 40%),
+    var(--color-surface-paper);
+  color: var(--color-text-on-paper);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(120, 90, 40, 0.35);
+  box-shadow:
+    inset 0 0 24px rgba(150, 110, 50, 0.12),
+    var(--shadow-soft);
+  padding: var(--space-lg);
+  font-family: var(--font-family-serif);
+  line-height: 1.7;
+}
+
+/* ── 근거 카드 ─────────────────────────────── */
+.evidence-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  width: 200px;
+  padding: var(--space-md);
+  background: linear-gradient(170deg, var(--navy-700), var(--navy-800));
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  cursor: grab;
+  touch-action: none;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.evidence-card:active {
+  cursor: grabbing;
+}
+
+.evidence-card.dragging {
+  opacity: 0.92;
+  transform: scale(1.05) rotate(1.2deg);
+  box-shadow: var(--shadow-card), var(--glow-brass);
+  z-index: var(--z-drawer);
+}
+
+.evidence-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.evidence-card__thumb {
+  flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: rgba(244, 236, 220, 0.06);
+  filter: drop-shadow(0 7px 8px rgba(0, 0, 0, 0.34));
+  pointer-events: none;
+  user-select: none;
+}
+
+.evidence-card__heading {
+  min-width: 0;
+}
+
+.evidence-card__kind {
+  font-size: var(--font-size-caption);
+  color: var(--brass-400);
+  letter-spacing: 0.08em;
+}
+
+.evidence-card__title {
+  font-size: var(--font-size-sub);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.evidence-card__summary {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-sub);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.evidence-card--direct {
+  border-left: 3px solid var(--color-confirm);
+}
+
+.evidence-card--shared {
+  border-left: 3px solid var(--color-shared);
+}
+
+.evidence-card--context {
+  border-left: 3px solid var(--navy-600);
+}
+
+.evidence-card.locked {
+  filter: grayscale(0.9) brightness(0.6);
+  cursor: default;
+}
+
+/* ── 토스트 ─────────────────────────────── */
+/* 화면 아래쪽에는 조작 영역이 있으므로 상단 중앙에 띄운다 */
+.hint-toast {
+  position: absolute;
+  left: 50%;
+  /* 상단 탭을 가리지 않게 작업면 가운데 빈 띠의 정중앙에 띄운다 */
+  top: 42%;
+  transform: translate(-50%, calc(-50% - 20px));
+  max-width: 620px;
+  padding: var(--space-lg) var(--space-xl);
+  background: rgba(10, 16, 32, 0.96);
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  color: var(--hanji-100);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  z-index: var(--z-toast);
+  pointer-events: none;
+}
+
+.hint-toast.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.hint-toast--feedback {
+  border-color: var(--color-review);
+}
+
+/* ── 모달 ─────────────────────────────── */
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 8, 18, 0.75);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: auto;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+}
+
+.modal-box {
+  position: relative;
+  width: min(var(--modal-max-width), 88%);
+  max-height: 82%;
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(175deg, rgba(255, 245, 220, 0.05), transparent 35%),
+    var(--color-surface-raised);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  box-shadow:
+    inset 0 1.5px 0 rgba(255, 245, 220, 0.14),
+    var(--shadow-card),
+    var(--glow-brass);
+  overflow: hidden;
+  transform: translateY(16px) scale(0.94);
+  transition: transform 0.26s cubic-bezier(0.34, 1.4, 0.5, 1);
+}
+
+/* 상단 황동 스트립 — 패널이 "장치"로 보이게 */
+.modal-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brass-500) 18%,
+    var(--brass-300) 50%,
+    var(--brass-500) 82%,
+    transparent
+  );
+  opacity: 0.85;
+}
+
+.modal-backdrop.show .modal-box {
+  transform: translateY(0) scale(1);
+}
+
+.modal-box__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.modal-box__title {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+  color: var(--brass-300);
+}
+
+.modal-box__body {
+  padding: var(--space-lg);
+  overflow-y: auto;
+  touch-action: pan-y;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.modal-box__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-border-soft);
+}
+
+/* 출처 표시 */
+.source-item {
+  padding: var(--space-md);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+}
+
+.source-item__claim {
+  font-size: var(--font-size-sub);
+  margin-bottom: var(--space-xs);
+}
+
+.source-item__ref {
+  font-size: var(--font-size-caption);
+  color: var(--brass-400);
+}
+
+.visual-note {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-faint);
+  font-style: normal;
+}
+
+/* ── 하단 내비게이션 ─────────────────────────────── */
+.bottom-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  pointer-events: none;
+  z-index: var(--z-hud);
+}
+
+.bottom-nav > * {
+  pointer-events: auto;
+}
+
+.bottom-nav--end {
+  justify-content: flex-end;
+}
+
+/* ── 제목·버튼은 라운드 디스플레이체 ─────────────────── */
+.kr-btn,
+.top-hud__title,
+.kr-panel__header,
+.modal-box__title,
+.stage-progress__label,
+.mission-intro__goal,
+.reward-headline__main,
+.slot-option {
+  font-family: var(--font-family-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* ── 상단 HUD 그룹 (뒤로·홈 / 소리·설정) ─────────────── */
+.top-hud__group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* ── 조사원 안내 캐릭터 + 말풍선 ─────────────────────── */
+.guide-char {
+  position: absolute;
+  left: var(--space-lg);
+  bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  z-index: var(--z-panel);
+  pointer-events: none;
+}
+
+.guide-char--right {
+  left: auto;
+  right: var(--space-lg);
+  align-items: flex-end;
+}
+
+.guide-char__btn {
+  pointer-events: auto;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.55));
+  transition: transform 0.18s ease;
+}
+
+.guide-char__btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.guide-char__btn:active {
+  transform: scale(0.96);
+}
+
+.guide-char__img {
+  height: 178px;
+  display: block;
+  pointer-events: none;
+}
+
+/* 오른쪽에 배치된 조사원이 화면 안쪽의 학습 자료를 바라보게 한다. */
+.guide-char--facing-left .guide-char__img {
+  transform: scaleX(-1);
+}
+
+.guide-char__bubble {
+  position: relative;
+  max-width: 460px;
+  min-width: 220px;
+  padding: var(--space-md) var(--space-lg);
+  background:
+    linear-gradient(165deg, rgba(255, 250, 235, 0.1), transparent 45%),
+    var(--color-surface-paper);
+  color: var(--color-text-on-paper);
+  border: 1.5px solid rgba(120, 90, 40, 0.4);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    inset 0 0 20px rgba(150, 110, 50, 0.1),
+    var(--shadow-card);
+  font-size: var(--font-size-body);
+  line-height: 1.55;
+  word-break: keep-all;
+  opacity: 0;
+  transform: translateY(8px) scale(0.96);
+  transform-origin: bottom left;
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
+  pointer-events: none;
+}
+
+.guide-char--right .guide-char__bubble {
+  transform-origin: bottom right;
+}
+
+/* 타이틀 화면(overlayRect 배치)의 말풍선은 가운데 로고 글자에 닿지 않게 좁힌다 */
+.guide-char--overlay .guide-char__bubble {
+  max-width: 400px;
+}
+
+.guide-char__bubble.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* 말풍선 꼬리 */
+.guide-char__bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 44px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-surface-paper);
+  border-right: 1.5px solid rgba(120, 90, 40, 0.4);
+  border-bottom: 1.5px solid rgba(120, 90, 40, 0.4);
+  transform: rotate(45deg);
+}
+
+.guide-char--right .guide-char__bubble::after {
+  left: auto;
+  right: 44px;
+}
+
+/* Phaser가 캐릭터를 그리는 화면: 투명 클릭존 + 말풍선만 */
+.guide-char--overlay .guide-char__btn {
+  background: transparent;
+  filter: none;
+  border-radius: var(--radius-lg);
+}
+
+.guide-char--overlay .guide-char__btn:hover {
+  transform: none;
+  background: rgba(232, 211, 163, 0.05);
+}
+
+/* ── 설정 모달 ─────────────────────────────── */
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.settings-row__label {
+  min-width: 110px;
+  font-size: var(--font-size-body);
+  font-weight: 600;
+}
+
+.settings-row--buttons {
+  justify-content: flex-start;
+  gap: var(--space-md);
+}
+
+.settings-range {
+  flex: 1;
+  height: 10px;
+  appearance: none;
+  /* 모달 표면(--color-surface-raised)과 같은 색이면 트랙이 안 보인다 — 어둡게 + 테두리 */
+  background: rgba(10, 16, 32, 0.8);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-pill);
+  outline: none;
+  cursor: pointer;
+}
+
+.settings-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--brass-300), var(--brass-500));
+  border: 2px solid rgba(255, 240, 210, 0.6);
+  box-shadow: var(--shadow-soft);
+}
+
+.settings-note {
+  font-size: var(--font-size-sub);
+  color: var(--color-text-faint);
+}
+
+.settings-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.settings-menu--grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.settings-menu__btn {
+  width: 100%;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.settings-menu__heading {
+  grid-column: 1 / -1;
+  margin: var(--space-sm) 0 0;
+  color: var(--brass-300);
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-body);
+  letter-spacing: 0.02em;
+}
+
+.settings-menu--teacher-actions {
+  margin-top: var(--space-lg);
+}
+
+.settings-password {
+  width: 100%;
+  min-height: var(--button-height-md);
+  padding: 0 var(--space-md);
+  background: var(--navy-800);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-md);
+  color: var(--color-text-main);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+}
+
+.settings-password:focus {
+  outline: none;
+  border-color: var(--color-border-strong);
+}
+
+/* 밀도 높은 화면용 — 전신 대신 원형 초상 칩. 버튼·패널을 가리지 않는다 */
+.guide-char--compact {
+  bottom: 110px;
+}
+
+.guide-char--compact .guide-char__btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-border-strong);
+  background: radial-gradient(circle at 50% 30%, var(--navy-700), var(--navy-900));
+  box-shadow: var(--shadow-card), var(--glow-brass);
+  filter: none;
+}
+
+/* 얼굴이 원 안에 오도록 상반신만 크게 */
+.guide-char--compact .guide-char__img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.guide-char--compact.guide-char--large .guide-char__btn {
+  width: 168px;
+  height: 168px;
+}
+
+.guide-char--compact.guide-char--large .guide-char__img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+}
+
+.guide-char--compact .guide-char__bubble {
+  max-width: 380px;
+  font-size: var(--font-size-sub);
+}
+
+/* 브리핑: 말풍선이 후보 인물 카드 상단과 겹치지 않게 카드 줄 위로 올린다 */
+div:has(> .briefing-screen) .guide-char--compact .guide-char__bubble {
+  margin-bottom: 34px;
+}
+
+/* 완료 화면: 칩이 인물 파일 패널 글줄을 가리지 않게 아래로 내린다
+   (패널 하단은 mask 흐림 구간이라 겹쳐도 내용을 가리지 않는다) */
+div:has(> .reward-screen) .guide-char--compact {
+  bottom: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guide-char__bubble,
+  .guide-char__btn {
+    transition: none;
+  }
+}
+
+/* ── 스테이지 미션 카드 ───────────────────────────
+   "지금 뭘, 왜 하는지"를 스테이지 진입 시 중앙에 보여준다 */
+.mission-intro {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 8, 18, 0.7);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: auto;
+}
+
+.mission-intro.show {
+  opacity: 1;
+}
+
+.mission-intro__card {
+  position: relative;
+  width: min(640px, 86%);
+  padding: var(--space-xl) var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  background:
+    linear-gradient(175deg, rgba(255, 245, 220, 0.06), transparent 35%),
+    var(--color-surface-raised);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  box-shadow:
+    inset 0 1.5px 0 rgba(255, 245, 220, 0.14),
+    var(--shadow-card),
+    var(--glow-brass);
+  transform: translateY(14px) scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.34, 1.4, 0.5, 1);
+}
+
+.mission-intro.show .mission-intro__card {
+  transform: translateY(0) scale(1);
+}
+
+.mission-intro__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brass-500) 18%,
+    var(--brass-300) 50%,
+    var(--brass-500) 82%,
+    transparent
+  );
+}
+
+.mission-intro__eyebrow {
+  font-size: var(--font-size-sub);
+  letter-spacing: 0.14em;
+  color: var(--brass-400);
+}
+
+.mission-intro__goal {
+  font-size: var(--font-size-h2);
+  color: var(--brass-300);
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.mission-intro__why {
+  font-size: var(--font-size-body);
+  color: var(--color-text-main);
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.mission-intro__how {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md) 0 var(--space-sm);
+  border-top: 1px solid var(--color-border-soft);
+}
+
+.mission-intro__how li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sub);
+  color: var(--color-text-sub);
+  word-break: keep-all;
+}
+
+.mission-intro__mark {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--brass-500);
+  transform: translateY(-1px);
+}
+
+.mission-intro__btn {
+  align-self: center;
+  margin-top: var(--space-sm);
+  min-width: 240px;
+}
+
+/* ── 스크롤 컨테이너 입력 복구 ───────────────────────
+   #ui-overlay 는 pointer-events:none 이므로, 스크롤이 필요한 컨테이너는
+   직접 입력을 받아야 스크롤바 클릭·휠·터치 팬이 동작한다. */
+.explore-found,
+.analyze-list,
+.analyze-side > .kr-panel__body,
+.record-reader__body,
+.question-list,
+.compare-zone__drop,
+.compare-tray,
+.restore-slot__options,
+.slot-row,
+.person-file,
+.settings-menu {
+  pointer-events: auto;
+}
+
+.compare-tray {
+  touch-action: pan-x;
+}
+
+/* ── 스크롤바 ─────────────────────────────── */
+#ui-overlay ::-webkit-scrollbar,
+#modal-layer ::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+#ui-overlay ::-webkit-scrollbar-thumb,
+#modal-layer ::-webkit-scrollbar-thumb {
+  background: var(--brass-dim);
+  border-radius: 4px;
+}
+
+/* 확보한 기록 목록 — 3열 격자.
+   카드마다 글 길이가 달라도 줄이 어긋나지 않게 높이를 맞추고,
+   마지막 줄이 반쯤 잘려 보이지 않도록 세 줄 단위로 스크롤한다. */
+.evidence-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  /* 마지막 줄에 카드가 덜 차도 가운데로 모여 어색하지 않게 */
+  justify-content: center;
+  align-items: stretch;
+}
+
+.evidence-grid .evidence-card {
+  flex: 0 0 calc((100% - 2 * var(--space-md)) / 3);
+  max-width: calc((100% - 2 * var(--space-md)) / 3);
+}
+
+.evidence-grid .evidence-card {
+  width: auto;
+  /* height 를 고정하면 flex 의 stretch 가 막혀 한 장만 짧아진다 */
+  height: auto;
+  align-self: stretch;
+  cursor: default;
+  /* 제목은 위, 설명은 아래에 붙여 카드마다 같은 자리에서 읽히게 */
+  justify-content: flex-start;
+}
+
+.evidence-grid .evidence-card:active {
+  cursor: default;
+}
+
+/* 세 줄쯤 보이고 그 뒤부터 스크롤.
+   잘린 줄이 실수처럼 보이지 않게 아래쪽을 흐려 "더 있다"고 알린다
+   (인물 파일 패널과 같은 방식). */
+.modal-box__body:has(.evidence-grid) {
+  max-height: 560px;
+  mask-image: linear-gradient(180deg, #000 0, #000 calc(100% - 40px), transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0, #000 calc(100% - 40px), transparent 100%);
+}
+
+/* 끝까지 내렸으면 흐림을 걷는다 */
+.modal-box__body:has(.evidence-grid).is-scrolled-end {
+  mask-image: none;
+  -webkit-mask-image: none;
+}

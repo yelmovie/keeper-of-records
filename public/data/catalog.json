@@ -1,0 +1,42 @@
+[
+  {
+    "id": "case-001",
+    "title": "훙커우의 기록",
+    "teaser": "1932년 상하이 훙커우공원에 남겨진 의거와 한 청년의 기록.",
+    "status": "available",
+    "sourceCaseId": "case-001",
+    "tracks": ["yunbonggil"]
+  },
+  {
+    "id": "case-002",
+    "title": "임시정부의 발자취",
+    "teaser": "상하이에서 충칭까지, 여덟 번 옮겨 다닌 청사의 기록.",
+    "status": "available",
+    "sourceCaseId": "case-001",
+    "tracks": ["kimgu"]
+  },
+  {
+    "id": "case-003",
+    "title": "아우내의 함성",
+    "teaser": "1919년 봄, 장터에 울린 목소리의 기록.",
+    "status": "available",
+    "sourceCaseId": "case-001",
+    "tracks": ["yugwansun"]
+  },
+  {
+    "id": "case-004",
+    "title": "하얼빈의 기록",
+    "teaser": "1909년 가을, 어느 역에서 남겨진 자료.",
+    "status": "available",
+    "sourceCaseId": "case-001",
+    "tracks": ["ahnjunggeun"]
+  },
+  {
+    "id": "case-005",
+    "title": "교육으로 세운 힘",
+    "teaser": "학교와 단체로 나라를 다시 세우려 한 사람들의 기록.",
+    "status": "available",
+    "sourceCaseId": "case-001",
+    "tracks": ["ahnchangho"]
+  }
+]

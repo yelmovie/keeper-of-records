@@ -1,0 +1,169 @@
+/* 클라이맥스 연출 (Agent B) — 기록의 주인 지목 오버레이 */
+
+.nominate-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl) var(--safe-x);
+  /* 아래 화면 글자가 비치면 헤드라인과 겹쳐 읽힌다 — 진하게 + 블러 */
+  background: rgba(10, 16, 32, 0.94);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.45s ease, background 0.7s ease;
+}
+
+.nominate-overlay.show {
+  opacity: 1;
+}
+
+.nominate-overlay.closing {
+  background: rgb(10, 16, 32);
+}
+
+.nominate-head {
+  text-align: center;
+}
+
+.nominate-head__lead {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-size-h3);
+  color: var(--color-text-sub);
+  letter-spacing: 0.04em;
+}
+
+.nominate-head__title {
+  margin: 0;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-tight);
+  color: var(--brass-300);
+  text-shadow: var(--glow-brass);
+}
+
+/* 후보 카드 — 2행 3열, 한지/황동 톤 */
+.nominate-grid {
+  /* 5명(3+2)이라 두 번째 줄이 가운데로 모이도록 flex로 짠다 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-lg);
+  max-width: 860px;
+}
+
+.nominate-grid .nominate-card {
+  width: 260px;
+}
+
+.nominate-card {
+  min-height: 120px;
+  min-width: var(--touch-min);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  background: var(--color-surface-paper);
+  color: var(--color-text-on-paper);
+  border: 2px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.nominate-card:hover,
+.nominate-card:focus-visible {
+  border-color: var(--brass-400);
+  box-shadow: var(--shadow-card), var(--glow-brass);
+  outline: none;
+}
+
+.nominate-card__name {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+}
+
+.nominate-card__life {
+  font-size: var(--font-size-sub);
+  color: rgba(36, 29, 20, 0.65);
+}
+
+/* 오답 지목 — 짧은 흔들림 */
+.nominate-card.shake {
+  animation: nominate-shake 0.4s ease;
+  border-color: var(--red-muted);
+}
+
+@keyframes nominate-shake {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  20% {
+    translate: -8px 0;
+  }
+  40% {
+    translate: 8px 0;
+  }
+  60% {
+    translate: -5px 0;
+  }
+  80% {
+    translate: 5px 0;
+  }
+}
+
+/* 정답 지목 — 정답 카드만 남기고 페이드아웃, 카드는 중앙으로 확대(transform 인라인) */
+.nominate-overlay.resolved .nominate-card {
+  pointer-events: none;
+}
+
+.nominate-overlay.resolved .nominate-card:not(.nominate-card--owner),
+.nominate-overlay.resolved .nominate-head,
+.nominate-overlay.resolved .nominate-feedback,
+.nominate-overlay.resolved .nominate-back {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.nominate-card--owner {
+  position: relative;
+  z-index: 1;
+  border-color: var(--brass-400);
+  box-shadow: var(--shadow-card), var(--glow-brass);
+}
+
+.nominate-overlay.closing .nominate-card--owner {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.nominate-feedback {
+  min-height: calc(var(--font-size-sub) * var(--line-height-body));
+  max-width: 640px;
+  text-align: center;
+  font-size: var(--font-size-sub);
+  color: var(--color-review);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nominate-overlay,
+  .nominate-card {
+    transition-duration: 0.01s;
+  }
+
+  .nominate-card.shake {
+    animation: none;
+  }
+}

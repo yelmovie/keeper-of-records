@@ -1,0 +1,105 @@
+/* 기록의 주인 — 디자인 토큰
+   기록보관소 세계관: deep navy / warm dark wood / restrained brass / hanji ivory */
+:root {
+  /* ── 기본 팔레트 ─────────────────────────────── */
+  --navy-950: #0a1020;
+  --navy-900: #0e1628;
+  --navy-800: #142038;
+  --navy-700: #1d2c4a;
+  --navy-600: #28395c;
+  --wood-900: #241610;
+  --wood-800: #332015;
+  --wood-700: #4a2f1e;
+  --brass-500: #c9a05a;
+  --brass-400: #d9b878;
+  --brass-300: #e8d3a3;
+  --brass-dim: #8a7040;
+  --hanji-100: #f4ecdc;
+  --hanji-200: #e8dcc4;
+  --hanji-300: #d5c5a5;
+  --ink-900: #241d14;
+  --red-muted: #9c3b34;
+  --red-deep: #7a2b26;
+  --jade-muted: #4a7a6a;
+
+  /* ── 의미 토큰 ─────────────────────────────── */
+  --color-bg: var(--navy-950);
+  --color-surface: rgba(20, 32, 56, 0.92);
+  --color-surface-raised: rgba(29, 44, 74, 0.95);
+  --color-surface-paper: var(--hanji-100);
+  --color-primary: var(--brass-500);
+  --color-primary-soft: rgba(201, 160, 90, 0.16);
+  --color-accent: var(--red-muted);
+  --color-text-main: var(--hanji-100);
+  --color-text-sub: rgba(232, 220, 196, 0.72);
+  --color-text-faint: rgba(232, 220, 196, 0.45);
+  --color-text-on-paper: var(--ink-900);
+  --color-border-soft: rgba(201, 160, 90, 0.28);
+  --color-border-strong: rgba(201, 160, 90, 0.55);
+  --color-confirm: #6fae8f;
+  --color-shared: #c9a05a;
+  --color-review: #c07f5a;
+
+  /* ── 간격 ─────────────────────────────── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* ── 둥글기 ─────────────────────────────── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 999px;
+
+  /* ── 그림자 ─────────────────────────────── */
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 6px 24px rgba(0, 0, 0, 0.45);
+  --shadow-button: 0 3px 12px rgba(0, 0, 0, 0.4);
+  --glow-brass: 0 0 18px rgba(201, 160, 90, 0.25);
+
+  /* ── 버튼 ─────────────────────────────── */
+  --button-height-sm: 48px;
+  --button-height-md: 48px;
+  --button-height-lg: 58px;
+  --button-gap: var(--space-md);
+  --touch-min: 48px;
+
+  /* ── 글자 ─────────────────────────────── */
+  --font-family:
+    'Pretendard', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo',
+    sans-serif;
+  --font-family-serif: 'Noto Serif KR', 'Batang', serif;
+  /* 제목·버튼용 라운드체 */
+  --font-family-display: 'Jua', 'Pretendard', 'Malgun Gothic', sans-serif;
+  /* 전자칠판 뒷자리에서도 읽히는 크기 기준 */
+  --font-size-title: 46px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-body: 21px;
+  --font-size-sub: 18px;
+  --font-size-caption: 15px;
+  --line-height-tight: 1.2;
+  --line-height-body: 1.5;
+
+  /* ── z-index 체계 ─────────────────────────────── */
+  --z-game: 1;
+  --z-hud: 100;
+  --z-panel: 120;
+  --z-drawer: 200;
+  --z-toast: 800;
+  --z-modal-backdrop: 1000;
+  --z-modal: 1001;
+  --z-transition: 1500;
+  --z-rotate-guard: 2000;
+
+  /* ── 레이아웃 ─────────────────────────────── */
+  --stage-w: 1600;
+  --stage-h: 900;
+  --safe-x: 5%;
+  --safe-y: 5%;
+  --modal-max-width: 720px;
+}

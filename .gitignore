@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# 원본 생성 에셋 (asset-bank 역할) — GitHub에 올리지 않는다.
+# public/assets/ 아래 변환본만 배포에 포함된다.
+/background/
+/assets/
+/3d assets/
+/chinese/
+/samplepages/
+/sound/
+/og.png
+/intro.mp4
+/final.mp4
+
+# QA 산출물
+docs/screens/
+scripts/tmp/
+
+# 원본 기획 문서 (docs/ 로 정리됨)
+/data/*.md
+
+# 원본 에셋 은행과 로컬 로그
+/asset-bank/
+.vite-preview.*.log
+/tmp/

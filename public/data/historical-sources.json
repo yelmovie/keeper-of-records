@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "kimgu-saengmol",
+    "claim": "김구는 1876년에 태어나 1949년에 세상을 떠난 독립운동가입니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "dateText": "1876년~1949년",
+    "sourceName": "한국민족문화대백과사전 「김구」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0008753",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-gyeongmuguk-1919",
+    "claim": "김구는 1919년 상하이로 건너가 대한민국 임시정부의 첫 경무국장이 되었습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1919년",
+    "sourceName": "한국민족문화대백과사전 「김구」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0008753",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-jusuk-1940",
+    "claim": "김구는 1940년 대한민국 임시정부의 주석이 되어 광복을 맞을 때까지 임시정부를 이끌었습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1940년",
+    "sourceName": "한국민족문화대백과사전 「김구」 / 우리역사넷 「김구」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0008753",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-hanin-aegukdan-1931",
+    "claim": "김구는 1931년 상하이에서 한인애국단을 만들었습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1931년",
+    "sourceName": "한국민족문화대백과사전 「김구」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0008753",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-uigeo-judo",
+    "claim": "김구는 1932년 이봉창 의거와 윤봉길 의거를 계획하고 이끌었습니다.",
+    "personIds": [
+      "kimgu",
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1932년",
+    "sourceName": "한국민족문화대백과사전 「김구」 / 독립기념관 독립운동인명사전",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail.do?id=682",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-baekbeomilji",
+    "claim": "김구는 자기 삶을 기록한 자서전 『백범일지』를 남겼습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "dateText": "1929년·1942년 집필, 1947년 간행",
+    "sourceName": "한국민족문화대백과사전 「백범일지」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0022125",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-shanghai-chongqing",
+    "claim": "김구는 13년 동안 활동하던 상하이를 떠나 여러 도시를 거친 뒤 충칭에 자리를 잡았습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1919년~1940년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「김구」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n400245",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-sajin",
+    "claim": "김구 선생의 초상 사진은 독립기념관 독립운동인명사전에서 확인할 수 있습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "sourceName": "독립기념관 한국독립운동정보시스템 「독립운동인명사전 · 김구」",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail.do?id=682",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-yesan",
+    "claim": "윤봉길은 충청남도 예산 덕산에서 태어났습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "dateText": "1908년",
+    "sourceName": "독립기념관 독립운동인명사전 「윤봉길」 / 한국민족문화대백과사전 「윤봉길」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0042345",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-yahak-nongmindokbon",
+    "claim": "윤봉길은 고향에서 야학을 열어 글을 가르치고, 농민들을 위해 『농민독본』을 썼습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "dateText": "1920년대 후반",
+    "sourceName": "한국민족문화대백과사전 「윤봉길」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0042345",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-woljinhoe",
+    "claim": "윤봉길은 1929년 부흥원을 세우고, 농민들과 함께 월진회를 만들어 회장을 맡았습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "woljinhoe"
+    ],
+    "dateText": "1929년",
+    "sourceName": "한국민족문화대백과사전 「윤봉길」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0042345",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-shanghai-1931",
+    "claim": "윤봉길은 1931년, 더 큰 일을 하기 위해 임시정부가 있는 상하이로 활동 무대를 옮겼습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1931년 8월",
+    "sourceName": "한국민족문화대백과사전 「윤봉길」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0042345",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-seonseo-19320426",
+    "claim": "윤봉길은 1932년 4월 26일 한인애국단에 들어가면서 김구 앞에서 선서했습니다.",
+    "personIds": [
+      "yunbonggil",
+      "kimgu"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1932년 4월 26일",
+    "sourceName": "한국민족문화대백과사전 「윤봉길」 / 공훈전자사료관 독립유공자 공적정보",
+    "sourceUrl": "https://e-gonghun.mpva.go.kr/user/ContribuReportDetail.do?goTocode=20001&mngNo=3732",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-seonseomun-text",
+    "claim": "윤봉길이 한인애국단에 들어가며 손가락을 깨물어 쓴 선서문이 남아 있습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1932년 4월 26일",
+    "sourceName": "독립기념관 한국독립운동정보시스템 「독립운동인명사전 · 윤봉길」",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail/print.do?id=677",
+    "sourceType": "museum",
+    "directQuote": true,
+    "quoteText": "나는 적성(赤誠)으로써 조국의 독립과 자유를 회복하기 위하여 한인애국단의 일원이 되어 중국을 침략하는 적의 장교를 도륙하기로 맹세하나이다.",
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-seonseomun-bomul",
+    "claim": "윤봉길이 직접 쓴 선서문은 보물로 지정되어 국립중앙박물관에 보관되어 있습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "dateText": "1972년 보물 지정",
+    "sourceName": "국가유산청 국가문화유산포털 「윤봉길의사유품 · 선서문」",
+    "sourceUrl": "https://www.heritage.go.kr/heri/mem/selectHaejeDetail.do?s_kdcd=12&s_asno=05680100",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hongkou-uigeo-seonggyeok",
+    "claim": "1932년 4월 29일 상하이 훙커우공원 행사는 일본 왕의 생일과 상하이 점령 승리를 함께 축하하는 자리였습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1932년 4월 29일",
+    "sourceName": "한국민족문화대백과사전 「훙커우공원 의거」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0065823",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hongkou-uigeo-tucheok",
+    "claim": "윤봉길은 그 행사장 단상을 향해 폭탄을 던져, 상하이를 침략한 일본군 지휘부에 큰 타격을 주었습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1932년 4월 29일",
+    "sourceName": "한국민족문화대백과사전 「훙커우공원 의거」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0065823",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-sigye-gyohwan",
+    "claim": "의거를 하러 떠나던 날 아침, 윤봉길은 새로 산 자기 시계를 김구에게 드리고 김구의 낡은 시계를 대신 받았습니다.",
+    "personIds": [
+      "yunbonggil",
+      "kimgu"
+    ],
+    "dateText": "1932년 4월 29일",
+    "sourceName": "한국민족문화대백과사전 「윤봉길 의사 유품」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0042347",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-sigye-yupum",
+    "claim": "윤봉길이 김구에게서 받은 낡은 회중시계는 그가 세상을 떠날 때까지 지녔던 유품으로 남아 있습니다.",
+    "personIds": [
+      "yunbonggil",
+      "kimgu"
+    ],
+    "dateText": "1932년",
+    "sourceName": "한국민족문화대백과사전 「윤봉길 의사 유품」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0042347",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-sungug-19321219",
+    "claim": "윤봉길은 일본으로 끌려가 1932년 12월 19일 가나자와에서 순국했습니다. 그때 나이 스물넷이었습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "dateText": "1932년 12월 19일",
+    "sourceName": "독립기념관 독립운동인명사전 「윤봉길」 / 한국민족문화대백과사전 「윤봉길」",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail/print.do?id=677",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-sajin",
+    "claim": "윤봉길 의사의 초상 사진은 공훈전자사료관과 독립기념관에서 확인할 수 있습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "sourceName": "공훈전자사료관 독립유공자 공적정보 「윤봉길」",
+    "sourceUrl": "https://e-gonghun.mpva.go.kr/user/ContribuReportDetail.do?goTocode=20001&mngNo=3732",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-ewha-1916",
+    "claim": "유관순은 1916년 선교사의 추천을 받아 이화학당에 들어가 공부했습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "organizationIds": [
+      "ewha-hakdang"
+    ],
+    "dateText": "1916년",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-aunae-19190401",
+    "claim": "유관순은 1919년 4월 1일 아우내 장터에서 수천 명이 모인 만세 시위를 앞장서서 이끌었습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1919년 4월 1일",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-sungug-1920",
+    "claim": "유관순은 서대문형무소에 갇혀서도 만세를 불렀고, 1920년 9월 열여덟 살에 옥중에서 순국했습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1920년 9월 28일",
+    "sourceName": "공훈전자사료관 독립유공자 공적조서 「유관순」",
+    "sourceUrl": "https://e-gonghun.mpva.go.kr/user/ContribuReportDetail.do?goTocode=20001&mngNo=3536",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-danji-1909",
+    "claim": "안중근은 1909년 3월 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "organizationIds": [
+      "danjihoe"
+    ],
+    "dateText": "1909년 3월 2일",
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-harbin-19091026",
+    "claim": "안중근은 1909년 10월 26일 하얼빈역에서 이토 히로부미를 처단했습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1909년 10월 26일",
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-sungug-1910",
+    "claim": "안중근은 1910년 3월 26일 뤼순감옥에서 순국했고, 옥중에서 쓰던 『동양평화론』은 끝내 완성되지 못했습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1910년 3월 26일",
+    "sourceName": "한국민족문화대백과사전 「안중근」 / 「동양평화론」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0016677",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-sinminhoe-1907",
+    "claim": "안창호는 1907년 동지들과 함께 비밀단체인 신민회를 조직했습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "organizationIds": [
+      "sinminhoe"
+    ],
+    "dateText": "1907년",
+    "sourceName": "한국민족문화대백과사전 「안창호」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035050",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-daesung",
+    "claim": "안창호는 평양에 대성학교를 세워 나라를 되찾을 인재를 길렀습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "organizationIds": [
+      "daesung-hakgyo"
+    ],
+    "sourceName": "독립기념관 한국독립운동정보시스템 「독립운동인명사전 · 안창호」",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail.do?id=696",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-heungsadan-1913",
+    "claim": "안창호는 1913년 미국 샌프란시스코에서 흥사단을 만들었습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "organizationIds": [
+      "heungsadan"
+    ],
+    "dateText": "1913년 5월",
+    "sourceName": "독립기념관 독립운동인명사전 「안창호」 / 한국민족문화대백과사전 「안창호」",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail.do?id=696",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-imsijeongbu",
+    "claim": "안창호는 대한민국 임시정부의 내무총장 겸 국무총리 대리를 맡아 임시정부의 조직을 정비했습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1919년",
+    "sourceName": "독립기념관 한국독립운동정보시스템 「독립운동인명사전 · 안창호」",
+    "sourceUrl": "https://search.i815.or.kr/dictionary/detail.do?id=696",
+    "sourceType": "museum",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-bukro-gunjeongseo",
+    "claim": "김좌진은 만주에서 독립군 부대인 북로군정서의 총사령관을 맡았습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "organizationIds": [
+      "bukro-gunjeongseo"
+    ],
+    "dateText": "1919년~1920년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「북로군정서」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_o401600",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-cheongsanri-1920",
+    "claim": "김좌진이 이끄는 북로군정서는 1920년 10월 청산리에서 일본군을 크게 무찔렀습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "organizationIds": [
+      "bukro-gunjeongseo"
+    ],
+    "dateText": "1920년 10월 21일~26일",
+    "sourceName": "우리역사넷(국사편찬위원회) 「북로군정서」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_o401600",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "imsijeongbu-1919-shanghai",
+    "claim": "대한민국 임시정부는 1919년 4월 11일 중국 상하이에서 세워졌습니다.",
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1919년 4월 11일",
+    "sourceName": "한국민족문화대백과사전 「대한민국 임시정부」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0015017",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "imsijeongbu-idong-gyeongro",
+    "claim": "임시정부는 일제의 추적을 피해 상하이에서 항저우·전장·창사·광저우·류저우·치장을 거쳐 충칭까지 청사를 옮겼습니다.",
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1932년~1940년",
+    "sourceName": "한국민족문화대백과사전 「대한민국 임시정부」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0015017",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "imsijeongbu-chongqing-1940",
+    "claim": "임시정부는 1940년부터 광복을 맞을 때까지 충칭에 자리를 잡았습니다.",
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1940년~1945년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「대한민국 임시 정부 유적」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/eh/view.do?levelId=eh_r0340_0010",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hanin-aegukdan-1931",
+    "claim": "한인애국단은 1931년 김구가 중국 상하이에서 만든 독립운동 단체입니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan",
+      "imsijeongbu"
+    ],
+    "dateText": "1931년",
+    "sourceName": "한국민족문화대백과사전 「한인애국단」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0061905",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hanin-aegukdan-mokjeok",
+    "claim": "한인애국단은 힘이 빠져 있던 독립운동에 다시 활기를 불어넣기 위해 만들어졌습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1931년",
+    "sourceName": "한국민족문화대백과사전 「한인애국단」 / 우리역사넷 「한인애국단」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0061905",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hanin-aegukdan-ibongchang",
+    "claim": "한인애국단 단원 이봉창은 1932년 1월 8일 도쿄에서 일본 왕을 향해 폭탄을 던졌습니다.",
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1932년 1월 8일",
+    "sourceName": "우리역사넷(국사편찬위원회) 「한인애국단」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_o404000",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hongkou-uiui",
+    "claim": "훙커우 의거는 나라 안팎에 큰 충격을 주었고, 침체되어 있던 독립운동을 다시 일으키는 계기가 되었습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan",
+      "imsijeongbu"
+    ],
+    "dateText": "1932년",
+    "sourceName": "한국민족문화대백과사전 「훙커우공원 의거」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0065823",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "hongkou-junggug-banung",
+    "claim": "훙커우 의거는 일제의 침략을 함께 받고 있던 중국 사람들에게도 큰 울림을 주어, 이후 중국이 대한민국 임시정부를 적극 돕게 되었습니다.",
+    "personIds": [
+      "yunbonggil"
+    ],
+    "organizationIds": [
+      "imsijeongbu"
+    ],
+    "dateText": "1932년",
+    "sourceName": "한국민족문화대백과사전 「훙커우공원 의거」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0065823",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "nagyang-hanin-teukbyeolban",
+    "claim": "윤봉길 의거 뒤 중국 정부의 도움으로 낙양군관학교 안에 한국인만을 위한 '한인특별반'이 만들어졌습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "organizationIds": [
+      "hanin-aegukdan"
+    ],
+    "dateText": "1934년",
+    "sourceName": "한국민족문화대백과사전 「한인애국단」 / 「낙양군관학교」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0061905",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ilje-sikmin-tongchi",
+    "claim": "1910년부터 1945년까지 일본 제국주의는 우리나라를 강제로 식민지로 삼아 지배했고, 우리말과 역사를 배우고 남기는 일까지 억눌렀습니다.",
+    "dateText": "1910년~1945년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「일제강점기」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_age_40",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yunbonggil-sigye-daehwa",
+    "claim": "시계를 바꾸던 순간 두 사람이 나눈 말이 우리역사넷의 학생용 이야기 서술에 전해집니다.",
+    "personIds": [
+      "yunbonggil",
+      "kimgu"
+    ],
+    "dateText": "1932년 4월 29일",
+    "sourceName": "우리역사넷(국사편찬위원회) 「윤봉길」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/eh/view.do?levelId=eh_n0890_0010",
+    "sourceType": "official",
+    "directQuote": true,
+    "quoteText": "제 시계는 앞으로 몇 시간밖에 쓸 일이 없으니까요.",
+    "status": "reviewed"
+  },
+  {
+    "id": "yunbonggil-sigye-baekbeomilji",
+    "claim": "『백범일지』에 기록된 시계 교환 대목의 원문 문장은 아직 확인하지 못했습니다.",
+    "personIds": [
+      "yunbonggil",
+      "kimgu"
+    ],
+    "dateText": "1932년",
+    "sourceName": "TODO_HISTORY_REVIEW — 원문 확인 필요",
+    "sourceType": "archive",
+    "directQuote": false,
+    "status": "draft"
+  },
+  {
+    "id": "ahnjunggeun-haeju-1879",
+    "claim": "안중근은 1879년 황해도 해주에서 태어났습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1879년",
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-samheung-donui-1906",
+    "claim": "안중근은 1906년 진남포로 옮겨 가 삼흥학교를 세우고, 이어 돈의학교를 인수해 학교 운영에 힘을 쏟았습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "organizationIds": [
+      "samheung-hakgyo"
+    ],
+    "dateText": "1906년",
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-yeonhaeju-uibyeong-1908",
+    "claim": "안중근은 1907년 연해주(블라디보스토크)로 건너가 동지들을 모았고, 1908년 여름 의병 부대를 이끌고 두만강을 건너 국내 진공 작전을 펼쳤습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1907년~1908년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「안중근」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n402100",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-chammojungjang",
+    "claim": "안중근은 연해주에서 편성된 의병 부대에서 대한의군 참모중장으로 임명되었습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1908년",
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-yumuk-bomul",
+    "claim": "안중근이 1910년 뤼순 옥중에서 남긴 유묵은 보물로 지정되어 있으며, 도장 대신 먹을 묻힌 손바닥 도장(장인)을 찍었는데 단지 맹세 때 자른 왼손 넷째 손가락의 모양이 그대로 나타나 있습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1910년 2월~3월",
+    "sourceName": "한국민족문화대백과사전 「안중근 의사 유묵」 / 국가유산청 국가유산포털",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035027",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ito-hirobumi-chimtal",
+    "claim": "이토 히로부미는 을사늑약 체결을 강요하고 초대 통감이 되어 대한제국의 국권을 빼앗는 침략을 이끈 인물로, 1909년 10월 26일 하얼빈에서 안중근에게 처단되었습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1905년~1909년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「이토 히로부미」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n404200",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-cheonan-1902",
+    "claim": "유관순은 1902년 12월 16일 충청남도 목천군, 지금의 천안시 병천면에서 태어났습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1902년 12월 16일",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-samil-gwihyang-1919",
+    "claim": "유관순은 1919년 서울에서 만세 시위에 참여했고, 3월 10일 휴교령이 내려지자 기차를 타고 고향으로 돌아왔습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1919년 3월",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-bumo-sungug-1919",
+    "claim": "1919년 4월 1일 아우내 장터 시위 날, 유관순의 부모를 포함해 열아홉 명이 시위 현장에서 순국했습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1919년 4월 1일",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-okjung-manse-1920",
+    "claim": "서대문형무소에 수감된 유관순은 1920년 3월 1일, 3·1운동 1주년을 맞아 동료들과 함께 옥중 만세운동을 벌였습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1920년 3월 1일",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-majimak-1920",
+    "claim": "유관순은 감옥에서 계속된 고문과 영양실조로 1920년 9월 28일 순국했고, 시신이 이화학당으로 돌아온 날 학생들은 통곡으로 맞이했습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1920년 9월 28일 · 10월 12일",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "yugwansun-suhyeong-girokpyo",
+    "claim": "유관순의 수형기록표 사진이 남아 있으며, 사진을 통해 감옥에서 겪은 심한 구타와 영양실조의 흔적을 확인할 수 있다는 견해가 있습니다.",
+    "personIds": [
+      "yugwansun"
+    ],
+    "dateText": "1919년~1920년 수감 중",
+    "sourceName": "한국민족문화대백과사전 「유관순」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0041268",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-seodaemun-1911",
+    "claim": "김구는 1911년 안악(안명근) 사건으로 붙잡혀 15년형을 받고 서대문감옥에 수감되었습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "dateText": "1911년",
+    "sourceName": "우리역사넷(국사편찬위원회) 「김구」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n400245",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "samil-undong-1919",
+    "claim": "1919년 3월 1일 서울에서 학생과 시민들이 독립 선언서를 낭독하고 만세 시위를 벌였고, 시위는 전국 곳곳과 해외로 퍼져 나갔습니다.",
+    "dateText": "1919년 3월 1일",
+    "sourceName": "우리역사넷(국사편찬위원회) 「3·1운동의 전개」",
+    "sourceUrl": "https://contents.history.go.kr/mobile/ta/view.do?levelId=ta_m71_0100_0020_0010_0020",
+    "sourceType": "official",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "seodaemun-oksa",
+    "claim": "서대문에 있던 감옥은 1912년 서대문감옥, 1923년 서대문형무소로 이름이 바뀌었고, 유관순과 안창호를 비롯한 수많은 독립운동가가 갇혀 옥고를 치른 곳입니다.",
+    "personIds": [
+      "yugwansun",
+      "ahnchangho"
+    ],
+    "dateText": "1912년 · 1923년 개칭",
+    "sourceName": "한국민족문화대백과사전 「서대문형무소」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0066513",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-hongseong-1889",
+    "claim": "김좌진은 1889년 충청남도 홍주(지금의 홍성)에서 태어났습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "dateText": "1889년",
+    "sourceName": "한국민족문화대백과사전 「김좌진」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-homyeong-hakgyo",
+    "claim": "김좌진은 고향 집에 호명학교를 세워 운영했습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "organizationIds": [
+      "homyeong-hakgyo"
+    ],
+    "sourceName": "한국민족문화대백과사전 「김좌진」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-manju-mangmyeong",
+    "claim": "김좌진은 만주로 건너가 독립군을 이끌며 무장 독립운동을 펼쳤습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "dateText": "1913년 출옥 이후",
+    "sourceName": "한국민족문화대백과사전 「김좌진」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-cheongsanri-jimyeong",
+    "claim": "청산리 전투는 백운평·어랑촌 등 여러 골짜기에서 며칠 동안 이어진 싸움이었습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "organizationIds": [
+      "bukro-gunjeongseo"
+    ],
+    "dateText": "1920년 10월",
+    "sourceName": "한국민족문화대백과사전 「김좌진」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-sinminbu-1925",
+    "claim": "김좌진은 1925년 만주에서 조직된 신민부의 중심이 되어 활동을 이어갔습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "organizationIds": [
+      "sinminbu"
+    ],
+    "dateText": "1925년 3월",
+    "sourceName": "한국민족문화대백과사전 「김좌진」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimjwajin-sungug-1930",
+    "claim": "김좌진은 1930년 1월 만주 산시에서 세상을 떠났습니다.",
+    "personIds": [
+      "kimjwajin"
+    ],
+    "dateText": "1930년 1월",
+    "sourceName": "한국민족문화대백과사전 「김좌진」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0010528",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-uibyeong-yeonhaeju",
+    "claim": "안중근은 연해주에서 의병을 모아 이끌었고, 대한의군 참모중장으로 활동했습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-samheung-hakgyo",
+    "claim": "안중근은 삼흥학교를 세우고 돈의학교를 맡아 운영하며 인재를 길렀습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "kimgu-haeju-1876",
+    "claim": "김구는 1876년 황해도 해주에서 태어났습니다.",
+    "personIds": [
+      "kimgu"
+    ],
+    "dateText": "1876년",
+    "sourceName": "한국민족문화대백과사전 「김구」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0008753",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-gangseo-1878",
+    "claim": "안창호는 1878년 평안남도 강서에서 태어났습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "dateText": "1878년",
+    "sourceName": "한국민족문화대백과사전 「안창호」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035050",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-manmin-1898",
+    "claim": "안창호는 1897년 독립협회에 가입했고, 1898년 서울 종로에서 이상재 등과 함께 만민공동회를 열었습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "dateText": "1897년~1898년",
+    "sourceName": "한국민족문화대백과사전 「안창호」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035050",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-chepo-1932",
+    "claim": "안창호는 1932년 4월 윤봉길의 훙커우공원 의거 직후 상하이에서 일본 경찰에 붙잡혔습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "dateText": "1932년 4월",
+    "sourceName": "한국민족문화대백과사전 「안창호」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035050",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnchangho-sungug-1938",
+    "claim": "안창호는 1937년 동우회 사건으로 다시 붙잡혔고, 병이 깊어져 1938년 3월 순국했습니다.",
+    "personIds": [
+      "ahnchangho"
+    ],
+    "dateText": "1937년 6월 · 1938년 3월",
+    "sourceName": "한국민족문화대백과사전 「안창호」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035050",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  },
+  {
+    "id": "ahnjunggeun-hakgyo",
+    "claim": "안중근은 삼흥학교를 세우고 돈의학교를 맡아 꾸리며 교육으로 인재를 기르는 일에 힘썼습니다.",
+    "personIds": [
+      "ahnjunggeun"
+    ],
+    "dateText": "1906년 무렵",
+    "sourceName": "한국민족문화대백과사전 「안중근」",
+    "sourceUrl": "https://encykorea.aks.ac.kr/Article/E0035026",
+    "sourceType": "academic",
+    "directQuote": false,
+    "status": "approved"
+  }
+]

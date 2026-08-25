@@ -1,0 +1,864 @@
+{
+  "id": "case-001",
+  "title": "교육으로 세운 힘",
+  "subtitle": "이름이 지워진 기록의 주인을 찾아라",
+  "teaser": "학교와 단체의 이름이 곳곳에 남은 문서 몇 장. 정작 그 한가운데 있어야 할 이름 하나가 지워져 있습니다.",
+  "solvedPersonId": "ahnchangho",
+  "candidateIds": [
+    "kimgu",
+    "yunbonggil",
+    "yugwansun",
+    "ahnjunggeun",
+    "ahnchangho"
+  ],
+  "finalCandidateIds": [
+    "kimgu",
+    "ahnchangho"
+  ],
+  "initialClueIds": [
+    "ev-japanese-rule",
+    "ev-shanghai-photo"
+  ],
+  "evidence": [
+    {
+      "id": "ev-japanese-rule",
+      "title": "식민 통치 아래의 기록실",
+      "kind": "event",
+      "summary": "이 자료들이 만들어진 시기의 배경입니다.",
+      "detail": "1910년부터 1945년까지 일본 제국주의는 우리나라를 강제로 식민지로 삼아 지배했습니다. 우리말과 우리 역사를 배우고 남기는 일까지 억눌렀기 때문에, 이 시기의 기록은 이름이 지워지거나 감춰진 채 전해지는 경우가 많습니다.",
+      "relatedPersonIds": [
+        "kimgu",
+        "yunbonggil",
+        "yugwansun",
+        "ahnjunggeun",
+        "ahnchangho",
+        "kimjwajin"
+      ],
+      "strength": "context",
+      "sourceClaimIds": [
+        "ilje-sikmin-tongchi"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-shanghai-photo",
+      "title": "상하이에서 찍힌 사진",
+      "kind": "photo",
+      "summary": "여러 사람이 함께 찍힌 사진. 뒷면에 '상하이'라고 적혀 있습니다.",
+      "detail": "상하이에서 찍힌 것으로 보이는 사진입니다. 상하이는 대한민국 임시정부가 있던 곳이라, 많은 독립운동가가 이 도시를 거쳐 갔습니다. 사진 한 장만으로는 누구인지 알 수 없습니다.",
+      "relatedPersonIds": [
+        "yunbonggil",
+        "kimgu",
+        "ahnchangho"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "imsijeongbu-1919-shanghai",
+        "yunbonggil-shanghai-1931"
+      ],
+      "interaction": "flip",
+      "visualization": true
+    },
+    {
+      "id": "ev-imsijeongbu-doc",
+      "title": "임시정부 관련 문서",
+      "kind": "document",
+      "summary": "대한민국 임시정부의 이름이 적힌 문서. 먼지에 덮여 있었습니다.",
+      "detail": "대한민국 임시정부는 3·1운동 뒤인 1919년 4월 11일 상하이에서 세워졌습니다. 임시정부와 연결되는 인물은 여러 명이므로, 이 문서만으로는 기록의 주인을 정할 수 없습니다.",
+      "relatedPersonIds": [
+        "kimgu",
+        "ahnchangho",
+        "yunbonggil"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "imsijeongbu-1919-shanghai",
+        "imsijeongbu-idong-gyeongro"
+      ],
+      "interaction": "rub"
+    },
+    {
+      "id": "ev-gangseo-record",
+      "title": "평안남도 강서의 마을 기록",
+      "kind": "place",
+      "summary": "한 사람이 태어나고 자란 마을의 기록입니다.",
+      "detail": "이 기록의 주인은 1878년 평안남도 강서에서 태어났습니다. 우리나라 서북 지방에서 자란 사람이었습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-gangseo-1878"
+      ],
+      "interaction": "pinch"
+    },
+    {
+      "id": "ev-manmin-record",
+      "title": "만민공동회의 기록",
+      "kind": "event",
+      "summary": "찢어진 기록 조각. 맞춰 보면 큰 모임의 이름이 드러납니다.",
+      "detail": "이 기록의 주인은 1897년 독립협회에 가입했고, 1898년 서울 종로에서 여러 사람과 함께 만민공동회를 열었습니다. 나라의 힘을 기르는 일에 젊은 나이부터 나선 것입니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-manmin-1898"
+      ],
+      "interaction": "puzzle"
+    },
+    {
+      "id": "ev-sinminhoe-record",
+      "title": "신민회 관련 기록",
+      "kind": "organization",
+      "summary": "겉으로 드러나지 않게 활동한 단체의 기록입니다.",
+      "detail": "이 기록의 주인은 1907년 동지들과 함께 비밀단체인 신민회를 조직했습니다. 드러나지 않게 나라의 힘을 기르려는 조직이었습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-sinminhoe-1907"
+      ],
+      "interaction": "drawer"
+    },
+    {
+      "id": "ev-heungsadan-record",
+      "title": "바다 건너에서 온 기록",
+      "kind": "organization",
+      "summary": "미국에서 만들어진 단체의 기록이 봉투에 담겨 있습니다.",
+      "detail": "이 기록의 주인은 1913년 미국 샌프란시스코에서 흥사단을 만들었습니다. 나라 밖에서도 사람을 기르는 일을 멈추지 않은 것입니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-heungsadan-1913"
+      ],
+      "interaction": "envelope"
+    },
+    {
+      "id": "ev-chepo-record",
+      "title": "1932년 상하이의 기록",
+      "kind": "document",
+      "summary": "1932년 4월, 상하이에서 붙잡힌 사람의 기록입니다.",
+      "detail": "1932년 4월 29일 훙커우공원 의거가 일어난 뒤, 이 기록의 주인은 상하이에서 일본 경찰에 붙잡혔습니다. 의거를 실행한 사람이 아닌데도 일제는 그를 놓아주지 않았습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-chepo-1932",
+        "hongkou-uigeo-seonggyeok"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-majimak-ahn",
+      "title": "순국 기록",
+      "kind": "document",
+      "summary": "1938년 3월, 병으로 세상을 떠나 순국한 기록입니다.",
+      "detail": "이 기록의 주인은 1937년 동우회 사건으로 다시 붙잡혔고, 병이 깊어져 1938년 3월 순국했습니다. 학교와 단체로 사람을 기르는 일에 평생을 바친 뒤였습니다.",
+      "relatedPersonIds": [
+        "ahnchangho"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnchangho-sungug-1938"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-gyeongmuguk",
+      "title": "임시정부 경무국장 임명 기록",
+      "kind": "document",
+      "summary": "1919년 임시정부의 첫 경무국장이 된 사람의 기록입니다.",
+      "detail": "1919년 상하이로 건너가 대한민국 임시정부의 첫 경무국장이 된 사람은 김구입니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-gyeongmuguk-1919"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-baekbeomilji",
+      "title": "『백범일지』",
+      "kind": "document",
+      "summary": "자기 삶을 직접 기록한 자서전입니다.",
+      "detail": "김구가 상하이와 충칭에서 쓴 자서전입니다. 1947년에 책으로 나왔습니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-baekbeomilji"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-jusuk-record",
+      "title": "임시정부 주석 취임 기록",
+      "kind": "document",
+      "summary": "1940년 임시정부의 주석이 된 사람의 기록입니다.",
+      "detail": "김구는 1940년 대한민국 임시정부의 주석이 되어 광복을 맞을 때까지 임시정부를 이끌었습니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-jusuk-1940",
+        "kimgu-shanghai-chongqing"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-aegukdan-record",
+      "title": "한인애국단 결성 기록",
+      "kind": "organization",
+      "summary": "1931년 상하이에서 만들어진 단체의 기록입니다.",
+      "detail": "1931년 상하이에서 한인애국단을 만든 사람은 김구입니다. 힘이 빠져 있던 독립운동에 다시 활기를 불어넣으려 한 것입니다.",
+      "relatedPersonIds": [
+        "kimgu"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimgu-hanin-aegukdan-1931",
+        "hanin-aegukdan-mokjeok"
+      ],
+      "interaction": "tap"
+    }
+  ],
+  "stages": {
+    "explore": {
+      "roomWidth": 2900,
+      "requiredEvidenceIds": [
+        "ev-heungsadan-record",
+        "ev-sinminhoe-record",
+        "ev-imsijeongbu-doc"
+      ],
+      "hintTexts": [
+        "책상 안쪽 서랍에서 학교 이름이 적힌 문서의 흔적이 보여요.",
+        "화면을 좌우로 밀면 기록실의 다른 구역을 볼 수 있습니다.",
+        "먼지가 두껍게 쌓인 문서는 오래 손대지 않았다는 뜻입니다.",
+        "바다를 건너온 봉투가 아직 열리지 않았습니다."
+      ],
+      "hotspots": [
+        {
+          "id": "hs-drawer-left",
+          "x": 190,
+          "y": 615,
+          "w": 240,
+          "h": 110,
+          "interaction": "drawer",
+          "textureKey": "prop-ahnchangho-school-ledger",
+          "evidenceId": "ev-sinminhoe-record",
+          "label": "책상 안쪽 서랍",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-envelope",
+          "x": 520,
+          "y": 565,
+          "w": 210,
+          "h": 130,
+          "interaction": "envelope",
+          "textureKey": "prop-ahnchangho-pacific-mail",
+          "evidenceId": "ev-heungsadan-record",
+          "label": "바다를 건너온 봉투",
+          "hintText": "봉인을 옆으로 밀어 봐."
+        },
+        {
+          "id": "hs-photo",
+          "x": 830,
+          "y": 525,
+          "w": 190,
+          "h": 150,
+          "interaction": "flip",
+          "evidenceId": "ev-shanghai-photo",
+          "label": "낡은 사진"
+        },
+        {
+          "id": "hs-teacup",
+          "x": 1090,
+          "y": 615,
+          "w": 110,
+          "h": 90,
+          "interaction": "tap",
+          "textureKey": "prop-ahnchangho-investigation-photo",
+          "label": "교육 모임 사진",
+          "emptyText": "여러 사람이 모여 배우고 이야기하는, 교육 모임을 찍은 사진으로 보여."
+        },
+        {
+          "id": "hs-dusty-doc",
+          "x": 1290,
+          "y": 515,
+          "w": 260,
+          "h": 190,
+          "interaction": "rub",
+          "evidenceId": "ev-imsijeongbu-doc",
+          "label": "먼지 덮인 문서",
+          "hintText": "손가락으로 문질러 먼지를 걷어내 봐."
+        },
+        {
+          "id": "hs-lamp",
+          "x": 1640,
+          "y": 475,
+          "w": 120,
+          "h": 150,
+          "interaction": "tap",
+          "textureKey": "prop-ahnchangho-meeting-gavel",
+          "label": "회의용 의사봉",
+          "emptyText": "모임의 순서를 알릴 때 쓰던 작은 나무 의사봉이야."
+        },
+        {
+          "id": "hs-cabinet",
+          "x": 1830,
+          "y": 595,
+          "w": 250,
+          "h": 120,
+          "interaction": "drawer",
+          "evidenceId": "ev-sinminhoe-record",
+          "label": "문서 캐비닛",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-watch",
+          "x": 2160,
+          "y": 545,
+          "w": 150,
+          "h": 150,
+          "interaction": "rotate",
+          "textureKey": "prop-ahnchangho-membership-notebook",
+          "backTextureKey": "prop-ahnchangho-membership-notebook-back",
+          "evidenceId": "ev-heungsadan-record",
+          "label": "낡은 단원 수첩",
+          "hintText": "수첩을 좌우로 돌리거나 눌러 뒷면을 살펴봐."
+        },
+        {
+          "id": "hs-torn",
+          "x": 2420,
+          "y": 525,
+          "w": 240,
+          "h": 180,
+          "interaction": "puzzle",
+          "textureKey": "prop-ahnchangho-civic-notice",
+          "evidenceId": "ev-manmin-record",
+          "label": "찢어진 종이 조각",
+          "hintText": "조각의 결이 맞는 자리를 찾아 놓아 봐."
+        },
+        {
+          "id": "hs-inkstone",
+          "x": 2700,
+          "y": 635,
+          "w": 120,
+          "h": 80,
+          "interaction": "tap",
+          "textureKey": "prop-ahnchangho-fountain-pen-case",
+          "label": "만년필과 가죽집",
+          "emptyText": "교육과 모임 기록을 적는 데 쓰였을 법한 오래된 만년필이야."
+        }
+      ]
+    },
+    "analyze": {
+      "tasks": [
+        {
+          "id": "task-compare",
+          "type": "compare",
+          "title": "두 기록 겹쳐 보기",
+          "instruction": "가운데 손잡이를 좌우로 밀어 두 기록을 겹쳐 보세요. 두 기록에서 같은 것이 보이나요?",
+          "pairEvidenceIds": [
+            "ev-sinminhoe-record"
+          ],
+          "compareInsightText": "두 기록은 같은 사람이 한 일입니다. 비밀 조직을 만든 사람과 평양에 학교를 세운 사람이 같은 사람입니다.",
+          "compareUnlockEvidenceId": "ev-gangseo-record"
+        },
+        {
+          "id": "task-timeline",
+          "type": "timeline",
+          "title": "시간 순서로 놓기",
+          "instruction": "자료를 왼쪽부터 시간 순서대로 옮겨 놓으세요. 카드에 적힌 연도를 보면 순서를 알 수 있어요.",
+          "timelineEvidenceIds": [
+            "ev-heungsadan-record",
+            "ev-sinminhoe-record",
+            "ev-manmin-record",
+            "ev-gangseo-record"
+          ],
+          "timelineDateLabels": {
+            "ev-gangseo-record": "1878년",
+            "ev-manmin-record": "1898년",
+            "ev-sinminhoe-record": "1907년",
+            "ev-heungsadan-record": "1913년"
+          },
+          "timelineCorrectOrder": [
+            "ev-gangseo-record",
+            "ev-manmin-record",
+            "ev-sinminhoe-record",
+            "ev-heungsadan-record"
+          ],
+          "timelineInsightText": "1878년 평안남도 강서에서 태어나 1898년 서울에서 만민공동회를 열었고, 1907년 신민회를 만든 뒤 1913년 미국에서 흥사단을 세웠습니다."
+        },
+        {
+          "id": "task-connect",
+          "type": "connect",
+          "title": "관계 잇기",
+          "instruction": "「출발」 카드와 직접 이어지는 카드를 눌러 보세요. 카드마다 그 이름이 나오는 기록이 적혀 있고, 확보한 기록에 없는 카드는 이어지지 않아요.",
+          "connectNodes": [
+            {
+              "id": "n-pyongyang",
+              "label": "평양",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-sinminhoe-record",
+                "ev-heungsadan-record"
+              ]
+            },
+            {
+              "id": "n-daesung",
+              "label": "대성학교",
+              "kind": "학교",
+              "sourceEvidenceIds": [
+                "ev-sinminhoe-record",
+                "ev-heungsadan-record"
+              ]
+            },
+            {
+              "id": "n-sf",
+              "label": "미국 샌프란시스코",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-heungsadan-record"
+              ]
+            },
+            {
+              "id": "n-heungsadan",
+              "label": "흥사단",
+              "kind": "조직",
+              "sourceEvidenceIds": [
+                "ev-heungsadan-record"
+              ]
+            },
+            {
+              "id": "n-cheongsanri",
+              "label": "청산리",
+              "kind": "장소",
+              "sourceEvidenceIds": []
+            }
+          ],
+          "connectAnswers": [
+            [
+              "n-pyongyang",
+              "n-daesung"
+            ],
+            [
+              "n-sf",
+              "n-heungsadan"
+            ]
+          ],
+          "connectInsightText": "이 기록의 주인은 평양에 대성학교를 세우고, 바다 건너 미국 샌프란시스코에서도 흥사단을 만들어 사람을 길렀습니다."
+        }
+      ]
+    },
+    "inquiry": {
+      "budget": 3,
+      "questions": [
+        {
+          "id": "q-place",
+          "prompt": "어느 지역들과 이어질까?",
+          "category": "place",
+          "recordTitle": "지역에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1878년 평안남도 강서에서 태어났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "평안도는 우리나라 서북쪽에 있는 지역입니다.",
+              "isKey": false
+            },
+            {
+              "text": "그의 흔적은 평양의 학교, 미국의 단체, 상하이의 임시정부로 이어집니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-gangseo-record"
+          ],
+          "resultSummary": "고향은 평안남도 강서, 활동 무대는 평양과 미국, 상하이까지 이어집니다."
+        },
+        {
+          "id": "q-organization",
+          "prompt": "어떤 조직과 관련 있었을까?",
+          "category": "organization",
+          "recordTitle": "조직에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1907년 동지들과 함께 비밀단체인 신민회를 조직했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "신민회는 겉으로 드러나지 않게 활동한 단체입니다.",
+              "isKey": false
+            },
+            {
+              "text": "그는 1913년 미국 샌프란시스코에서 흥사단을 만들었습니다.",
+              "isKey": true
+            },
+            {
+              "text": "임시정부에서는 내무총장 겸 국무총리 대리를 맡아 조직을 정비했습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-heungsadan-record",
+            "ev-imsijeongbu-doc"
+          ],
+          "resultSummary": "조직을 만들고 정비하는 일을 평생 이어 온 사람입니다."
+        },
+        {
+          "id": "q-event",
+          "prompt": "어떤 사건과 연결될까?",
+          "category": "event",
+          "recordTitle": "사건에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "1932년 4월 29일 상하이 훙커우공원에서 의거(나라를 되찾으려고 목숨을 걸고 벌인 일)가 일어났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "의거가 있던 날 공원에는 많은 사람이 모여 있었습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 의거 직후 상하이에서 일본 경찰에 붙잡혔습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-chepo-record"
+          ],
+          "resultSummary": "훙커우 의거 직후 상하이에서 붙잡힌 사람입니다. 의거를 실행한 사람과는 다른 사람입니다."
+        },
+        {
+          "id": "q-record",
+          "prompt": "어떤 기록이 남아 있을까?",
+          "category": "record",
+          "recordTitle": "남아 있는 기록",
+          "recordSentences": [
+            {
+              "text": "그가 세운 학교와 단체의 기록이 여러 곳에 남아 있습니다.",
+              "isKey": false
+            },
+            {
+              "text": "1937년 동우회 사건으로 다시 붙잡혔다는 기록이 있습니다.",
+              "isKey": true
+            },
+            {
+              "text": "1938년 3월, 병이 깊어져 순국했다는 기록이 마지막입니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-majimak-ahn"
+          ],
+          "resultSummary": "학교와 단체의 기록, 그리고 1938년의 순국 기록이 남아 있습니다."
+        },
+        {
+          "id": "q-relationship",
+          "prompt": "임시정부에서 무슨 일을 맡았을까?",
+          "category": "relationship",
+          "recordTitle": "임시정부에서 맡은 일의 기록",
+          "recordSentences": [
+            {
+              "text": "임시정부에는 여러 자리가 있었습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 내무총장 겸 국무총리 대리를 맡아 조직을 정비했습니다.",
+              "isKey": true
+            },
+            {
+              "text": "흩어져 있던 부서와 사람들을 모아 임시정부가 제대로 일할 수 있게 만들었습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-imsijeongbu-doc"
+          ],
+          "resultSummary": "임시정부의 안살림을 맡아 조직을 정비한 사람입니다."
+        }
+      ]
+    },
+    "compare": {
+      "personAId": "kimgu",
+      "personBId": "ahnchangho",
+      "grantEvidenceIds": [
+        "ev-gyeongmuguk",
+        "ev-baekbeomilji",
+        "ev-jusuk-record",
+        "ev-aegukdan-record"
+      ],
+      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 같은 임시정부에서 두 사람이 각각 어떤 자리를 맡았는지, 자료가 누구와 직접 연결되는지를 나눠 보세요.",
+      "cardAnswers": {
+        "ev-gyeongmuguk": "A",
+        "ev-baekbeomilji": "A",
+        "ev-jusuk-record": "A",
+        "ev-aegukdan-record": "A",
+        "ev-gangseo-record": "B",
+        "ev-manmin-record": "B",
+        "ev-sinminhoe-record": "B",
+        "ev-heungsadan-record": "B",
+        "ev-chepo-record": "B",
+        "ev-majimak-ahn": "B",
+        "ev-imsijeongbu-doc": "SHARED",
+        "ev-shanghai-photo": "SHARED",
+        "ev-japanese-rule": "SHARED"
+      },
+      "minShared": 3,
+      "minDirectPerPerson": 2,
+      "completionEvidenceIds": [
+        "ev-imsijeongbu-doc"
+      ]
+    },
+    "restore": {
+      "timelineEvidenceIds": [
+        "ev-sinminhoe-record",
+        "ev-majimak-ahn",
+        "ev-gangseo-record",
+        "ev-heungsadan-record",
+        "ev-manmin-record",
+        "ev-chepo-record"
+      ],
+      "timelineDateLabels": {
+        "ev-gangseo-record": "1878년",
+        "ev-manmin-record": "1897~1898년",
+        "ev-sinminhoe-record": "1907년",
+        "ev-heungsadan-record": "1913년",
+        "ev-chepo-record": "1932년",
+        "ev-majimak-ahn": "1938년"
+      },
+      "timelineCorrectOrder": [
+        "ev-gangseo-record",
+        "ev-manmin-record",
+        "ev-sinminhoe-record",
+        "ev-heungsadan-record",
+        "ev-chepo-record",
+        "ev-majimak-ahn"
+      ],
+      "relationPairs": [
+        {
+          "from": "기록의 주인",
+          "to": "신민회",
+          "label": "1907년 동지들과 조직함"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "대성학교",
+          "label": "평양에 세움"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "흥사단",
+          "label": "1913년 미국에서 만듦"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "임시정부",
+          "label": "내무총장을 맡아 조직을 정비함"
+        },
+        {
+          "from": "김구",
+          "to": "임시정부",
+          "label": "첫 경무국장을 맡음"
+        }
+      ],
+      "minEvidenceCount": 3,
+      "slots": [
+        {
+          "slot": "person",
+          "label": "인물",
+          "options": [
+            {
+              "id": "p-ahn",
+              "text": "안창호",
+              "correct": true
+            },
+            {
+              "id": "p-kim",
+              "text": "김구",
+              "correct": false,
+              "feedback": "김구는 임시정부의 경무국장과 주석을 맡은 사람이야. 이 기록에는 학교와 단체를 세워 사람을 기른 이의 흔적이 남아 있어."
+            },
+            {
+              "id": "p-ahnjung",
+              "text": "안중근",
+              "correct": false,
+              "feedback": "안중근도 학교를 세워 인재를 길렀지만, 1909년 하얼빈역 의거와 이어지는 인물이야. 확보한 근거의 시기와 맞지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "period",
+          "label": "활동 시기",
+          "options": [
+            {
+              "id": "t-1890s",
+              "text": "1890년대 후반 ~ 1930년대",
+              "correct": true
+            },
+            {
+              "id": "t-1919",
+              "text": "1919년 ~ 1945년",
+              "correct": false,
+              "feedback": "이 시기는 임시정부를 광복까지 이끈 인물의 활동 기간에 가까워. 확보한 자료는 1898년 만민공동회에서 1938년 순국 기록까지 이어져."
+            },
+            {
+              "id": "t-1916",
+              "text": "1916년 ~ 1920년",
+              "correct": false,
+              "feedback": "이 시기는 학교에서 배우다 만세 시위를 이끈 학생의 활동 시기야. 확보한 자료의 폭이 훨씬 넓어."
+            }
+          ]
+        },
+        {
+          "slot": "organization",
+          "label": "관련 조직",
+          "options": [
+            {
+              "id": "o-sinmin-heung",
+              "text": "신민회 · 흥사단",
+              "correct": true
+            },
+            {
+              "id": "o-aegukdan",
+              "text": "한인애국단",
+              "correct": false,
+              "feedback": "한인애국단은 김구가 만든 단체야. 확보한 근거는 신민회와 흥사단으로 이어져."
+            },
+            {
+              "id": "o-bukro",
+              "text": "북로군정서",
+              "correct": false,
+              "feedback": "북로군정서는 만주에서 활동한 독립군 부대야. 확보한 기록과 직접 이어지지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "activity",
+          "label": "주요 활동",
+          "options": [
+            {
+              "id": "a-education",
+              "text": "학교와 단체를 세워 나라의 힘을 기름",
+              "correct": true
+            },
+            {
+              "id": "a-hongkou",
+              "text": "1932년 훙커우공원 의거 실행",
+              "correct": false,
+              "feedback": "훙커우 의거를 실행한 사람은 따로 있어. 이 기록의 주인은 의거 직후 상하이에서 붙잡힌 사람이야."
+            },
+            {
+              "id": "a-cheongsanri",
+              "text": "1920년 청산리 전투 지휘",
+              "correct": false,
+              "feedback": "청산리 전투는 만주에서 독립군 부대가 치른 전투야. 이 기록과 직접 연결되지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "role",
+          "label": "독립운동에서의 역할",
+          "options": [
+            {
+              "id": "r-educator",
+              "text": "교육과 조직으로 독립의 힘을 기른 지도자",
+              "correct": true
+            },
+            {
+              "id": "r-jusuk",
+              "text": "임시정부를 광복까지 이끈 주석",
+              "correct": false,
+              "feedback": "주석을 맡아 임시정부를 광복까지 이끈 사람은 김구야. 확보한 근거를 다시 확인해 봐."
+            },
+            {
+              "id": "r-danwon",
+              "text": "폭탄을 들고 의거를 실행한 단원",
+              "correct": false,
+              "feedback": "의거를 직접 실행한 기록은 확보한 자료에 없어. 이 기록의 주인은 학교와 단체를 세운 사람이야."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "epilogue": {
+    "profileFacts": [
+      {
+        "label": "이름",
+        "text": "안창호 (1878 ~ 1938)",
+        "sourceClaimIds": [
+          "ahnchangho-gangseo-1878",
+          "ahnchangho-sungug-1938"
+        ]
+      },
+      {
+        "label": "활동 시기",
+        "text": "1890년대 후반 ~ 1930년대",
+        "sourceClaimIds": [
+          "ahnchangho-manmin-1898",
+          "ahnchangho-sungug-1938"
+        ]
+      },
+      {
+        "label": "관련 조직",
+        "text": "신민회 (1907) · 대성학교 (평양) · 흥사단 (1913, 미국) · 대한민국 임시정부",
+        "sourceClaimIds": [
+          "ahnchangho-sinminhoe-1907",
+          "ahnchangho-daesung",
+          "ahnchangho-heungsadan-1913",
+          "ahnchangho-imsijeongbu"
+        ]
+      },
+      {
+        "label": "주요 활동",
+        "text": "평양에 대성학교를 세워 인재를 기르고, 미국에서 흥사단을 만들었으며, 임시정부의 내무총장 겸 국무총리 대리를 맡아 조직을 정비했습니다.",
+        "sourceClaimIds": [
+          "ahnchangho-daesung",
+          "ahnchangho-heungsadan-1913",
+          "ahnchangho-imsijeongbu"
+        ]
+      },
+      {
+        "label": "관련 장소",
+        "text": "평안남도 강서 · 평양 · 미국 샌프란시스코 · 중국 상하이",
+        "sourceClaimIds": [
+          "ahnchangho-gangseo-1878",
+          "ahnchangho-daesung",
+          "ahnchangho-heungsadan-1913",
+          "ahnchangho-chepo-1932"
+        ]
+      },
+      {
+        "label": "남은 기록",
+        "text": "그가 세운 학교와 단체의 기록이 남아, 교육으로 나라의 힘을 기르려 한 뜻을 오늘까지 전하고 있습니다.",
+        "sourceClaimIds": [
+          "ahnchangho-daesung",
+          "ahnchangho-heungsadan-1913"
+        ]
+      },
+      {
+        "label": "역사적 의미",
+        "text": "총과 폭탄만이 독립운동이 아니었음을 보여 줍니다. 학교를 세우고 사람을 기르는 일도 나라를 되찾는 길이었습니다. 훙커우 의거 직후 붙잡히고 동우회 사건으로 다시 붙잡히면서도, 그는 힘을 기르는 일을 놓지 않았습니다.",
+        "sourceClaimIds": [
+          "ahnchangho-daesung",
+          "ahnchangho-chepo-1932",
+          "ahnchangho-sungug-1938"
+        ]
+      }
+    ],
+    "meaningText": "그는 폭탄 대신 학교를 세웠고, 총 대신 사람을 길렀습니다. 강서의 젊은이가 평양과 샌프란시스코, 상하이를 거치며 평생 놓지 않은 것은 힘을 기르자는 한 가지 생각이었습니다. 그 긴 기록의 주인을 오늘 당신이 찾아냈습니다."
+  }
+}

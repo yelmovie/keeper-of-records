@@ -1,0 +1,876 @@
+{
+  "id": "case-001",
+  "title": "청산리의 흔적",
+  "subtitle": "이름이 지워진 기록의 주인을 찾아라",
+  "teaser": "낡은 지도 한 장과 이름이 지워진 문서 몇 장. 만주에서 건너온 기록 상자에서 나온 자료들입니다.",
+  "solvedPersonId": "kimjwajin",
+  "candidateIds": [
+    "kimgu",
+    "yunbonggil",
+    "yugwansun",
+    "ahnjunggeun",
+    "ahnchangho",
+    "kimjwajin"
+  ],
+  "finalCandidateIds": [
+    "ahnjunggeun",
+    "kimjwajin"
+  ],
+  "initialClueIds": [
+    "ev-japanese-rule",
+    "ev-manju-map"
+  ],
+  "evidence": [
+    {
+      "id": "ev-japanese-rule",
+      "title": "식민 통치 아래의 기록실",
+      "kind": "event",
+      "summary": "이 자료들이 만들어진 시기의 배경입니다.",
+      "detail": "1910년부터 1945년까지 일본 제국주의는 우리나라를 강제로 식민지로 삼아 지배했습니다. 우리말과 우리 역사를 배우고 남기는 일까지 억눌렀기 때문에, 이 시기의 기록은 이름이 지워지거나 감춰진 채 전해지는 경우가 많습니다.",
+      "relatedPersonIds": [
+        "kimgu",
+        "yunbonggil",
+        "yugwansun",
+        "ahnjunggeun",
+        "ahnchangho",
+        "kimjwajin"
+      ],
+      "strength": "context",
+      "sourceClaimIds": [
+        "ilje-sikmin-tongchi"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-manju-map",
+      "title": "만주와 연해주가 그려진 지도",
+      "kind": "map",
+      "summary": "낡은 지도 한 장. 뒷면에 여러 지명이 적혀 있습니다.",
+      "detail": "나라를 빼앗긴 뒤, 많은 독립운동가가 만주와 연해주로 건너가 총을 들고 싸울 준비를 했습니다. 지도에는 여러 사람의 흔적이 겹쳐 있어, 이것만으로는 기록의 주인을 정할 수 없습니다.",
+      "relatedPersonIds": [
+        "kimjwajin",
+        "ahnjunggeun"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "kimjwajin-manju-mangmyeong",
+        "ahnjunggeun-uibyeong-yeonhaeju"
+      ],
+      "interaction": "flip",
+      "visualization": true
+    },
+    {
+      "id": "ev-farewell-records",
+      "title": "돌아오지 못한 사람들의 기록",
+      "kind": "document",
+      "summary": "광복을 보지 못하고 세상을 떠난 사람들의 기록입니다.",
+      "detail": "뤼순감옥에서, 옥중에서, 가나자와에서, 그리고 만주에서 — 많은 독립운동가가 광복을 보지 못한 채 세상을 떠났습니다. 여러 사람의 기록이 함께 묶여 있어, 이것만으로는 주인을 정할 수 없습니다.",
+      "relatedPersonIds": [
+        "kimjwajin",
+        "ahnjunggeun",
+        "yunbonggil",
+        "yugwansun"
+      ],
+      "strength": "shared",
+      "sourceClaimIds": [
+        "kimjwajin-sungug-1930",
+        "ahnjunggeun-sungug-1910",
+        "yunbonggil-sungug-19321219",
+        "yugwansun-sungug-1920"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-hongseong-record",
+      "title": "충남 홍성의 마을 기록",
+      "kind": "place",
+      "summary": "한 사람이 태어나고 자란 고장의 기록입니다.",
+      "detail": "이 기록의 주인은 1889년 충청남도 홍성에서 태어났습니다. 그의 첫 기록은 고향 마을에서 시작됩니다.",
+      "relatedPersonIds": [
+        "kimjwajin"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimjwajin-hongseong-1889"
+      ],
+      "interaction": "pinch"
+    },
+    {
+      "id": "ev-homyeong-record",
+      "title": "호명학교 기록",
+      "kind": "organization",
+      "summary": "한 학교의 이름이 적힌 기록입니다.",
+      "detail": "이 기록의 주인은 만주로 떠나기 전, 고향 집에 호명학교를 세워 운영했습니다. 총보다 먼저 배움으로 나라의 힘을 기르려 한 것입니다.",
+      "relatedPersonIds": [
+        "kimjwajin"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimjwajin-homyeong-hakgyo"
+      ],
+      "interaction": "drawer"
+    },
+    {
+      "id": "ev-bukro-record",
+      "title": "북로군정서 총사령관 기록",
+      "kind": "document",
+      "summary": "먼지 아래에서 독립군 부대의 이름이 드러납니다.",
+      "detail": "북로군정서는 1919년 만주에서 만들어진 독립군 부대입니다. 이 기록의 주인은 이 부대의 총사령관을 맡아 부대를 이끌었습니다.",
+      "relatedPersonIds": [
+        "kimjwajin"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimjwajin-bukro-gunjeongseo"
+      ],
+      "interaction": "rub"
+    },
+    {
+      "id": "ev-cheongsanri-map",
+      "title": "청산리 전투 기록",
+      "kind": "map",
+      "summary": "찢어진 조각을 맞추면 골짜기 이름들이 드러납니다.",
+      "detail": "1920년 10월, 이 기록의 주인이 이끄는 북로군정서는 청산리 일대의 백운평·어랑촌 등 여러 골짜기에서 며칠 동안 이어진 싸움 끝에 일본군을 크게 무찔렀습니다.",
+      "relatedPersonIds": [
+        "kimjwajin"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimjwajin-cheongsanri-1920",
+        "kimjwajin-cheongsanri-jimyeong"
+      ],
+      "interaction": "puzzle"
+    },
+    {
+      "id": "ev-sinminbu-record",
+      "title": "신민부 기록",
+      "kind": "organization",
+      "summary": "금속 통 안에 든 문서에 한 단체의 이름이 적혀 있습니다.",
+      "detail": "청산리 전투 뒤에도 이 기록의 주인은 만주를 떠나지 않았습니다. 1925년 만주에서 조직된 신민부의 중심이 되어 활동을 이어갔습니다.",
+      "relatedPersonIds": [
+        "kimjwajin"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimjwajin-sinminbu-1925"
+      ],
+      "interaction": "rotate"
+    },
+    {
+      "id": "ev-sungug-1930",
+      "title": "순국 기록",
+      "kind": "document",
+      "summary": "1930년 1월, 만주에서 순국한 기록입니다.",
+      "detail": "이 기록의 주인은 1930년 1월 만주 산시에서 세상을 떠났습니다. 그의 기록은 고향이 아닌 만주 땅에서 멈췄습니다.",
+      "relatedPersonIds": [
+        "kimjwajin"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "kimjwajin-sungug-1930"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-uibyeong-record",
+      "title": "연해주 의병 기록",
+      "kind": "document",
+      "summary": "연해주에서 의병을 이끈 사람의 기록입니다.",
+      "detail": "안중근은 연해주에서 의병을 모아 이끌었고, 대한의군 참모중장으로 활동했습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-uibyeong-yeonhaeju"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-danji-record",
+      "title": "단지 맹세 기록",
+      "kind": "event",
+      "summary": "1909년 3월, 손가락을 잘라 맹세한 사람들의 기록입니다.",
+      "detail": "안중근은 1909년 3월 동지 열두 명과 함께 손가락을 잘라 나라를 되찾자고 맹세했습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-danji-1909"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-harbin-record",
+      "title": "하얼빈역 의거 기록",
+      "kind": "event",
+      "summary": "1909년 10월 26일 하얼빈역에서 일어난 일의 기록입니다.",
+      "detail": "안중근은 1909년 10월 26일 하얼빈역에서 이토 히로부미를 처단했습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-harbin-19091026"
+      ],
+      "interaction": "tap"
+    },
+    {
+      "id": "ev-lushun-record",
+      "title": "뤼순감옥의 기록",
+      "kind": "document",
+      "summary": "1910년 3월의 기록입니다.",
+      "detail": "안중근은 1910년 3월 26일 뤼순감옥에서 순국했습니다. 옥중에서 쓰던 『동양평화론』은 끝내 완성되지 못했습니다.",
+      "relatedPersonIds": [
+        "ahnjunggeun"
+      ],
+      "strength": "direct",
+      "sourceClaimIds": [
+        "ahnjunggeun-sungug-1910"
+      ],
+      "interaction": "tap"
+    }
+  ],
+  "stages": {
+    "explore": {
+      "roomWidth": 2900,
+      "requiredEvidenceIds": [
+        "ev-bukro-record",
+        "ev-cheongsanri-map",
+        "ev-homyeong-record"
+      ],
+      "hintTexts": [
+        "책상 왼쪽 서랍 아래에서 오래된 흔적이 감지됩니다.",
+        "화면을 좌우로 밀면 기록실의 다른 구역을 볼 수 있습니다.",
+        "먼지가 두껍게 쌓인 자리는 오래 손대지 않았다는 뜻입니다.",
+        "찢어진 조각은 맞춰 보아야 내용을 알 수 있습니다."
+      ],
+      "hotspots": [
+        {
+          "id": "hs-drawer-left",
+          "x": 190,
+          "y": 615,
+          "w": 240,
+          "h": 110,
+          "interaction": "drawer",
+          "evidenceId": "ev-homyeong-record",
+          "label": "책상 왼쪽 서랍",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-envelope",
+          "x": 520,
+          "y": 565,
+          "w": 210,
+          "h": 130,
+          "interaction": "envelope",
+          "evidenceId": "ev-bukro-record",
+          "label": "봉인된 봉투",
+          "hintText": "봉인을 옆으로 밀어 봐."
+        },
+        {
+          "id": "hs-photo",
+          "x": 830,
+          "y": 525,
+          "w": 190,
+          "h": 150,
+          "interaction": "flip",
+          "textureKey": "prop-kimjwajin-manchuria-map",
+          "backTextureKey": "prop-kimjwajin-manchuria-map-back",
+          "evidenceId": "ev-manju-map",
+          "label": "낡은 지도"
+        },
+        {
+          "id": "hs-teacup",
+          "x": 1090,
+          "y": 615,
+          "w": 110,
+          "h": 90,
+          "interaction": "tap",
+          "textureKey": "prop-kimjwajin-investigation-photo",
+          "label": "독립군 야영 사진",
+          "emptyText": "산속 야영지에서 지도를 살피는 모습을 찍은 사진으로 보여."
+        },
+        {
+          "id": "hs-dusty-doc",
+          "x": 1290,
+          "y": 515,
+          "w": 260,
+          "h": 190,
+          "interaction": "rub",
+          "textureKey": "prop-kimjwajin-command-report",
+          "evidenceId": "ev-bukro-record",
+          "label": "먼지 덮인 문서",
+          "hintText": "손가락으로 문질러 먼지를 걷어내 봐."
+        },
+        {
+          "id": "hs-lamp",
+          "x": 1640,
+          "y": 475,
+          "w": 120,
+          "h": 150,
+          "interaction": "tap",
+          "textureKey": "prop-kimjwajin-field-canteen",
+          "label": "야전 수통",
+          "emptyText": "혹독한 야외 활동에 쓰였을 법한 낡은 수통이야. 새 기록은 없어."
+        },
+        {
+          "id": "hs-cabinet",
+          "x": 1830,
+          "y": 595,
+          "w": 250,
+          "h": 120,
+          "interaction": "drawer",
+          "evidenceId": "ev-homyeong-record",
+          "label": "문서 캐비닛",
+          "hintText": "서랍을 아래로 밀어 당겨 봐."
+        },
+        {
+          "id": "hs-watch",
+          "x": 2160,
+          "y": 545,
+          "w": 150,
+          "h": 150,
+          "interaction": "rotate",
+          "textureKey": "prop-kimjwajin-field-compass",
+          "backTextureKey": "prop-kimjwajin-field-compass-back",
+          "evidenceId": "ev-sinminbu-record",
+          "label": "작은 금속 통",
+          "hintText": "좌우로 돌려 뚜껑 쪽을 살펴봐."
+        },
+        {
+          "id": "hs-torn",
+          "x": 2420,
+          "y": 525,
+          "w": 240,
+          "h": 180,
+          "interaction": "puzzle",
+          "evidenceId": "ev-cheongsanri-map",
+          "label": "찢어진 종이 조각",
+          "hintText": "조각의 결이 맞는 자리를 찾아 놓아 봐."
+        },
+        {
+          "id": "hs-inkstone",
+          "x": 2700,
+          "y": 635,
+          "w": 120,
+          "h": 80,
+          "interaction": "tap",
+          "textureKey": "prop-kimjwajin-signal-whistle",
+          "label": "신호 호루라기",
+          "emptyText": "멀리 있는 대원에게 신호를 보낼 때 쓰던 호루라기야."
+        }
+      ]
+    },
+    "analyze": {
+      "tasks": [
+        {
+          "id": "task-compare",
+          "type": "compare",
+          "title": "두 기록 겹쳐 보기",
+          "instruction": "가운데 손잡이를 좌우로 밀어 두 기록을 겹쳐 보세요. 두 기록에서 같은 것이 보이나요?",
+          "pairEvidenceIds": [
+            "ev-bukro-record",
+            "ev-cheongsanri-map"
+          ],
+          "compareInsightText": "두 기록에 같은 부대 이름이 나옵니다. 만주에서 독립군 부대를 이끈 사람과 청산리에서 일본군을 무찌른 사람은 같은 사람입니다.",
+          "compareUnlockEvidenceId": "ev-hongseong-record"
+        },
+        {
+          "id": "task-timeline",
+          "type": "timeline",
+          "title": "시간 순서로 놓기",
+          "instruction": "자료를 왼쪽부터 시간 순서대로 옮겨 놓으세요. 카드에 적힌 연도를 보면 순서를 알 수 있어요.",
+          "timelineEvidenceIds": [
+            "ev-sinminbu-record",
+            "ev-cheongsanri-map",
+            "ev-bukro-record",
+            "ev-hongseong-record"
+          ],
+          "timelineDateLabels": {
+            "ev-hongseong-record": "1889년",
+            "ev-bukro-record": "1919년",
+            "ev-cheongsanri-map": "1920년",
+            "ev-sinminbu-record": "1925년"
+          },
+          "timelineCorrectOrder": [
+            "ev-hongseong-record",
+            "ev-bukro-record",
+            "ev-cheongsanri-map",
+            "ev-sinminbu-record"
+          ],
+          "timelineInsightText": "1889년 충남 홍성에서 태어나 1919년 만주에서 독립군 부대의 총사령관이 되었고, 1920년 청산리에서 일본군을 크게 무찌른 뒤 1925년까지 만주에서 활동을 이어 갔습니다."
+        },
+        {
+          "id": "task-connect",
+          "type": "connect",
+          "title": "관계 잇기",
+          "instruction": "「출발」 카드와 직접 이어지는 카드를 눌러 보세요. 카드마다 그 이름이 나오는 기록이 적혀 있고, 확보한 기록에 없는 카드는 이어지지 않아요.",
+          "connectNodes": [
+            {
+              "id": "n-manju",
+              "label": "만주",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-manju-map",
+                "ev-farewell-records",
+                "ev-homyeong-record",
+                "ev-bukro-record",
+                "ev-sinminbu-record",
+                "ev-sungug-1930"
+              ]
+            },
+            {
+              "id": "n-bukro",
+              "label": "북로군정서",
+              "kind": "조직",
+              "sourceEvidenceIds": [
+                "ev-bukro-record",
+                "ev-cheongsanri-map"
+              ]
+            },
+            {
+              "id": "n-cheongsanri",
+              "label": "청산리",
+              "kind": "장소",
+              "sourceEvidenceIds": [
+                "ev-cheongsanri-map",
+                "ev-sinminbu-record"
+              ]
+            },
+            {
+              "id": "n-homyeong",
+              "label": "호명학교",
+              "kind": "학교",
+              "sourceEvidenceIds": [
+                "ev-homyeong-record"
+              ]
+            },
+            {
+              "id": "n-aegukdan",
+              "label": "한인애국단",
+              "kind": "조직",
+              "sourceEvidenceIds": []
+            }
+          ],
+          "connectAnswers": [
+            [
+              "n-manju",
+              "n-bukro"
+            ],
+            [
+              "n-bukro",
+              "n-cheongsanri"
+            ]
+          ],
+          "connectInsightText": "이 기록의 주인은 만주에서 북로군정서를 이끌었고, 청산리에서 일본군을 크게 무찔렀습니다."
+        }
+      ]
+    },
+    "inquiry": {
+      "budget": 3,
+      "questions": [
+        {
+          "id": "q-place",
+          "prompt": "어느 지역에서 활동했을까?",
+          "category": "place",
+          "recordTitle": "지역에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 주인은 1889년 충청남도 홍성에서 태어났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "기록에는 여러 지명이 함께 적혀 있습니다.",
+              "isKey": false
+            },
+            {
+              "text": "그는 고향을 떠나 만주로 건너갔습니다.",
+              "isKey": true
+            },
+            {
+              "text": "만주는 압록강과 두만강 너머에 있는 땅입니다.",
+              "isKey": false
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-hongseong-record"
+          ],
+          "resultSummary": "고향은 충남 홍성, 이후 활동한 곳은 만주입니다."
+        },
+        {
+          "id": "q-organization",
+          "prompt": "어떤 조직과 관련 있었을까?",
+          "category": "organization",
+          "recordTitle": "조직에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "북로군정서는 1919년 만주에서 만들어진 독립군 부대입니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 북로군정서의 총사령관을 맡았습니다.",
+              "isKey": true
+            },
+            {
+              "text": "1925년에는 만주에서 조직된 신민부의 중심이 되어 활동을 이어갔습니다.",
+              "isKey": true
+            },
+            {
+              "text": "만주에는 여러 독립군 부대가 활동하고 있었습니다.",
+              "isKey": false
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-bukro-record",
+            "ev-sinminbu-record"
+          ],
+          "resultSummary": "북로군정서의 총사령관, 그리고 신민부의 중심이었던 사람입니다."
+        },
+        {
+          "id": "q-event",
+          "prompt": "어떤 사건과 연결될까?",
+          "category": "event",
+          "recordTitle": "사건에 관한 기록",
+          "recordSentences": [
+            {
+              "text": "1920년 10월, 만주 청산리 일대에서 독립군과 일본군이 맞붙었습니다.",
+              "isKey": true
+            },
+            {
+              "text": "싸움은 백운평·어랑촌 등 여러 골짜기에서 며칠 동안 이어졌습니다.",
+              "isKey": true
+            },
+            {
+              "text": "이 기록의 주인이 이끄는 부대는 일본군을 크게 무찔렀습니다.",
+              "isKey": true
+            },
+            {
+              "text": "청산리는 만주에 있는 지명입니다.",
+              "isKey": false
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-cheongsanri-map"
+          ],
+          "resultSummary": "1920년 10월 청산리 전투와 직접 연결됩니다."
+        },
+        {
+          "id": "q-record",
+          "prompt": "어떤 기록이 남아 있을까?",
+          "category": "record",
+          "recordTitle": "남아 있는 기록",
+          "recordSentences": [
+            {
+              "text": "이 기록의 마지막 자료는 1930년 1월에 멈춰 있습니다.",
+              "isKey": true
+            },
+            {
+              "text": "그는 만주 산시에서 세상을 떠났습니다.",
+              "isKey": true
+            },
+            {
+              "text": "그가 세운 학교와 그가 치른 전투의 기록이 함께 전해집니다.",
+              "isKey": false
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-sungug-1930",
+            "ev-farewell-records"
+          ],
+          "resultSummary": "순국 기록은 1930년 1월, 만주에서 멈춰 있습니다."
+        },
+        {
+          "id": "q-relationship",
+          "prompt": "학교와 군대를 어떻게 이끌었을까?",
+          "category": "relationship",
+          "recordTitle": "학교와 부대의 기록",
+          "recordSentences": [
+            {
+              "text": "만주에는 많은 독립운동가가 건너가 있었습니다.",
+              "isKey": false
+            },
+            {
+              "text": "이 기록의 주인은 고향 집에 호명학교를 세워 인재를 길렀습니다.",
+              "isKey": true
+            },
+            {
+              "text": "만주로 건너가서는 북로군정서의 총사령관을 맡아 독립군 부대를 지휘했습니다.",
+              "isKey": true
+            }
+          ],
+          "unlockEvidenceIds": [
+            "ev-manju-map",
+            "ev-homyeong-record"
+          ],
+          "resultSummary": "학교를 세워 사람을 기르고, 만주에서 독립군 부대를 지휘했습니다."
+        }
+      ]
+    },
+    "compare": {
+      "personAId": "ahnjunggeun",
+      "personBId": "kimjwajin",
+      "grantEvidenceIds": [
+        "ev-uibyeong-record",
+        "ev-danji-record",
+        "ev-harbin-record",
+        "ev-lushun-record"
+      ],
+      "guideText": "누가 더 훌륭한지를 묻지 않습니다. 나라 밖에서 총을 들고 맞선 두 사람이 각각 어떤 자리에 있었는지, 자료가 누구와 직접 연결되는지를 나눠 보세요.",
+      "cardAnswers": {
+        "ev-uibyeong-record": "A",
+        "ev-danji-record": "A",
+        "ev-harbin-record": "A",
+        "ev-lushun-record": "A",
+        "ev-hongseong-record": "B",
+        "ev-homyeong-record": "B",
+        "ev-bukro-record": "B",
+        "ev-cheongsanri-map": "B",
+        "ev-sinminbu-record": "B",
+        "ev-sungug-1930": "B",
+        "ev-manju-map": "SHARED",
+        "ev-farewell-records": "SHARED",
+        "ev-japanese-rule": "SHARED"
+      },
+      "minShared": 3,
+      "minDirectPerPerson": 2,
+      "completionEvidenceIds": [
+        "ev-farewell-records"
+      ]
+    },
+    "restore": {
+      "timelineEvidenceIds": [
+        "ev-cheongsanri-map",
+        "ev-hongseong-record",
+        "ev-sungug-1930",
+        "ev-homyeong-record",
+        "ev-bukro-record",
+        "ev-sinminbu-record"
+      ],
+      "timelineDateLabels": {
+        "ev-hongseong-record": "1889년",
+        "ev-homyeong-record": "1907년 이후",
+        "ev-bukro-record": "1919~1920년",
+        "ev-cheongsanri-map": "1920년 10월",
+        "ev-sinminbu-record": "1925년",
+        "ev-sungug-1930": "1930년"
+      },
+      "timelineCorrectOrder": [
+        "ev-hongseong-record",
+        "ev-homyeong-record",
+        "ev-bukro-record",
+        "ev-cheongsanri-map",
+        "ev-sinminbu-record",
+        "ev-sungug-1930"
+      ],
+      "relationPairs": [
+        {
+          "from": "기록의 주인",
+          "to": "호명학교",
+          "label": "고향 집에 세움"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "북로군정서",
+          "label": "총사령관을 맡음"
+        },
+        {
+          "from": "북로군정서",
+          "to": "청산리 전투",
+          "label": "일본군을 크게 무찌름"
+        },
+        {
+          "from": "기록의 주인",
+          "to": "신민부",
+          "label": "중심이 되어 활동함"
+        },
+        {
+          "from": "안중근",
+          "to": "하얼빈역 의거",
+          "label": "직접 실행함"
+        }
+      ],
+      "minEvidenceCount": 3,
+      "slots": [
+        {
+          "slot": "person",
+          "label": "인물",
+          "options": [
+            {
+              "id": "p-kimjwajin",
+              "text": "김좌진",
+              "correct": true
+            },
+            {
+              "id": "p-ahnjunggeun",
+              "text": "안중근",
+              "correct": false,
+              "feedback": "안중근은 연해주에서 의병을 이끌고 1909년 하얼빈역 의거를 실행한 사람이야. 확보한 근거에는 만주에서 독립군 부대를 지휘하고 1925년 신민부에서 활동한 사람의 흔적이 남아 있어."
+            },
+            {
+              "id": "p-kimgu",
+              "text": "김구",
+              "correct": false,
+              "feedback": "김구는 상하이에서 임시정부와 한인애국단을 이끈 사람이야. 확보한 근거는 만주의 독립군 부대와 이어져."
+            }
+          ]
+        },
+        {
+          "slot": "period",
+          "label": "활동 시기",
+          "options": [
+            {
+              "id": "t-1919-1930",
+              "text": "1910년대 후반 ~ 1930년",
+              "correct": true
+            },
+            {
+              "id": "t-1907-1910",
+              "text": "1907년 ~ 1910년",
+              "correct": false,
+              "feedback": "이 시기는 연해주에서 의병을 이끈 인물의 활동 기간에 가까워. 확보한 자료는 1920년 청산리, 1925년 신민부로 이어져."
+            },
+            {
+              "id": "t-1931-1932",
+              "text": "1931년 ~ 1932년",
+              "correct": false,
+              "feedback": "이 시기는 상하이에서 한인애국단이 활동한 때야. 이 기록의 마지막 자료는 1930년 1월에 멈춰 있어."
+            }
+          ]
+        },
+        {
+          "slot": "organization",
+          "label": "관련 조직",
+          "options": [
+            {
+              "id": "o-bukro",
+              "text": "북로군정서",
+              "correct": true
+            },
+            {
+              "id": "o-aegukdan",
+              "text": "한인애국단",
+              "correct": false,
+              "feedback": "한인애국단은 상하이에서 만들어진 단체야. 확보한 기록은 만주의 독립군 부대를 가리켜."
+            },
+            {
+              "id": "o-danjihoe",
+              "text": "단지회",
+              "correct": false,
+              "feedback": "단지회는 안중근이 동지들과 만든 비밀 모임이야. 확보한 기록과 직접 이어지지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "activity",
+          "label": "주요 활동",
+          "options": [
+            {
+              "id": "a-cheongsanri",
+              "text": "1920년 10월 청산리 전투 승리",
+              "correct": true
+            },
+            {
+              "id": "a-harbin",
+              "text": "1909년 하얼빈역 의거",
+              "correct": false,
+              "feedback": "하얼빈역 의거는 안중근이 실행한 일이야. 확보한 자료는 부대가 함께 치른 전투를 가리켜."
+            },
+            {
+              "id": "a-hongkou",
+              "text": "1932년 상하이 훙커우공원 의거",
+              "correct": false,
+              "feedback": "훙커우 의거는 상하이에서 일어난 일이야. 확보한 자료의 시기·장소와 맞지 않아."
+            }
+          ]
+        },
+        {
+          "slot": "role",
+          "label": "독립운동에서의 역할",
+          "options": [
+            {
+              "id": "r-commander",
+              "text": "고향에 학교를 세워 인재를 기르다가, 만주에서 독립군 부대를 지휘한 총사령관",
+              "correct": true
+            },
+            {
+              "id": "r-single-action",
+              "text": "혼자서 의거를 실행한 독립운동가",
+              "correct": false,
+              "feedback": "확보한 근거는 혼자 실행한 의거가 아니라, 부대를 이끌고 전투를 지휘한 기록이야."
+            },
+            {
+              "id": "r-leader",
+              "text": "임시정부를 오래 이끈 지도자",
+              "correct": false,
+              "feedback": "임시정부를 이끈 기록은 확보한 자료에 없어. 이 기록은 만주의 전투와 이어져."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "epilogue": {
+    "profileFacts": [
+      {
+        "label": "이름",
+        "text": "김좌진 (1889 ~ 1930)",
+        "sourceClaimIds": [
+          "kimjwajin-hongseong-1889",
+          "kimjwajin-sungug-1930"
+        ]
+      },
+      {
+        "label": "활동 시기",
+        "text": "1910년대 후반 ~ 1930년",
+        "sourceClaimIds": [
+          "kimjwajin-manju-mangmyeong",
+          "kimjwajin-sungug-1930"
+        ]
+      },
+      {
+        "label": "관련 조직",
+        "text": "호명학교 (고향 홍성) · 북로군정서 (총사령관) · 신민부 (1925)",
+        "sourceClaimIds": [
+          "kimjwajin-homyeong-hakgyo",
+          "kimjwajin-bukro-gunjeongseo",
+          "kimjwajin-sinminbu-1925"
+        ]
+      },
+      {
+        "label": "주요 활동",
+        "text": "1920년 10월, 북로군정서를 이끌고 청산리에서 일본군을 크게 무찔렀습니다. 백운평·어랑촌 등 여러 골짜기에서 며칠 동안 이어진 싸움이었습니다.",
+        "sourceClaimIds": [
+          "kimjwajin-cheongsanri-1920",
+          "kimjwajin-cheongsanri-jimyeong"
+        ]
+      },
+      {
+        "label": "관련 장소",
+        "text": "충청남도 홍성 · 만주 청산리 · 만주 산시",
+        "sourceClaimIds": [
+          "kimjwajin-hongseong-1889",
+          "kimjwajin-cheongsanri-1920",
+          "kimjwajin-sungug-1930"
+        ]
+      },
+      {
+        "label": "순국 기록",
+        "text": "1930년 1월, 만주 산시에서 세상을 떠났습니다. 광복을 보지 못한 채였습니다.",
+        "sourceClaimIds": [
+          "kimjwajin-sungug-1930"
+        ]
+      },
+      {
+        "label": "역사적 의미",
+        "text": "청산리 전투는 독립군이 일본군을 크게 무찌른 승리로, 만주에서 이어진 무장 독립운동의 힘을 보여 주었습니다.",
+        "sourceClaimIds": [
+          "kimjwajin-cheongsanri-1920",
+          "kimjwajin-cheongsanri-jimyeong"
+        ]
+      }
+    ],
+    "meaningText": "자기 집을 학교로 내어 준 사람이 있었습니다. 고향에서는 아이들을 가르쳤고, 만주 벌판에서는 독립군을 이끌었습니다. 청산리의 승리도, 1930년 1월 만주에서 멈춘 순국 기록도 모두 한 사람의 것입니다. 지워졌던 그 이름을 오늘 당신이 근거로 되찾았습니다."
+  }
+}
