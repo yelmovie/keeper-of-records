@@ -363,6 +363,8 @@
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: auto;
+  /* memory-overlay(z-modal) 위에서 열려야 한다 */
+  z-index: calc(var(--z-modal) + 1);
 }
 
 .modal-backdrop.show {
