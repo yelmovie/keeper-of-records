@@ -6,6 +6,8 @@ import { el, button } from '../dom';
 import { Router, type Screen } from '../../core/Router';
 import { SaveManager } from '../../core/SaveManager';
 import { AudioManager } from '../../core/AudioManager';
+import { GameState } from '../../core/GameState';
+import { openModal, closeModal } from '../Modal';
 import { mountTopHud } from '../TopHud';
 import { mountGuide } from '../Guide';
 import { AssetMap } from '../../config/AssetMap';
@@ -45,27 +47,60 @@ export const TitleScreen: Screen = {
         ));
     let starting = false;
 
+    // 새 탐험: (이전 기록이 있으면 지우고) 종이 쪽지 프롤로그 → 시작 영상 → 기록소.
+    // 영상은 타이틀에서 이미 prefetch 중이므로 쪽지 연출 동안 버퍼링을 이어 간다.
+    const beginNewGame = () => {
+      if (starting) return;
+      starting = true;
+      startBtn.disabled = true;
+      continueBtn.disabled = true;
+      offGuide?.();
+      offGuide = null;
+
+      // "새로 시작하기"인데 이전 회차(복원 완료 인물 등)가 그대로 남아 보이던
+      // 문제: 저장 데이터와 메모리 상태를 반드시 비운 뒤 기록소로 들어간다.
+      SaveManager.resetProgress();
+      GameState.reset();
+
+      root.classList.add('is-prologue');
+      const playVideo = () =>
+        playIntroCinematic(() => {
+          void Router.go('archive');
+        });
+      const scene = Router.getScene('TitleScene') as TitleScene | null;
+      if (scene) scene.playPrologue(playVideo);
+      else playVideo();
+    };
+
     const startBtn = button(
       hasSave ? '새로 시작하기' : '기록 탐험 시작',
       () => {
         if (starting) return;
-        starting = true;
         AudioManager.sfx('uiTap');
-        startBtn.disabled = true;
-        continueBtn.disabled = true;
-        offGuide?.();
-        offGuide = null;
-
-        // 새 탐험: 종이 쪽지 프롤로그 → 시작 영상 → 기록소.
-        // 영상은 타이틀에서 이미 prefetch 중이므로 쪽지 연출 동안 버퍼링을 이어 간다.
-        root.classList.add('is-prologue');
-        const playVideo = () =>
-          playIntroCinematic(() => {
-            void Router.go('archive');
-          });
-        const scene = Router.getScene('TitleScene') as TitleScene | null;
-        if (scene) scene.playPrologue(playVideo);
-        else playVideo();
+        if (!hasSave) {
+          beginNewGame();
+          return;
+        }
+        // 이전 기록이 있으면 지워도 되는지 한 번 확인한다(되돌릴 수 없으므로).
+        openModal({
+          title: '새로 시작하기',
+          body: el('p', {
+            text: '지금까지 복원한 기록이 모두 지워지고 처음부터 시작합니다. 이어서 하려면 "이어하기"를 눌러 주세요.',
+          }),
+          footer: [
+            button('취소', () => closeModal(), { variant: 'ghost' }),
+            button(
+              '처음부터 시작',
+              () => {
+                AudioManager.sfx('uiTap');
+                closeModal();
+                beginNewGame();
+              },
+              { variant: 'primary' },
+            ),
+          ],
+          width: 520,
+        });
       },
       { variant: resuming ? 'default' : 'primary', size: 'lg' },
     );

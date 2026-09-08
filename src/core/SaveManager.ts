@@ -164,6 +164,15 @@ class SaveManagerImpl {
     this.save();
   }
 
+  /** 탐구 진행 기록만 모두 지운다(완료 사건·트랙·진행 중 사건). 소리 설정은 유지.
+   *  타이틀의 "새로 시작하기"가 쓴다. 기록소가 다시 그려질 때 이전 회차가
+   *  남아 보이지 않도록 메모리와 localStorage 를 함께 갈아 끼운다. */
+  resetProgress(): void {
+    const settings = { ...this.data.settings };
+    this.data = { ...structuredClone(DEFAULT_SAVE), settings };
+    this.save();
+  }
+
   resetAll(): void {
     this.data = structuredClone(DEFAULT_SAVE);
     SafeStorage.remove(SAVE_KEY);

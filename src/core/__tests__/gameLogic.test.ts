@@ -186,4 +186,29 @@ describe('저장', () => {
     expect(prog.evidenceIds).toContain(id);
     expect(prog.stage).toBe(3);
   });
+
+  it('새로 시작하기(resetProgress)는 복원 완료 기록을 모두 지우고 소리 설정만 남긴다', () => {
+    GameState.loadCase(caseData, people);
+    GameState.setStage(3);
+    SaveManager.markCaseComplete(caseData.id, caseData.solvedPersonId);
+    SaveManager.get().settings.bgm = 0.2;
+    SaveManager.save();
+    expect(SaveManager.hasProgress()).toBe(true);
+    expect(SaveManager.completedTracksOf(caseData.id)).toHaveLength(1);
+
+    SaveManager.resetProgress();
+
+    const s = SaveManager.get();
+    expect(SaveManager.hasProgress()).toBe(false);
+    expect(s.completedCaseIds).toEqual([]);
+    expect(s.completedTrackIds).toEqual([]);
+    expect(s.currentCaseId).toBeNull();
+    expect(s.caseProgress).toEqual({});
+    expect(s.settings.bgm).toBe(0.2);
+    // localStorage 에도 빈 진행이 기록되어 새로고침해도 이전 회차가 되살아나지 않는다
+    const raw = JSON.parse(
+      localStorage.getItem('keeper-of-records:v1') ?? '{}',
+    ) as { completedTrackIds?: string[] };
+    expect(raw.completedTrackIds).toEqual([]);
+  });
 });
